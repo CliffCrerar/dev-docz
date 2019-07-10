@@ -1,8 +1,15 @@
 module.exports = [
-    'Landing', 
+    'Landing',
+    'Things about docz',
     'Circle back',
-    'Publish to NPM', 
-    'Setting up Next.js', 
+    'GCLOUD Create VM snapshot',
+    'MS SQL Server - Ubuntu',
+    'MS SQL Server - Docker',
+    'Publish to NPM',
+    'Setting up Next.js',
+    'Scaffolding a DOCZ app',
+    'Setup Live-server',
     'VS Code Dev extensions',
+    'swapmem',
     'Readme'
 ]
