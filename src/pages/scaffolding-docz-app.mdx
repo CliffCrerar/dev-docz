@@ -1,0 +1,163 @@
+---
+name: Scaffols a DOCZ app
+route: /scaffolding-docz-app-quickly
+---
+
+# Scaffold a DOCZ for use quickly
+
+Possible improvements:
+[docz-iframe-playground](https://www.npmjs.com/package/docz-iframe-playground)
+
+>  ### This doc will show you how to quickly scaffold a docs app without having to decrypt the official documents first. following theses steps will have you up and running in no time
+
+* #### Prepare:
+	Setup git repo and '.gitignore' and enter 'node_modules'.
+
+1. ### Setup project
+
+	```bash
+	mkdir MyDevDocz
+	cd MyDevDocz
+	npm init -y 
+	npm install react react-doc
+	npm install docz docz-theme-default
+	npm update all
+	```
+
+2. ### Add scripts in `package.json` 
+
+	```json
+	"scripts": {
+		"start": "docz dev --port 5001",
+		"build": "docz build"
+	}
+	```
+
+3. ### Add  page in root dir 
+	```bash
+	$ echo "# My Dev Docz" > index.mdx
+	```
+4. ### Add  build folder to gitignore `echo \.docz >> .gitignore` 
+5. ### Add `doczrc.js` config file.
+
+	
+	```bash
+		echo "export default {title: 'My Dev Docz',description: 'This is my awesome documentation',theme: 'docz-theme-default'}" > doczrc.js
+	```
+
+6. ### Create `.env` file with content:
+
+	```
+	DOCZ_BASE || '/'
+	DOCZ_DEBUG || true
+	DOCZ_SOURCE || './src'
+	```
+
+7. ### Create source directory 
+
+	```bash 
+	mkdir src/pages; mv index.mdx src/pages/index.mdx
+	``` 
+
+8. ### Install environment variables package 
+
+	```bash 
+	npm install dotenv
+	```
+
+9. ### Add config entries:
+
+	```
+	files: 'src/**/*.{md, markdown, mdx}'
+	```
+
+10. ### Add environment variable to `.env` 
+
+	```bash
+	NODE_ENV=src
+	``` 
+
+11. ### Create html index file in public folder
+
+	```bash
+		mkdir public
+	```
+
+	##### Create `index.html` in public and populate with:
+	
+	```html
+
+		<!DOCTYPE html>
+		<html lang="{{ lang }}">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="description" content="{{ description }}">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>{{ title }}</title>
+			{{ head }}
+		</head>
+		<body>
+			<div id="root" />
+			{{ footer }}
+		</body>
+		</html>
+
+	```
+
+12. ### Add entries to config file:
+
+	```js
+		public: '/public',
+		indexHtml: 'public/index.html'
+	```
+
+13. ### Create nav menu config for ordering correctly
+
+	```bash
+		mkdir src / menu
+		echo "module.exports = ['Landing', 'Page Z', 'Page A']" > src / menu / index.js
+	```
+
+14. ### Modify `doczrc.js` add entry 
+
+	```js 
+	menu: require('./src/menu')
+	``` 
+
+14. ### Modify `src/pages/index.mdx` 
+
+	```md
+		---
+		name: Landing
+		route: /landing
+		---
+
+		# My Dec Docz
+
+		### info goes here
+	```
+
+13. ### Create pages `page1.mdx` and `page2.mdx` 
+
+13. ### Add Content `page1.mdx` 
+
+	```md
+		---
+		name: Page Z
+		route: /page1
+		---
+
+		# Page One
+	```
+
+13. ### Add Content `page2.mdx` 
+
+	```md
+	---
+	name: Page A
+	route: /page2
+	---
+
+	# Page Two
+	```

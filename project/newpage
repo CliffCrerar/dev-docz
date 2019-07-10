@@ -1,0 +1,26 @@
+echo newpage $1
+echo on route $2
+
+# echo "--- \n name: $1 \n route: $2 \n --- \n\n # $1" > $1.mdx
+
+THISDIR=$(pwd)
+
+cd src/pages 
+
+pwd
+
+FILE=./$1.mdx
+
+echo "filename: $1.mdx"
+
+if (test -f "$FILE")
+then
+    echo "\n ERR: $1.mdx exist \n NOT CREATED \n"
+    cd "$THISDIR"
+else
+    
+    echo "---\nname: $1\nroute: $2\n---\n\n# $1" > $1.mdx  
+    echo "\n SUCCESS!"
+    cd "$THISDIR"
+fi
+

@@ -1,0 +1,37 @@
+{
+    "name": "my-dev-docz",
+    "description": "my own documentation spot that might be useful to others",
+    "version": "1.0.0",
+    "main": "public/index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "docz dev",
+        "start": "npm run dev --port 5400",
+        "build": "docz build",
+        "now-build": "yarn build",
+        "newpage": "./newpage",
+        "live-start": "node run",
+        "deploy": "node _updatedocs.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/CliffCrerar.github.io.git"
+    },
+    "keywords": [
+        "docs"
+    ],
+    "author": "Cliff Crerar & others",
+    "license": "MIT",
+    "devDependencies": {
+        "docz": "^1.2.0",
+        "docz-theme-default": "^1.2.0"
+    },
+    "dependencies": {
+        "docz-knobs": "^0.1.1",
+        "docz-theme-umi": "^2.0.5",
+        "dotenv": "^8.0.0",
+        "gh-pages": "^2.0.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    }
+}

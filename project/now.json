@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "name": "mydevdocs",
+    "alias": "mydevdocs",
+    "builds": [{
+        "src": "package.json",
+        "use": "@now/static-build"
+    }]
+}

@@ -1,0 +1,74 @@
+---
+name: Things about docz
+route: /things-about-docz
+---
+
+# Things about docz
+
+> Why?
+> Because the docz config docs are still badly organised and I am constantly scrolling around lookgin for shit.
+
+## Tuning the logo
+
+## Files
+
+// doczrc.js
+export default {
+  files: '**/*.{md,markdown,mdx}'
+}
+
+ignore
+
+Type: string[]
+Default: ['readme.md', 'changelog.md', 'code_of_conduct.md', 'contributing.md', 'license.md'],
+
+
+## Public
+
+export default {
+  public: '/public'
+}
+
+## Theme 
+
+// doczrc.js
+export default {
+  theme: 'src/theme',
+}
+
+import React from 'react'
+import { theme } from 'docz'
+
+const Theme = ({ children }) => <div>{children}</div>
+
+const themeConfig = {
+  colors: {
+    primary: 'tomato',
+    secondary: 'khaki',
+    gray: 'lightslategray',
+  },
+}
+
+export default theme(themeConfig)(Theme)
+
+## Example project structure:
+
+##Deploy
+
+https://www.docz.site/docs/deploying-your-docs  
+
+pages/
+  hello-world.mdx
+src/
+  theme.js
+doczrc.js
+package.json
+
+## Menu
+
+export default {
+  menu: [
+    'Getting Started',
+    { name: 'Components', menu: ['Alert', 'Button'] }
+  ]
+}
