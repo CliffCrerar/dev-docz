@@ -20,7 +20,7 @@ const doczConfig = {
 	base: "/",
 	public: './public',
 	indexHtml: 'public/index.html',
-	dest: "/dist"
+	dest: "/docs"
 	// modifyBundlerConfig: config => {
 	//     (function() {
 	//         console.log('when this runs');
