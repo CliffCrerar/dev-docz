@@ -18,9 +18,9 @@ const doczConfig = {
 		'src/**/*.{md,markdown,mdx}'
 	],
 	base: "/",
-	public: '/docs',
+	public: '/public',
 	indexHtml: 'index.html',
-	dest: "/docs"
+	dest: "/dist"
 	// modifyBundlerConfig: config => {
 	//     (function() {
 	//         console.log('when this runs');

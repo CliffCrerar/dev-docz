@@ -14,9 +14,11 @@ parent: Pages
 ## Files
 
 // doczrc.js
+```
 export default {
   files: '**/*.{md,markdown,mdx}'
 }
+```
 
 ignore
 
@@ -25,14 +27,16 @@ Default: ['readme.md', 'changelog.md', 'code_of_conduct.md', 'contributing.md', 
 
 
 ## Public
-
+```
 export default {
   public: '/public'
 }
+```
 
 ## Theme 
 
 // doczrc.js
+```
 export default {
   theme: 'src/theme',
 }
@@ -51,6 +55,7 @@ const themeConfig = {
 }
 
 export default theme(themeConfig)(Theme)
+```
 
 ## Example project structure:
 
@@ -66,10 +71,11 @@ doczrc.js
 package.json
 
 ## Menu
-
+```
 export default {
   menu: [
     'Getting Started',
     { name: 'Components', menu: ['Alert', 'Button'] }
   ]
 }
+```
