@@ -3,11 +3,14 @@ const path = require( 'path' );
 // import themeDefault from 'docz-theme-default/dist'
 // import { splash } from 'docz-plugin-splash'
 
+const PUBLIC = path.resolve(__dirname, 'public');
+const SRC = path.resolve(__dirname, 'src');
+
 const doczConfig = {
 	hashRouter: true,
 	title: 'My Dev Docz',
 	description: 'This is my awesome documentation',
-	menu: require( './src/menu' ),
+	menu: require( SRC+'/menu' ),
 	themeConfig: {
 		mode: 'light'
 		// logo: {
@@ -15,10 +18,10 @@ const doczConfig = {
 		// }
 	},
 	files: [
-		'src/**/*.{md,markdown,mdx}'
+		SRC+'/**/*.{md,markdown,mdx}'
 	],
 	base: "/",
-	public: '/public',
+	public: PUBLIC,
 	indexHtml: 'index.html',
 	dest: "/dist"
 	// modifyBundlerConfig: config => {
