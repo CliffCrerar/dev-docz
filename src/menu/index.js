@@ -12,5 +12,6 @@ module.exports = [
 	'Setup Live-server',
 	'Setting up Next.js',
 	'VS Code Dev extensions',
-	'Setting up swapemory - Ubuntu'
+	'Setting up swapemory - Ubuntu',
+	'Replace/Restore Finder'
 ]
