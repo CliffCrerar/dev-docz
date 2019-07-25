@@ -13,5 +13,6 @@ module.exports = [
 	'Setting up Next.js',
 	'VS Code Dev extensions',
 	'Setting up swapemory - Ubuntu',
-	'Replace/Restore Finder'
+	'Replace-Restore Finder',
+	'name: Dotnet Core Authentication and Authorisation app'
 ]
