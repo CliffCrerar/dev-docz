@@ -1,5 +1,5 @@
 ---
-name: aws-compliance-videos
+name: AWS compliance videos
 route: /aws-compliance-videos
 parent: Documentation
 ---
