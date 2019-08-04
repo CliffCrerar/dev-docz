@@ -14,5 +14,6 @@ module.exports = [
 	'VS Code Dev extensions',
 	'Setting up swapemory - Ubuntu',
 	'Replace-Restore Finder',
-	'name: Dotnet Core Authentication and Authorisation app'
+	'Dotnet Core Authe app',
+	'AWS compliance videos'
 ]
