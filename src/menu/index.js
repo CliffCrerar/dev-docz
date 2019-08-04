@@ -15,5 +15,6 @@ module.exports = [
 	'Setting up swapemory - Ubuntu',
 	'Replace-Restore Finder',
 	'Dotnet Core Authe app',
-	'AWS compliance videos'
+	'AWS compliance videos',
+	'Markdown Package Stack'2
 ]
