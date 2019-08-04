@@ -1,0 +1,14 @@
+---
+name: aws-compliance-videos
+route: /aws-compliance-videos
+parent: Documentation
+---
+
+## IAM
+
+https://youtu.be/Ul6FW4UANGc
+
+### Best practice
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
+
