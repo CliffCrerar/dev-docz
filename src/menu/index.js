@@ -16,5 +16,6 @@ module.exports = [
 	'Replace-Restore Finder',
 	'Dotnet Core Authe app',
 	'AWS compliance videos',
-	'Markdown Package Stack'2
+	'Markdown Package Stack',
+	'Smooth modern'
 ]
