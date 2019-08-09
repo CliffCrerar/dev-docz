@@ -12,7 +12,7 @@ const doczConfig = {
     description: 'This is my awesome documentation',
     menu: require(SRC + '/menu'),
     themeConfig: {
-        mode: 'light'
+        mode: 'dark'
             // logo: {
             //     src: 'https://cdn-learnsql.c1i44.now.sh/pg-wip/_under_construction.png'
             // }
