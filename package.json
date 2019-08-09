@@ -11,7 +11,8 @@
         "now-build": "yarn build",
         "newpage": "./newpage",
         "live-start": "node run",
-        "deploy": "node _updatedocs.js"
+        "deploy": "node _updatedocs.js",
+        "gatsby": "yarn gatsby develop"
     },
     "repository": {
         "type": "git",
@@ -30,9 +31,11 @@
         "docz-knobs": "^0.1.1",
         "docz-theme-umi": "^2.0.5",
         "dotenv": "^8.0.0",
+        "gatsby": "^2.13.54",
+        "gatsby-theme-docz": "^1.2.0",
         "gh-pages": "^2.0.1",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
         "request": "^2.88.0"
     }
 }
