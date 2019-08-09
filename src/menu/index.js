@@ -1,32 +1,48 @@
 module.exports = [
-    'Landing',
+'Landing',
+{
     'Things about docz': [
-        'Scaffolding a DOCZ app',
+        'Scaffolding a DOCZ app'
     ]
-    'Circle back',
-    'Node.js related': [
-        'Publish to NPM',
-        'Setting up Next.js',
-        'Setup Live-server',
-    ]
-    'GCLOUD Create VM snapshot',
-    'Installing MongoDB on ubuntu',
-    'MS SQL Server - Docker',
-    'MS SQL Server - Ubuntu',
-
-
-
-
-
-
-    'VS Code Dev extensions',
-    'Setting up swapemory - Ubuntu',
-    'Replace-Restore Finder',
+},
+'Circle back',
+'Cloudenation': [
+    'AWS Partner marketing',
     'Dotnet Core Authe app',
     'AWS compliance videos',
-    'Markdown Package Stack',
-    'Smooth modern',
-    'AWS Partner marketing',
-    'Homebrew'
+    'Smooth modern'
+],
+'Node.js related': [
+    'Publish to NPM',
+    'Setting up Next.js',
+    'Setup Live-server',
+    'Homebrew',
+    'Markdown Package Stack'
+],
+'gCloud Create VM snapshot',
+'Installing MongoDB on ubuntu',
+'VS Code Dev extensions',
+'OS related': [
+    'MS SQL Server - Docker',
+    'MS SQL Server - Ubuntu',
+    'Setting up swapemory - Ubuntu',
+    'Replace-Restore Finder'
+]
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ]
