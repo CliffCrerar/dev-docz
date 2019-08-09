@@ -1,16 +1,24 @@
 module.exports = [
     'Landing',
-    'Things about docz',
+    'Things about docz': [
+        'Scaffolding a DOCZ app',
+    ]
     'Circle back',
+    'Node.js related': [
+        'Publish to NPM',
+        'Setting up Next.js',
+        'Setup Live-server',
+    ]
     'GCLOUD Create VM snapshot',
     'Installing MongoDB on ubuntu',
     'MS SQL Server - Docker',
     'MS SQL Server - Ubuntu',
-    'Publish to NPM',
-    'Setting up Next.js',
-    'Scaffolding a DOCZ app',
-    'Setup Live-server',
-    'Setting up Next.js',
+
+
+
+
+
+
     'VS Code Dev extensions',
     'Setting up swapemory - Ubuntu',
     'Replace-Restore Finder',
@@ -18,6 +26,7 @@ module.exports = [
     'AWS compliance videos',
     'Markdown Package Stack',
     'Smooth modern',
-    'AWS Partner marketing'
+    'AWS Partner marketing',
+    'Homebrew'
 
 ]
