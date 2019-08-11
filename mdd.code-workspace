@@ -8,6 +8,9 @@
 		}
 	],
 	"settings": {
-		"workbench.colorTheme": "Deep Jungle"
+		"workbench.colorTheme": "Deep Jungle",
+		"workbench.colorCustomizations": {
+			"tab.unfocusedActiveBorder": "#fff0"
+		}
 	}
 }
