@@ -20,7 +20,7 @@ module.exports = [
     'Markdown Package Stack'
 ],
 'gCloud Create VM snapshot',
-'Installing MongoDB on ubuntu',
+'Installing MongoDB',
 'VS Code Dev extensions',
 'OS related': [
     'MS SQL Server - Docker',
