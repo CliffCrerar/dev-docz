@@ -1,5 +1,5 @@
 ---
-name: Segment,
+name: Segment
 route: /segment-js
 ---
 
