@@ -6,9 +6,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "docz dev",
-        "start": "npm run dev --port 5400",
+        "start": "docz",
         "build": "docz build",
-        "now-build": "yarn build",
+        "now-build": "npm run build",
         "newpage": "./newpage",
         "live-start": "node run",
         "deploy": "node _updatedocs.js",
@@ -33,7 +33,6 @@
         "dotenv": "^8.0.0",
         "gatsby": "^2.13.54",
         "gatsby-theme-docz": "^1.2.0",
-        "gh-pages": "^2.0.1",
         "react": "^16.9.0",
         "react-dom": "^16.9.0",
         "request": "^2.88.0"

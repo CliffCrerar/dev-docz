@@ -3,7 +3,6 @@ const path = require('path');
 // import themeDefault from 'docz-theme-default/dist'
 // import { splash } from 'docz-plugin-splash'
 
-const PUBLIC = path.resolve(__dirname, 'public');
 const SRC = path.resolve(__dirname, 'src');
 
 const doczConfig = {
@@ -21,9 +20,8 @@ const doczConfig = {
         SRC + '/**/*.{md,markdown,mdx}'
     ],
     base: "/",
-    public: PUBLIC,
     indexHtml: 'index.html',
-    dest: "/dist"
+    dest: "dist"
         // modifyBundlerConfig: config => {
         //     (function() {
         //         console.log('when this runs');

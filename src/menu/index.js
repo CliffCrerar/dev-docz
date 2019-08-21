@@ -1,8 +1,7 @@
 module.exports = [
-'Landing',
-
+    {name:'Landing'},
     { name: 'Things about docz', menu: ['Scaffolding a DOCZ app'] },
-    "Mongo DB rest API"
+    {name: "Mongo DB rest API"}
 
 // 'Circle back',
 // 'Cloudenation': [
