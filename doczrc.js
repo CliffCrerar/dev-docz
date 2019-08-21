@@ -9,7 +9,7 @@ const doczConfig = {
     hashRouter: true,
     title: 'My Dev Docz',
     description: 'This is my awesome documentation',
-    menu: require(SRC + '/menu'),
+    // menu: require(SRC + '/menu'),
     themeConfig: {
         mode: 'dark'
             // logo: {
@@ -21,7 +21,7 @@ const doczConfig = {
     ],
     base: "/",
     indexHtml: 'index.html',
-    dest: "dist"
+    dest: "./dist"
         // modifyBundlerConfig: config => {
         //     (function() {
         //         console.log('when this runs');
