@@ -1,6 +1,7 @@
 ---
 name: SEO
 route: /seo
+parent: Documentation
 ---
 
 # Search engine optimisation resources
