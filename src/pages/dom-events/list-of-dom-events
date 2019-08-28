@@ -235,4 +235,3 @@ $("#pdf-next").on('click', function() {
 });
 Browser Compatability
 The above code will work good in all major browsers, including IE 10+.
-
