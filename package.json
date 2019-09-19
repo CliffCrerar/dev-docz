@@ -1,40 +1,22 @@
 {
-    "name": "my-dev-docz",
-    "description": "my own documentation spot that might be useful to others",
-    "version": "1.0.0",
-    "main": "public/index.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "docz dev",
-        "start": "docz",
-        "build": "docz build",
-        "now-build": "npm run build",
-        "newpage": "./newpage",
-        "live-start": "node run",
-        "deploy": "node _updatedocs.js",
-        "gatsby": "yarn gatsby develop"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/CliffCrerar/dev-docz.git"
-    },
-    "keywords": [
-        "docs"
-    ],
-    "author": "Cliff Crerar & others",
-    "license": "MIT",
-    "devDependencies": {
-        "docz": "^1.2.0",
-        "docz-theme-default": "^1.2.0"
-    },
-    "dependencies": {
-        "docz-knobs": "^0.1.1",
-        "docz-theme-umi": "^2.0.5",
-        "dotenv": "^8.0.0",
-        "gatsby": "^2.13.54",
-        "gatsby-theme-docz": "^1.2.0",
-        "react": "^16.9.0",
-        "react-dom": "^16.9.0",
-        "request": "^2.88.0"
-    }
+  "name": "my-dev-docs",
+  "version": "1.0.0",
+  "description": "My personnal documentation spot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CliffCrerar/dev-docz.git"
+  },
+  "author": "Cliff Crerar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CliffCrerar/dev-docz/issues"
+  },
+  "homepage": "https://github.com/CliffCrerar/dev-docz#readme",
+  "dependencies": {
+    "docpress": "0.7.6"
+  }
 }
