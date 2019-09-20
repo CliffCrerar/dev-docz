@@ -1,0 +1,24 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "My project",
+        "source": "README.md",
+        "expand": true,
+        "url": "index.html",
+        "slug": "index"
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "README.md",
+      "title": "My project",
+      "pageTitle": "My project",
+      "slug": "index"
+    }
+  },
+  "sources": {
+    "README.md": "index.html"
+  }
+}

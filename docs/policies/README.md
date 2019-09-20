@@ -1,4 +1,0 @@
-Policies
-========
-
-# Policies
