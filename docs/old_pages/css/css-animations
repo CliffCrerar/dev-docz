@@ -1,0 +1,37 @@
+---
+name: CSS Animations
+route: css-animations
+Parent: css
+---
+
+Property	Description
+@keyframes	Specifies the animation code
+animation	A shorthand property for setting all the animation properties
+animation-delay	Specifies a delay for the start of an animation
+animation-direction	Specifies whether an animation should be played forwards, backwards or in alternate cycles
+animation-duration	Specifies how long time an animation should take to complete one cycle
+animation-fill-mode	Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+animation-iteration-count	Specifies the number of times an animation should be played
+animation-name	Specifies the name of the @keyframes animation
+animation-play-state	Specifies whether the animation is running or paused
+animation-timing-function	Specifies the speed curve of the animation
+
+CSS Syntax
+
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+
+Property Values
+
+Value	Description
+animation-name	Specifies the name of the keyframe you want to bind to the selector
+animation-duration	Specifies how many seconds or milliseconds an animation takes to complete
+animation-timing-function	Specifies the speed curve of the animation
+animation-delay	Specifies a delay before the animation will start
+animation-iteration-count	Specifies how many times an animation should be played
+animation-direction	Specifies whether or not the animation should play in reverse on alternate cycles
+animation-fill-mode	Specifies what values are applied by the animation outside the time it is executing
+animation-play-state	Specifies whether the animation is running or paused
+initial	Sets this property to its default value. Read about initial
+inherit	Inherits this property from its parent element. Read about inherit
+
+https://www.w3schools.com/cssref/css3_pr_animation.asp

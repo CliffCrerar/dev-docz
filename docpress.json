@@ -1,5 +1,6 @@
 {
     "docs": "docs",
+    "dist":"public",
     "github": "CliffCrerar/dev-docz",
     "css": [
         "_assets/css/style.css"
