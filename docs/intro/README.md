@@ -1,4 +1,4 @@
-About
+About {style=color:red}
 =====
 
 Public documentation spot.

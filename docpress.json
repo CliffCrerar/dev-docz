@@ -1,0 +1,15 @@
+{
+    "docs": "docs",
+    "github": "CliffCrerar/dev-docz",
+    "css": [
+        "_assets/css/style.css"
+    ],
+    "scripts":[
+        "_assets/scripts/scripts.js"
+    ],
+    "markdown":{
+        "plugins": {
+            "attrs": {}
+        }
+    }
+}

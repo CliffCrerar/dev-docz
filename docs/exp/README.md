@@ -4,3 +4,9 @@ Build TODO list
 `List of apps to build for portfolio of evidence`
 
 1. [Building a notes App](https://raw.githubusercontent.com/CliffCrerar/react-notes/master/README.md)
+
+2. [AWS MongoDb](https://aws.amazon.com/quickstart/architecture/mongodb/)
+
+3. [AWS CouchDb](https://aws.amazon.com/quickstart/architecture/couchbase/)
+
+4. [Netapp](https://aws.amazon.com/quickstart/architecture/netapp-ontap-cloud/)
