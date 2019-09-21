@@ -1,0 +1,38 @@
+
+# Installing MongoDB on ubuntu
+
+## TODO . . . .
+
+# Installing MongoDB on MacOS
+
+```bash
+brew tap mongodb/brew
+
+brew install mongodb-community@4.0
+```
+
+In addition to the binaries, the install creates:
+
+the configuration file (/usr/local/etc/mongod.conf)
+the log directory path (/usr/local/var/log/mongodb)
+the data directory path (/usr/local/var/mongodb)
+
+### Running mongo
+
+```bash
+mongod --config /usr/local/etc/mongod.conf
+```
+
+> Alternatively, to run MongoDB as a macOS service, issue the following (the process uses the /usr/local/etc/mongod.conf file, created during the install):
+
+```bash
+brew services start mongodb-community@4.0
+```
+
+#### Connect and Use MongoDB
+
+To begin using MongoDB, connect a mongo shell to the running instance. From a new terminal, issue the following:
+
+```bash
+mongo
+```
