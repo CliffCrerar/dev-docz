@@ -10,5 +10,6 @@ https://principledgraphql.com/
 # Apollo DB
 
 https://www.apollographql.com/docs/
+https://www.apollographql.com/docs/references/apollo-config/
 
 # Fauna DB

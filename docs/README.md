@@ -23,7 +23,7 @@ DOCUMENTATION
 * [Data & Databases](./databases/README.md)
     * [GraphQL](./databases/graphql.md)
     * [NoSQL](./databases/noSQL.md)
-    * [GraphQL](./databases/sql.md)
+    * [SQL](./databases/sql.md)
 
 * [Policies](./policies/README.md)
     * [Acceptable Use Policies](./policies/acceptable-use-policy.md)
