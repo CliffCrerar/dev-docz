@@ -18,11 +18,6 @@
             "source": "docs/intro/this-resource.md",
             "url": "intro/this-resource.html",
             "slug": "introthis-resource"
-          },
-          {
-            "title": "hugo-themes",
-            "source": "docs/",
-            "url": ""
           }
         ]
       },
@@ -121,16 +116,27 @@
         "title": "Data & Databases",
         "source": "docs/databases/README.md",
         "url": "databases/index.html",
-        "slug": "databases"
-      },
-      {
-        "title": "  GraphQL"
-      },
-      {
-        "title": "  NoSQL"
-      },
-      {
-        "title": "  GraphQL"
+        "slug": "databases",
+        "sections": [
+          {
+            "title": "GraphQL",
+            "source": "docs/databases/graphql.md",
+            "url": "databases/graphql.html",
+            "slug": "databasesgraphql"
+          },
+          {
+            "title": "NoSQL",
+            "source": "docs/databases/noSQL.md",
+            "url": "databases/noSQL.html",
+            "slug": "databasesnosql"
+          },
+          {
+            "title": "GraphQL",
+            "source": "docs/databases/sql.md",
+            "url": "databases/sql.html",
+            "slug": "databasessql"
+          }
+        ]
       },
       {
         "title": "Policies",
@@ -308,6 +314,24 @@
       "pageTitle": "Data & Databases",
       "slug": "databases"
     },
+    "databases/graphql.html": {
+      "source": "docs/databases/graphql.md",
+      "title": "GraphQL - DEV DOCS",
+      "pageTitle": "GraphQL",
+      "slug": "databasesgraphql"
+    },
+    "databases/noSQL.html": {
+      "source": "docs/databases/noSQL.md",
+      "title": "NoSQL - DEV DOCS",
+      "pageTitle": "NoSQL",
+      "slug": "databasesnosql"
+    },
+    "databases/sql.html": {
+      "source": "docs/databases/sql.md",
+      "title": "GraphQL - DEV DOCS",
+      "pageTitle": "GraphQL",
+      "slug": "databasessql"
+    },
     "policies/index.html": {
       "source": "docs/policies/README.md",
       "title": "Policies - DEV DOCS",
@@ -389,30 +413,34 @@
     "docs/dev-resources/eslint-rules.md": "dev-resources/eslint-rules.html",
     "docs/dev-resources/hugo-themes.md": "dev-resources/hugo-themes.html",
     "docs/databases/README.md": "databases/index.html",
+    "docs/databases/graphql.md": "databases/graphql.html",
+    "docs/databases/noSQL.md": "databases/noSQL.html",
+    "docs/databases/sql.md": "databases/sql.html",
     "docs/policies/README.md": "policies/index.html",
     "docs/policies/acceptable-use-policy.md": "policies/acceptable-use-policy.html",
     "docs/resources/README.md": "resources/index.html",
-    "docs/_assets/css/style.css": "_assets/css/style.css",
     "docs/_assets/scripts/scripts.js": "_assets/scripts/scripts.js",
+    "docs/_assets/css/style.css": "_assets/css/style.css",
+    "docs/old_pages/AWS/_marketing-stragegies.mdx": "old_pages/AWS/_marketing-stragegies.mdx",
+    "docs/old_pages/AWS/aws-compliance-videos.mdx": "old_pages/AWS/aws-compliance-videos.mdx",
+    "docs/old_pages/AWS/dotnet-auth-app.mdx": "old_pages/AWS/dotnet-auth-app.mdx",
+    "docs/old_pages/AWS/gloud-vm-snapshot.mdx": "old_pages/AWS/gloud-vm-snapshot.mdx",
     "docs/old_pages/about-docz/about-docz.mdx": "old_pages/about-docz/about-docz.mdx",
     "docs/old_pages/about-docz/scaffolding-docz-app.mdx": "old_pages/about-docz/scaffolding-docz-app.mdx",
     "docs/old_pages/circle-back/circle-back.mdx": "old_pages/circle-back/circle-back.mdx",
     "docs/old_pages/css/css-animations": "old_pages/css/css-animations",
     "docs/old_pages/dom-events/list-of-dom-events": "old_pages/dom-events/list-of-dom-events",
     "docs/old_pages/list-of-dom-events/dom-events.mdx": "old_pages/list-of-dom-events/dom-events.mdx",
-    "docs/old_pages/live-server/live-server-doc.mdx": "old_pages/live-server/live-server-doc.mdx",
     "docs/old_pages/markdown-package-stack/markdown-package-stack.mdx": "old_pages/markdown-package-stack/markdown-package-stack.mdx",
     "docs/old_pages/mongo/mongo-db.mdx": "old_pages/mongo/mongo-db.mdx",
+    "docs/old_pages/live-server/live-server-doc.mdx": "old_pages/live-server/live-server-doc.mdx",
     "docs/old_pages/pdf-in-html/pdf-libs": "old_pages/pdf-in-html/pdf-libs",
     "docs/old_pages/replace-restore-finder/rep-res-fndr.mdx": "old_pages/replace-restore-finder/rep-res-fndr.mdx",
-    "docs/old_pages/search-engine-opt/seo": "old_pages/search-engine-opt/seo",
     "docs/old_pages/segment-js/segment.js": "old_pages/segment-js/segment.js",
     "docs/old_pages/setup-nextjs/setup-nextjs.mdx": "old_pages/setup-nextjs/setup-nextjs.mdx",
+    "docs/old_pages/search-engine-opt/seo": "old_pages/search-engine-opt/seo",
     "docs/old_pages/vscode-dev-extensions/vscode-dev-extensions.mdx": "old_pages/vscode-dev-extensions/vscode-dev-extensions.mdx",
-    "docs/old_pages/AWS/_marketing-stragegies.mdx": "old_pages/AWS/_marketing-stragegies.mdx",
-    "docs/old_pages/AWS/aws-compliance-videos.mdx": "old_pages/AWS/aws-compliance-videos.mdx",
-    "docs/old_pages/AWS/dotnet-auth-app.mdx": "old_pages/AWS/dotnet-auth-app.mdx",
-    "docs/old_pages/AWS/gloud-vm-snapshot.mdx": "old_pages/AWS/gloud-vm-snapshot.mdx",
+    "docs/old_pages/Linux/ubuntu-swap-mem/ubuntu-swap-mem.mdx": "old_pages/Linux/ubuntu-swap-mem/ubuntu-swap-mem.mdx",
     "docs/old_pages/Package Manager/homebrew/homebrew-knowledge.mdx": "old_pages/Package Manager/homebrew/homebrew-knowledge.mdx",
     "docs/old_pages/Package Manager/publids-npm/publish-npm.mdx": "old_pages/Package Manager/publids-npm/publish-npm.mdx",
     "docs/old_pages/Package Manager/setup-live-server/setup-live-server.mdx": "old_pages/Package Manager/setup-live-server/setup-live-server.mdx",
@@ -420,7 +448,6 @@
     "docs/old_pages/os-related/os-related-docz.mdx": "old_pages/os-related/os-related-docz.mdx",
     "docs/old_pages/os-related/mongo-ubuntu/mongodb-ubuntu.mdx": "old_pages/os-related/mongo-ubuntu/mongodb-ubuntu.mdx",
     "docs/old_pages/os-related/ms-sql-server-docker/ms-sql-server-docker.mdx": "old_pages/os-related/ms-sql-server-docker/ms-sql-server-docker.mdx",
-    "docs/old_pages/os-related/ms-sql-server-ubuntu/ms-sql-server-ubuntu.mdx": "old_pages/os-related/ms-sql-server-ubuntu/ms-sql-server-ubuntu.mdx",
-    "docs/old_pages/Linux/ubuntu-swap-mem/ubuntu-swap-mem.mdx": "old_pages/Linux/ubuntu-swap-mem/ubuntu-swap-mem.mdx"
+    "docs/old_pages/os-related/ms-sql-server-ubuntu/ms-sql-server-ubuntu.mdx": "old_pages/os-related/ms-sql-server-ubuntu/ms-sql-server-ubuntu.mdx"
   }
 }

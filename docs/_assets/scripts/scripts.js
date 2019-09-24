@@ -1,6 +1,10 @@
 
-window.onloadend = function () {
+document.onloadeddata = function(){
+    console.log('documentloaded');
+}
 
+window.onloadend = function () {
+    
     // insertLogoImg()
 }
 

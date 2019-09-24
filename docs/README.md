@@ -4,7 +4,6 @@ DOCUMENTATION
 * [DEV DOCS](../README.md)
 * [About](./intro/README.md)
     * [What is this?](./intro/this-resource.md)
-    * [hugo-themes](./)
 
 * [Devdocs.io](./devdocsio/README.md)
 
@@ -23,9 +22,9 @@ DOCUMENTATION
     * [hugo-themes](./dev-resources/hugo-themes.md)
 
 * [Data & Databases](./databases/README.md)
-    *[GraphQL](./databases/graphql.md)
-    *[NoSQL](./databases/noSQL.md)
-    *[GraphQL](./databases/sql.md)
+    * [GraphQL](./databases/graphql.md)
+    * [NoSQL](./databases/noSQL.md)
+    * [GraphQL](./databases/sql.md)
 
 * [Policies](./policies/README.md)
     * [Acceptable Use Policies](./policies/acceptable-use-policy.md)

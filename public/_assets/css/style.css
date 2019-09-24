@@ -1,25 +1,61 @@
-h1{
-    color: blue
+@import url("https://fonts.googleapis.com/css?family=Righteous|Roboto&display=swap"); 
+
+:root{
+    --primary: rgb(53, 53, 141);
 }
 
-.imgDiv{
-    text-align: center;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Righteous;
 }
 
-.main-menu-title{
-    text-align: center;
+p, a, div {
+    font-family: Roboto;
 }
 
-.devdocs{
-    display: flex;
-    align-items: stretch;
-    position: relative;
-    width: 100%;
-    height: auto;
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+    font-family: Righteous;
 }
 
-.devdocs iframe{
-    position: relative;
-    width: 100%;
-    height: 70vh;
+
+h1 {
+  color: var(--primary);
+}
+
+.imgDiv {
+  text-align: center;
+}
+
+.main-menu-title {
+  text-align: center;
+}
+
+.devdocs {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.devdocs iframe {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+.menu.toc-menu{
+    background: var(--primary);
+    color: white;
+}
+
+.menu.toc-menu a, .menu.toc-menu p{
+    color: white !important;
+}
+
+.menu.toc-menu.-active{
+    color: #fafafa;
+}
+
+span.title{
+    color:white;
 }
