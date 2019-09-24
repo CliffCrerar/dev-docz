@@ -1,11 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous|Roboto&display=swap"); 
 
 :root{
-    --primary: rgb(53, 53, 141);
+    --primary: #283593;
+    --primary-light: #5f5fc4    ;
+    --primary-dark: #001064;
+    --secondary: #d32f2f;
+    --secondary-light: #ff6659;
+    --secondary-dark: #9a0007;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Righteous;
+  
+}
+
+h1{
+    color: var(--secondary);
+}
+
+h2,h3,h4{
+    color: var(--secondary-dark);
 }
 
 p, a, div {
@@ -14,11 +29,6 @@ p, a, div {
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
     font-family: Righteous;
-}
-
-
-h1 {
-  color: var(--primary);
 }
 
 .imgDiv {
@@ -44,18 +54,18 @@ h1 {
 }
 
 .menu.toc-menu{
-    background: var(--primary);
-    color: white;
+    background: var(--primary-dark);
+    color: var(--primary-light);
 }
 
 .menu.toc-menu a, .menu.toc-menu p{
-    color: white !important;
+    color: var(--primary-light) !important;
 }
 
 .menu.toc-menu.-active{
-    color: #fafafa;
+    color: var(--primary-light);
 }
 
 span.title{
-    color:white;
+    color: var(--primary-light);
 }
