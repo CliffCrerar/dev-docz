@@ -2,8 +2,7 @@ DOCUMENTATION
 =============
 
 * [DEV DOCS](../README.md)
-* [About](./intro/README.md)
-    * [What is this?](./intro/this-resource.md)
+* [About](./about/README.md)
 
 * [Devdocs.io](./devdocsio/README.md)
 
