@@ -28,6 +28,7 @@ DOCUMENTATION
     * [hugo-themes](./dev-resources/hugo-themes.md)
     * [freenom api](./dev-resources/freenon-api.md)
     * [cloud flare wrangler](./dev-resources/cloud-flare-wrangler.md)
+        * [Configure](./dev-resources/cloud-flare-wrangler-configure.md)
     * [cloud flare api](./dev-resources/cloud-flare-wrangler.md)
     * [serverless org](./dev-resources/serverless.com.md)
     * [Hubot generator](./dev-resources/hubot.md)

@@ -1,0 +1,3895 @@
+{
+  "segment_conditions": [
+    {
+      "id": "campaignActivity",
+      "name": "Campaign Activity",
+      "conditionType": "campaignActivity",
+      "queryTypes": [
+        {
+          "value": "received",
+          "name": "received"
+        },
+        {
+          "value": "opened",
+          "name": "opened"
+        },
+        {
+          "value": "clicked",
+          "name": "clicked"
+        },
+        {
+          "value": "not_received",
+          "name": "did not receive"
+        },
+        {
+          "value": "not_opened",
+          "name": "did not open"
+        },
+        {
+          "value": "not_clicked",
+          "name": "did not click"
+        }
+      ],
+      "queryParams": [
+        {
+          "id": "any_5",
+          "name": "any of the last 5 campaigns",
+          "fieldToQuery": "count",
+          "searchTerm": 5,
+          "match": "any"
+        },
+        {
+          "id": "any_10",
+          "name": "any of the last 10 campaigns",
+          "fieldToQuery": "count",
+          "searchTerm": 10,
+          "match": "any"
+        },
+        {
+          "id": "any_7_days",
+          "name": "any campaigns within the last 7 days",
+          "fieldToQuery": "time",
+          "searchTerm": {
+            "gte": "now-7d/d"
+          },
+          "match": "any"
+        },
+        {
+          "id": "any_1_month",
+          "name": "any campaigns within the last month",
+          "fieldToQuery": "time",
+          "searchTerm": {
+            "gte": "now-30d/d"
+          },
+          "match": "any"
+        },
+        {
+          "id": "any_3_month",
+          "name": "any campaigns within the last 3 months",
+          "fieldToQuery": "time",
+          "searchTerm": {
+            "gte": "now-90d/d"
+          },
+          "match": "any"
+        },
+        {
+          "id": "all_5",
+          "name": "all of the last 5 campaigns",
+          "fieldToQuery": "count",
+          "searchTerm": 5,
+          "match": "all"
+        },
+        {
+          "id": "all_10",
+          "name": "all of the last 10 campaigns",
+          "fieldToQuery": "count",
+          "searchTerm": 10,
+          "match": "all"
+        },
+        {
+          "id": "all_7_days",
+          "name": "all campaigns within the last 7 days",
+          "fieldToQuery": "time",
+          "searchTerm": {
+            "gte": "now-7d/d"
+          },
+          "match": "all"
+        },
+        {
+          "id": "all_1_month",
+          "name": "all campaigns within the last month",
+          "fieldToQuery": "time",
+          "searchTerm": {
+            "gte": "now-30d/d"
+          },
+          "match": "all"
+        },
+        {
+          "id": "all_3_month",
+          "name": "all campaigns within the last 3 months",
+          "fieldToQuery": "time",
+          "searchTerm": {
+            "gte": "now-90d/d"
+          },
+          "match": "all"
+        }
+      ]
+    },
+    {
+      "id": "subscriptionOrigin",
+      "name": "Subscription origin",
+      "queryType": "match",
+      "fieldToQuery": "subscriptionOrigin",
+      "conditionType": "filter",
+      "placeholder": "Select subscription origin",
+      "searchTerms": [
+        {
+          "value": "listImport",
+          "name": "List import"
+        },
+        {
+          "value": "manual",
+          "name": "Manual"
+        },
+        {
+          "value": "signupForm",
+          "name": "Signup form"
+        },
+        {
+          "value": "api",
+          "name": "MoonMail API"
+        }
+      ]
+    },
+    {
+      "id": "createdAt",
+      "name": "Date added",
+      "queryType": "range",
+      "fieldToQuery": "createdAt",
+      "conditionType": "filter"
+    },
+    {
+      "id": "systemMetadata.countryCode",
+      "name": "Country",
+      "placeholder": "Select subscriber's country",
+      "queryType": "match",
+      "fieldToQuery": "systemMetadata.countryCode",
+      "conditionType": "filter",
+      "search": true,
+      "searchTerms": [
+        {
+          "name": "Afghanistan",
+          "value": "AF"
+        },
+        {
+          "name": "Aland Islands",
+          "value": "AX"
+        },
+        {
+          "name": "Albania",
+          "value": "AL"
+        },
+        {
+          "name": "Algeria",
+          "value": "DZ"
+        },
+        {
+          "name": "American Samoa",
+          "value": "AS"
+        },
+        {
+          "name": "AndorrA",
+          "value": "AD"
+        },
+        {
+          "name": "Angola",
+          "value": "AO"
+        },
+        {
+          "name": "Anguilla",
+          "value": "AI"
+        },
+        {
+          "name": "Antarctica",
+          "value": "AQ"
+        },
+        {
+          "name": "Antigua and Barbuda",
+          "value": "AG"
+        },
+        {
+          "name": "Argentina",
+          "value": "AR"
+        },
+        {
+          "name": "Armenia",
+          "value": "AM"
+        },
+        {
+          "name": "Aruba",
+          "value": "AW"
+        },
+        {
+          "name": "Australia",
+          "value": "AU"
+        },
+        {
+          "name": "Austria",
+          "value": "AT"
+        },
+        {
+          "name": "Azerbaijan",
+          "value": "AZ"
+        },
+        {
+          "name": "Bahamas",
+          "value": "BS"
+        },
+        {
+          "name": "Bahrain",
+          "value": "BH"
+        },
+        {
+          "name": "Bangladesh",
+          "value": "BD"
+        },
+        {
+          "name": "Barbados",
+          "value": "BB"
+        },
+        {
+          "name": "Belarus",
+          "value": "BY"
+        },
+        {
+          "name": "Belgium",
+          "value": "BE"
+        },
+        {
+          "name": "Belize",
+          "value": "BZ"
+        },
+        {
+          "name": "Benin",
+          "value": "BJ"
+        },
+        {
+          "name": "Bermuda",
+          "value": "BM"
+        },
+        {
+          "name": "Bhutan",
+          "value": "BT"
+        },
+        {
+          "name": "Bolivia",
+          "value": "BO"
+        },
+        {
+          "name": "Bosnia and Herzegovina",
+          "value": "BA"
+        },
+        {
+          "name": "Botswana",
+          "value": "BW"
+        },
+        {
+          "name": "Bouvet Island",
+          "value": "BV"
+        },
+        {
+          "name": "Brazil",
+          "value": "BR"
+        },
+        {
+          "name": "British Indian Ocean Territory",
+          "value": "IO"
+        },
+        {
+          "name": "Brunei Darussalam",
+          "value": "BN"
+        },
+        {
+          "name": "Bulgaria",
+          "value": "BG"
+        },
+        {
+          "name": "Burkina Faso",
+          "value": "BF"
+        },
+        {
+          "name": "Burundi",
+          "value": "BI"
+        },
+        {
+          "name": "Cambodia",
+          "value": "KH"
+        },
+        {
+          "name": "Cameroon",
+          "value": "CM"
+        },
+        {
+          "name": "Canada",
+          "value": "CA"
+        },
+        {
+          "name": "Cape Verde",
+          "value": "CV"
+        },
+        {
+          "name": "Cayman Islands",
+          "value": "KY"
+        },
+        {
+          "name": "Central African Republic",
+          "value": "CF"
+        },
+        {
+          "name": "Chad",
+          "value": "TD"
+        },
+        {
+          "name": "Chile",
+          "value": "CL"
+        },
+        {
+          "name": "China",
+          "value": "CN"
+        },
+        {
+          "name": "Christmas Island",
+          "value": "CX"
+        },
+        {
+          "name": "Cocos (Keeling) Islands",
+          "value": "CC"
+        },
+        {
+          "name": "Colombia",
+          "value": "CO"
+        },
+        {
+          "name": "Comoros",
+          "value": "KM"
+        },
+        {
+          "name": "Congo",
+          "value": "CG"
+        },
+        {
+          "name": "Congo, The Democratic Republic of the",
+          "value": "CD"
+        },
+        {
+          "name": "Cook Islands",
+          "value": "CK"
+        },
+        {
+          "name": "Costa Rica",
+          "value": "CR"
+        },
+        {
+          "name": "Cote D'Ivoire",
+          "value": "CI"
+        },
+        {
+          "name": "Croatia",
+          "value": "HR"
+        },
+        {
+          "name": "Cuba",
+          "value": "CU"
+        },
+        {
+          "name": "Cyprus",
+          "value": "CY"
+        },
+        {
+          "name": "Czech Republic",
+          "value": "CZ"
+        },
+        {
+          "name": "Denmark",
+          "value": "DK"
+        },
+        {
+          "name": "Djibouti",
+          "value": "DJ"
+        },
+        {
+          "name": "Dominica",
+          "value": "DM"
+        },
+        {
+          "name": "Dominican Republic",
+          "value": "DO"
+        },
+        {
+          "name": "Ecuador",
+          "value": "EC"
+        },
+        {
+          "name": "Egypt",
+          "value": "EG"
+        },
+        {
+          "name": "El Salvador",
+          "value": "SV"
+        },
+        {
+          "name": "Equatorial Guinea",
+          "value": "GQ"
+        },
+        {
+          "name": "Eritrea",
+          "value": "ER"
+        },
+        {
+          "name": "Estonia",
+          "value": "EE"
+        },
+        {
+          "name": "Ethiopia",
+          "value": "ET"
+        },
+        {
+          "name": "Falkland Islands (Malvinas)",
+          "value": "FK"
+        },
+        {
+          "name": "Faroe Islands",
+          "value": "FO"
+        },
+        {
+          "name": "Fiji",
+          "value": "FJ"
+        },
+        {
+          "name": "Finland",
+          "value": "FI"
+        },
+        {
+          "name": "France",
+          "value": "FR"
+        },
+        {
+          "name": "French Guiana",
+          "value": "GF"
+        },
+        {
+          "name": "French Polynesia",
+          "value": "PF"
+        },
+        {
+          "name": "French Southern Territories",
+          "value": "TF"
+        },
+        {
+          "name": "Gabon",
+          "value": "GA"
+        },
+        {
+          "name": "Gambia",
+          "value": "GM"
+        },
+        {
+          "name": "Georgia",
+          "value": "GE"
+        },
+        {
+          "name": "Germany",
+          "value": "DE"
+        },
+        {
+          "name": "Ghana",
+          "value": "GH"
+        },
+        {
+          "name": "Gibraltar",
+          "value": "GI"
+        },
+        {
+          "name": "Greece",
+          "value": "GR"
+        },
+        {
+          "name": "Greenland",
+          "value": "GL"
+        },
+        {
+          "name": "Grenada",
+          "value": "GD"
+        },
+        {
+          "name": "Guadeloupe",
+          "value": "GP"
+        },
+        {
+          "name": "Guam",
+          "value": "GU"
+        },
+        {
+          "name": "Guatemala",
+          "value": "GT"
+        },
+        {
+          "name": "Guernsey",
+          "value": "GG"
+        },
+        {
+          "name": "Guinea",
+          "value": "GN"
+        },
+        {
+          "name": "Guinea-Bissau",
+          "value": "GW"
+        },
+        {
+          "name": "Guyana",
+          "value": "GY"
+        },
+        {
+          "name": "Haiti",
+          "value": "HT"
+        },
+        {
+          "name": "Heard Island and Mcdonald Islands",
+          "value": "HM"
+        },
+        {
+          "name": "Holy See (Vatican City State)",
+          "value": "VA"
+        },
+        {
+          "name": "Honduras",
+          "value": "HN"
+        },
+        {
+          "name": "Hong Kong",
+          "value": "HK"
+        },
+        {
+          "name": "Hungary",
+          "value": "HU"
+        },
+        {
+          "name": "Iceland",
+          "value": "IS"
+        },
+        {
+          "name": "India",
+          "value": "IN"
+        },
+        {
+          "name": "Indonesia",
+          "value": "ID"
+        },
+        {
+          "name": "Iran, Islamic Republic Of",
+          "value": "IR"
+        },
+        {
+          "name": "Iraq",
+          "value": "IQ"
+        },
+        {
+          "name": "Ireland",
+          "value": "IE"
+        },
+        {
+          "name": "Isle of Man",
+          "value": "IM"
+        },
+        {
+          "name": "Israel",
+          "value": "IL"
+        },
+        {
+          "name": "Italy",
+          "value": "IT"
+        },
+        {
+          "name": "Jamaica",
+          "value": "JM"
+        },
+        {
+          "name": "Japan",
+          "value": "JP"
+        },
+        {
+          "name": "Jersey",
+          "value": "JE"
+        },
+        {
+          "name": "Jordan",
+          "value": "JO"
+        },
+        {
+          "name": "Kazakhstan",
+          "value": "KZ"
+        },
+        {
+          "name": "Kenya",
+          "value": "KE"
+        },
+        {
+          "name": "Kiribati",
+          "value": "KI"
+        },
+        {
+          "name": "Korea, Democratic People's Republicof",
+          "value": "KP"
+        },
+        {
+          "name": "Korea, Republic of",
+          "value": "KR"
+        },
+        {
+          "name": "Kuwait",
+          "value": "KW"
+        },
+        {
+          "name": "Kyrgyzstan",
+          "value": "KG"
+        },
+        {
+          "name": "Lao People'S DemocraticRepublic",
+          "value": "LA"
+        },
+        {
+          "name": "Latvia",
+          "value": "LV"
+        },
+        {
+          "name": "Lebanon",
+          "value": "LB"
+        },
+        {
+          "name": "Lesotho",
+          "value": "LS"
+        },
+        {
+          "name": "Liberia",
+          "value": "LR"
+        },
+        {
+          "name": "Libyan Arab Jamahiriya",
+          "value": "LY"
+        },
+        {
+          "name": "Liechtenstein",
+          "value": "LI"
+        },
+        {
+          "name": "Lithuania",
+          "value": "LT"
+        },
+        {
+          "name": "Luxembourg",
+          "value": "LU"
+        },
+        {
+          "name": "Macao",
+          "value": "MO"
+        },
+        {
+          "name": "Macedonia, The Former Yugoslav Republic of",
+          "value": "MK"
+        },
+        {
+          "name": "Madagascar",
+          "value": "MG"
+        },
+        {
+          "name": "Malawi",
+          "value": "MW"
+        },
+        {
+          "name": "Malaysia",
+          "value": "MY"
+        },
+        {
+          "name": "Maldives",
+          "value": "MV"
+        },
+        {
+          "name": "Mali",
+          "value": "ML"
+        },
+        {
+          "name": "Malta",
+          "value": "MT"
+        },
+        {
+          "name": "Marshall Islands",
+          "value": "MH"
+        },
+        {
+          "name": "Martinique",
+          "value": "MQ"
+        },
+        {
+          "name": "Mauritania",
+          "value": "MR"
+        },
+        {
+          "name": "Mauritius",
+          "value": "MU"
+        },
+        {
+          "name": "Mayotte",
+          "value": "YT"
+        },
+        {
+          "name": "Mexico",
+          "value": "MX"
+        },
+        {
+          "name": "Micronesia, Federated States of",
+          "value": "FM"
+        },
+        {
+          "name": "Moldova, Republic of",
+          "value": "MD"
+        },
+        {
+          "name": "Monaco",
+          "value": "MC"
+        },
+        {
+          "name": "Mongolia",
+          "value": "MN"
+        },
+        {
+          "name": "Montserrat",
+          "value": "MS"
+        },
+        {
+          "name": "Morocco",
+          "value": "MA"
+        },
+        {
+          "name": "Mozambique",
+          "value": "MZ"
+        },
+        {
+          "name": "Myanmar",
+          "value": "MM"
+        },
+        {
+          "name": "Namibia",
+          "value": "NA"
+        },
+        {
+          "name": "Nauru",
+          "value": "NR"
+        },
+        {
+          "name": "Nepal",
+          "value": "NP"
+        },
+        {
+          "name": "Netherlands",
+          "value": "NL"
+        },
+        {
+          "name": "Netherlands Antilles",
+          "value": "AN"
+        },
+        {
+          "name": "New Caledonia",
+          "value": "NC"
+        },
+        {
+          "name": "New Zealand",
+          "value": "NZ"
+        },
+        {
+          "name": "Nicaragua",
+          "value": "NI"
+        },
+        {
+          "name": "Niger",
+          "value": "NE"
+        },
+        {
+          "name": "Nigeria",
+          "value": "NG"
+        },
+        {
+          "name": "Niue",
+          "value": "NU"
+        },
+        {
+          "name": "Norfolk Island",
+          "value": "NF"
+        },
+        {
+          "name": "Northern Mariana Islands",
+          "value": "MP"
+        },
+        {
+          "name": "Norway",
+          "value": "NO"
+        },
+        {
+          "name": "Oman",
+          "value": "OM"
+        },
+        {
+          "name": "Pakistan",
+          "value": "PK"
+        },
+        {
+          "name": "Palau",
+          "value": "PW"
+        },
+        {
+          "name": "Palestinian Territory, Occupied",
+          "value": "PS"
+        },
+        {
+          "name": "Panama",
+          "value": "PA"
+        },
+        {
+          "name": "Papua New Guinea",
+          "value": "PG"
+        },
+        {
+          "name": "Paraguay",
+          "value": "PY"
+        },
+        {
+          "name": "Peru",
+          "value": "PE"
+        },
+        {
+          "name": "Philippines",
+          "value": "PH"
+        },
+        {
+          "name": "Pitcairn",
+          "value": "PN"
+        },
+        {
+          "name": "Poland",
+          "value": "PL"
+        },
+        {
+          "name": "Portugal",
+          "value": "PT"
+        },
+        {
+          "name": "Puerto Rico",
+          "value": "PR"
+        },
+        {
+          "name": "Qatar",
+          "value": "QA"
+        },
+        {
+          "name": "Reunion",
+          "value": "RE"
+        },
+        {
+          "name": "Romania",
+          "value": "RO"
+        },
+        {
+          "name": "Russian Federation",
+          "value": "RU"
+        },
+        {
+          "name": "RWANDA",
+          "value": "RW"
+        },
+        {
+          "name": "Saint Helena",
+          "value": "SH"
+        },
+        {
+          "name": "Saint Kitts and Nevis",
+          "value": "KN"
+        },
+        {
+          "name": "Saint Lucia",
+          "value": "LC"
+        },
+        {
+          "name": "Saint Pierre and Miquelon",
+          "value": "PM"
+        },
+        {
+          "name": "Saint Vincent and the Grenadines",
+          "value": "VC"
+        },
+        {
+          "name": "Samoa",
+          "value": "WS"
+        },
+        {
+          "name": "San Marino",
+          "value": "SM"
+        },
+        {
+          "name": "Sao Tome and Principe",
+          "value": "ST"
+        },
+        {
+          "name": "Saudi Arabia",
+          "value": "SA"
+        },
+        {
+          "name": "Senegal",
+          "value": "SN"
+        },
+        {
+          "name": "Serbia and Montenegro",
+          "value": "CS"
+        },
+        {
+          "name": "Seychelles",
+          "value": "SC"
+        },
+        {
+          "name": "Sierra Leone",
+          "value": "SL"
+        },
+        {
+          "name": "Singapore",
+          "value": "SG"
+        },
+        {
+          "name": "Slovakia",
+          "value": "SK"
+        },
+        {
+          "name": "Slovenia",
+          "value": "SI"
+        },
+        {
+          "name": "Solomon Islands",
+          "value": "SB"
+        },
+        {
+          "name": "Somalia",
+          "value": "SO"
+        },
+        {
+          "name": "South Africa",
+          "value": "ZA"
+        },
+        {
+          "name": "South Georgia and the South Sandwich Islands",
+          "value": "GS"
+        },
+        {
+          "name": "Spain",
+          "value": "ES"
+        },
+        {
+          "name": "Sri Lanka",
+          "value": "LK"
+        },
+        {
+          "name": "Sudan",
+          "value": "SD"
+        },
+        {
+          "name": "Suriname",
+          "value": "SR"
+        },
+        {
+          "name": "Svalbard and Jan Mayen",
+          "value": "SJ"
+        },
+        {
+          "name": "Swaziland",
+          "value": "SZ"
+        },
+        {
+          "name": "Sweden",
+          "value": "SE"
+        },
+        {
+          "name": "Switzerland",
+          "value": "CH"
+        },
+        {
+          "name": "Syrian Arab Republic",
+          "value": "SY"
+        },
+        {
+          "name": "Taiwan, Province of China",
+          "value": "TW"
+        },
+        {
+          "name": "Tajikistan",
+          "value": "TJ"
+        },
+        {
+          "name": "Tanzania, United Republic of",
+          "value": "TZ"
+        },
+        {
+          "name": "Thailand",
+          "value": "TH"
+        },
+        {
+          "name": "Timor-Leste",
+          "value": "TL"
+        },
+        {
+          "name": "Togo",
+          "value": "TG"
+        },
+        {
+          "name": "Tokelau",
+          "value": "TK"
+        },
+        {
+          "name": "Tonga",
+          "value": "TO"
+        },
+        {
+          "name": "Trinidad and Tobago",
+          "value": "TT"
+        },
+        {
+          "name": "Tunisia",
+          "value": "TN"
+        },
+        {
+          "name": "Turkey",
+          "value": "TR"
+        },
+        {
+          "name": "Turkmenistan",
+          "value": "TM"
+        },
+        {
+          "name": "Turks and Caicos Islands",
+          "value": "TC"
+        },
+        {
+          "name": "Tuvalu",
+          "value": "TV"
+        },
+        {
+          "name": "Uganda",
+          "value": "UG"
+        },
+        {
+          "name": "Ukraine",
+          "value": "UA"
+        },
+        {
+          "name": "United Arab Emirates",
+          "value": "AE"
+        },
+        {
+          "name": "United Kingdom",
+          "value": "GB"
+        },
+        {
+          "name": "United States",
+          "value": "US"
+        },
+        {
+          "name": "United States Minor Outlying Islands",
+          "value": "UM"
+        },
+        {
+          "name": "Uruguay",
+          "value": "UY"
+        },
+        {
+          "name": "Uzbekistan",
+          "value": "UZ"
+        },
+        {
+          "name": "Vanuatu",
+          "value": "VU"
+        },
+        {
+          "name": "Venezuela",
+          "value": "VE"
+        },
+        {
+          "name": "Viet Nam",
+          "value": "VN"
+        },
+        {
+          "name": "Virgin Islands, British",
+          "value": "VG"
+        },
+        {
+          "name": "Virgin Islands, U.S.",
+          "value": "VI"
+        },
+        {
+          "name": "Wallis and Futuna",
+          "value": "WF"
+        },
+        {
+          "name": "Western Sahara",
+          "value": "EH"
+        },
+        {
+          "name": "Yemen",
+          "value": "YE"
+        },
+        {
+          "name": "Zambia",
+          "value": "ZM"
+        },
+        {
+          "name": "Zimbabwe",
+          "value": "ZW"
+        }
+      ]
+    },
+    {
+      "id": "systemMetadata.regionName",
+      "name": "Region",
+      "queryType": "match",
+      "fieldToQuery": "systemMetadata.regionName",
+      "conditionType": "filter",
+      "placeholder": "Enter subscriber country region"
+    },
+    {
+      "id": "systemMetadata.city",
+      "name": "City",
+      "queryType": "match",
+      "fieldToQuery": "systemMetadata.city",
+      "conditionType": "filter",
+      "placeholder": "Enter subscribers city"
+    },
+    {
+      "id": "systemMetadata.zipCode",
+      "name": "ZIP Code",
+      "queryType": "match",
+      "fieldToQuery": "systemMetadata.zipCode",
+      "conditionType": "filter",
+      "placeholder": "123456"
+    },
+    {
+      "id": "systemMetadata.timeZone",
+      "name": "Time Zone",
+      "queryType": "match",
+      "fieldToQuery": "systemMetadata.timeZone",
+      "conditionType": "filter",
+      "placeholder": "Select subscriber's time zone",
+      "search": true,
+      "searchTerms": [
+        {
+          "value": "America/Puerto_Rico",
+          "name": "Puerto Rico (Atlantic)"
+        },
+        {
+          "value": "America/New_York",
+          "name": "New York (Eastern)"
+        },
+        {
+          "value": "America/Chicago",
+          "name": "Chicago (Central)"
+        },
+        {
+          "value": "America/Denver",
+          "name": "Denver (Mountain)"
+        },
+        {
+          "value": "America/Phoenix",
+          "name": "Phoenix (MST)"
+        },
+        {
+          "value": "America/Los_Angeles",
+          "name": "Los Angeles (Pacific)"
+        },
+        {
+          "value": "America/Anchorage",
+          "name": "Anchorage (Alaska)"
+        },
+        {
+          "value": "Pacific/Honolulu",
+          "name": "Honolulu (Hawaii)"
+        },
+        {
+          "value": "America/Adak",
+          "name": "Adak"
+        },
+        {
+          "value": "America/Anchorage",
+          "name": "Anchorage"
+        },
+        {
+          "value": "America/Anguilla",
+          "name": "Anguilla"
+        },
+        {
+          "value": "America/Antigua",
+          "name": "Antigua"
+        },
+        {
+          "value": "America/Araguaina",
+          "name": "Araguaina"
+        },
+        {
+          "value": "America/Argentina/Buenos_Aires",
+          "name": "Argentina - Buenos Aires"
+        },
+        {
+          "value": "America/Argentina/Catamarca",
+          "name": "Argentina - Catamarca"
+        },
+        {
+          "value": "America/Argentina/ComodRivadavia",
+          "name": "Argentina - ComodRivadavia"
+        },
+        {
+          "value": "America/Argentina/Cordoba",
+          "name": "Argentina - Cordoba"
+        },
+        {
+          "value": "America/Argentina/Jujuy",
+          "name": "Argentina - Jujuy"
+        },
+        {
+          "value": "America/Argentina/La_Rioja",
+          "name": "Argentina - La Rioja"
+        },
+        {
+          "value": "America/Argentina/Mendoza",
+          "name": "Argentina - Mendoza"
+        },
+        {
+          "value": "America/Argentina/Rio_Gallegos",
+          "name": "Argentina - Rio Gallegos"
+        },
+        {
+          "value": "America/Argentina/Salta",
+          "name": "Argentina - Salta"
+        },
+        {
+          "value": "America/Argentina/San_Juan",
+          "name": "Argentina - San Juan"
+        },
+        {
+          "value": "America/Argentina/San_Luis",
+          "name": "Argentina - San Luis"
+        },
+        {
+          "value": "America/Argentina/Tucuman",
+          "name": "Argentina - Tucuman"
+        },
+        {
+          "value": "America/Argentina/Ushuaia",
+          "name": "Argentina - Ushuaia"
+        },
+        {
+          "value": "America/Aruba",
+          "name": "Aruba"
+        },
+        {
+          "value": "America/Asuncion",
+          "name": "Asuncion"
+        },
+        {
+          "value": "America/Atikokan",
+          "name": "Atikokan"
+        },
+        {
+          "value": "America/Atka",
+          "name": "Atka"
+        },
+        {
+          "value": "America/Bahia",
+          "name": "Bahia"
+        },
+        {
+          "value": "America/Barbados",
+          "name": "Barbados"
+        },
+        {
+          "value": "America/Belem",
+          "name": "Belem"
+        },
+        {
+          "value": "America/Belize",
+          "name": "Belize"
+        },
+        {
+          "value": "America/Blanc-Sablon",
+          "name": "Blanc-Sablon"
+        },
+        {
+          "value": "America/Boa_Vista",
+          "name": "Boa Vista"
+        },
+        {
+          "value": "America/Bogota",
+          "name": "Bogota"
+        },
+        {
+          "value": "America/Boise",
+          "name": "Boise"
+        },
+        {
+          "value": "America/Buenos_Aires",
+          "name": "Buenos Aires"
+        },
+        {
+          "value": "America/Cambridge_Bay",
+          "name": "Cambridge Bay"
+        },
+        {
+          "value": "America/Campo_Grande",
+          "name": "Campo Grande"
+        },
+        {
+          "value": "America/Cancun",
+          "name": "Cancun"
+        },
+        {
+          "value": "America/Caracas",
+          "name": "Caracas"
+        },
+        {
+          "value": "America/Catamarca",
+          "name": "Catamarca"
+        },
+        {
+          "value": "America/Cayenne",
+          "name": "Cayenne"
+        },
+        {
+          "value": "America/Cayman",
+          "name": "Cayman"
+        },
+        {
+          "value": "America/Chicago",
+          "name": "Chicago"
+        },
+        {
+          "value": "America/Chihuahua",
+          "name": "Chihuahua"
+        },
+        {
+          "value": "America/Coral_Harbour",
+          "name": "Coral Harbour"
+        },
+        {
+          "value": "America/Cordoba",
+          "name": "Cordoba"
+        },
+        {
+          "value": "America/Costa_Rica",
+          "name": "Costa Rica"
+        },
+        {
+          "value": "America/Cuiaba",
+          "name": "Cuiaba"
+        },
+        {
+          "value": "America/Curacao",
+          "name": "Curacao"
+        },
+        {
+          "value": "America/Danmarkshavn",
+          "name": "Danmarkshavn"
+        },
+        {
+          "value": "America/Dawson",
+          "name": "Dawson"
+        },
+        {
+          "value": "America/Dawson_Creek",
+          "name": "Dawson Creek"
+        },
+        {
+          "value": "America/Denver",
+          "name": "Denver"
+        },
+        {
+          "value": "America/Detroit",
+          "name": "Detroit"
+        },
+        {
+          "value": "America/Dominica",
+          "name": "Dominica"
+        },
+        {
+          "value": "America/Edmonton",
+          "name": "Edmonton"
+        },
+        {
+          "value": "America/Eirunepe",
+          "name": "Eirunepe"
+        },
+        {
+          "value": "America/El_Salvador",
+          "name": "El Salvador"
+        },
+        {
+          "value": "America/Ensenada",
+          "name": "Ensenada"
+        },
+        {
+          "value": "America/Fortaleza",
+          "name": "Fortaleza"
+        },
+        {
+          "value": "America/Fort_Wayne",
+          "name": "Fort Wayne"
+        },
+        {
+          "value": "America/Glace_Bay",
+          "name": "Glace Bay"
+        },
+        {
+          "value": "America/Godthab",
+          "name": "Godthab"
+        },
+        {
+          "value": "America/Goose_Bay",
+          "name": "Goose Bay"
+        },
+        {
+          "value": "America/Grand_Turk",
+          "name": "Grand Turk"
+        },
+        {
+          "value": "America/Grenada",
+          "name": "Grenada"
+        },
+        {
+          "value": "America/Guadeloupe",
+          "name": "Guadeloupe"
+        },
+        {
+          "value": "America/Guatemala",
+          "name": "Guatemala"
+        },
+        {
+          "value": "America/Guayaquil",
+          "name": "Guayaquil"
+        },
+        {
+          "value": "America/Guyana",
+          "name": "Guyana"
+        },
+        {
+          "value": "America/Halifax",
+          "name": "Halifax"
+        },
+        {
+          "value": "America/Havana",
+          "name": "Havana"
+        },
+        {
+          "value": "America/Hermosillo",
+          "name": "Hermosillo"
+        },
+        {
+          "value": "America/Indiana/Indianapolis",
+          "name": "Indiana - Indianapolis"
+        },
+        {
+          "value": "America/Indiana/Knox",
+          "name": "Indiana - Knox"
+        },
+        {
+          "value": "America/Indiana/Marengo",
+          "name": "Indiana - Marengo"
+        },
+        {
+          "value": "America/Indiana/Petersburg",
+          "name": "Indiana - Petersburg"
+        },
+        {
+          "value": "America/Indiana/Tell_City",
+          "name": "Indiana - Tell City"
+        },
+        {
+          "value": "America/Indiana/Vevay",
+          "name": "Indiana - Vevay"
+        },
+        {
+          "value": "America/Indiana/Vincennes",
+          "name": "Indiana - Vincennes"
+        },
+        {
+          "value": "America/Indiana/Winamac",
+          "name": "Indiana - Winamac"
+        },
+        {
+          "value": "America/Indianapolis",
+          "name": "Indianapolis"
+        },
+        {
+          "value": "America/Inuvik",
+          "name": "Inuvik"
+        },
+        {
+          "value": "America/Iqaluit",
+          "name": "Iqaluit"
+        },
+        {
+          "value": "America/Jamaica",
+          "name": "Jamaica"
+        },
+        {
+          "value": "America/Jujuy",
+          "name": "Jujuy"
+        },
+        {
+          "value": "America/Juneau",
+          "name": "Juneau"
+        },
+        {
+          "value": "America/Kentucky/Louisville",
+          "name": "Kentucky - Louisville"
+        },
+        {
+          "value": "America/Kentucky/Monticello",
+          "name": "Kentucky - Monticello"
+        },
+        {
+          "value": "America/Knox_IN",
+          "name": "Knox IN"
+        },
+        {
+          "value": "America/La_Paz",
+          "name": "La Paz"
+        },
+        {
+          "value": "America/Lima",
+          "name": "Lima"
+        },
+        {
+          "value": "America/Los_Angeles",
+          "name": "Los Angeles"
+        },
+        {
+          "value": "America/Louisville",
+          "name": "Louisville"
+        },
+        {
+          "value": "America/Maceio",
+          "name": "Maceio"
+        },
+        {
+          "value": "America/Managua",
+          "name": "Managua"
+        },
+        {
+          "value": "America/Manaus",
+          "name": "Manaus"
+        },
+        {
+          "value": "America/Marigot",
+          "name": "Marigot"
+        },
+        {
+          "value": "America/Martinique",
+          "name": "Martinique"
+        },
+        {
+          "value": "America/Matamoros",
+          "name": "Matamoros"
+        },
+        {
+          "value": "America/Mazatlan",
+          "name": "Mazatlan"
+        },
+        {
+          "value": "America/Mendoza",
+          "name": "Mendoza"
+        },
+        {
+          "value": "America/Menominee",
+          "name": "Menominee"
+        },
+        {
+          "value": "America/Merida",
+          "name": "Merida"
+        },
+        {
+          "value": "America/Mexico_City",
+          "name": "Mexico City"
+        },
+        {
+          "value": "America/Miquelon",
+          "name": "Miquelon"
+        },
+        {
+          "value": "America/Moncton",
+          "name": "Moncton"
+        },
+        {
+          "value": "America/Monterrey",
+          "name": "Monterrey"
+        },
+        {
+          "value": "America/Montevideo",
+          "name": "Montevideo"
+        },
+        {
+          "value": "America/Montreal",
+          "name": "Montreal"
+        },
+        {
+          "value": "America/Montserrat",
+          "name": "Montserrat"
+        },
+        {
+          "value": "America/Nassau",
+          "name": "Nassau"
+        },
+        {
+          "value": "America/New_York",
+          "name": "New York"
+        },
+        {
+          "value": "America/Nipigon",
+          "name": "Nipigon"
+        },
+        {
+          "value": "America/Nome",
+          "name": "Nome"
+        },
+        {
+          "value": "America/Noronha",
+          "name": "Noronha"
+        },
+        {
+          "value": "America/North_Dakota/Center",
+          "name": "North Dakota - Center"
+        },
+        {
+          "value": "America/North_Dakota/New_Salem",
+          "name": "North Dakota - New Salem"
+        },
+        {
+          "value": "America/Ojinaga",
+          "name": "Ojinaga"
+        },
+        {
+          "value": "America/Panama",
+          "name": "Panama"
+        },
+        {
+          "value": "America/Pangnirtung",
+          "name": "Pangnirtung"
+        },
+        {
+          "value": "America/Paramaribo",
+          "name": "Paramaribo"
+        },
+        {
+          "value": "America/Phoenix",
+          "name": "Phoenix"
+        },
+        {
+          "value": "America/Port-au-Prince",
+          "name": "Port-au-Prince"
+        },
+        {
+          "value": "America/Porto_Acre",
+          "name": "Porto Acre"
+        },
+        {
+          "value": "America/Port_of_Spain",
+          "name": "Port of Spain"
+        },
+        {
+          "value": "America/Porto_Velho",
+          "name": "Porto Velho"
+        },
+        {
+          "value": "America/Puerto_Rico",
+          "name": "Puerto Rico"
+        },
+        {
+          "value": "America/Rainy_River",
+          "name": "Rainy River"
+        },
+        {
+          "value": "America/Rankin_Inlet",
+          "name": "Rankin Inlet"
+        },
+        {
+          "value": "America/Recife",
+          "name": "Recife"
+        },
+        {
+          "value": "America/Regina",
+          "name": "Regina"
+        },
+        {
+          "value": "America/Resolute",
+          "name": "Resolute"
+        },
+        {
+          "value": "America/Rio_Branco",
+          "name": "Rio Branco"
+        },
+        {
+          "value": "America/Rosario",
+          "name": "Rosario"
+        },
+        {
+          "value": "America/Santa_Isabel",
+          "name": "Santa Isabel"
+        },
+        {
+          "value": "America/Santarem",
+          "name": "Santarem"
+        },
+        {
+          "value": "America/Santiago",
+          "name": "Santiago"
+        },
+        {
+          "value": "America/Santo_Domingo",
+          "name": "Santo Domingo"
+        },
+        {
+          "value": "America/Sao_Paulo",
+          "name": "Sao Paulo"
+        },
+        {
+          "value": "America/Scoresbysund",
+          "name": "Scoresbysund"
+        },
+        {
+          "value": "America/Shiprock",
+          "name": "Shiprock"
+        },
+        {
+          "value": "America/St_Barthelemy",
+          "name": "St Barthelemy"
+        },
+        {
+          "value": "America/St_Johns",
+          "name": "St Johns"
+        },
+        {
+          "value": "America/St_Kitts",
+          "name": "St Kitts"
+        },
+        {
+          "value": "America/St_Lucia",
+          "name": "St Lucia"
+        },
+        {
+          "value": "America/St_Thomas",
+          "name": "St Thomas"
+        },
+        {
+          "value": "America/St_Vincent",
+          "name": "St Vincent"
+        },
+        {
+          "value": "America/Swift_Current",
+          "name": "Swift Current"
+        },
+        {
+          "value": "America/Tegucigalpa",
+          "name": "Tegucigalpa"
+        },
+        {
+          "value": "America/Thule",
+          "name": "Thule"
+        },
+        {
+          "value": "America/Thunder_Bay",
+          "name": "Thunder Bay"
+        },
+        {
+          "value": "America/Tijuana",
+          "name": "Tijuana"
+        },
+        {
+          "value": "America/Toronto",
+          "name": "Toronto"
+        },
+        {
+          "value": "America/Tortola",
+          "name": "Tortola"
+        },
+        {
+          "value": "America/Vancouver",
+          "name": "Vancouver"
+        },
+        {
+          "value": "America/Virgin",
+          "name": "Virgin"
+        },
+        {
+          "value": "America/Whitehorse",
+          "name": "Whitehorse"
+        },
+        {
+          "value": "America/Winnipeg",
+          "name": "Winnipeg"
+        },
+        {
+          "value": "America/Yakutat",
+          "name": "Yakutat"
+        },
+        {
+          "value": "America/Yellowknife",
+          "name": "Yellowknife"
+        },
+        {
+          "value": "Europe/Amsterdam",
+          "name": "Amsterdam"
+        },
+        {
+          "value": "Europe/Andorra",
+          "name": "Andorra"
+        },
+        {
+          "value": "Europe/Athens",
+          "name": "Athens"
+        },
+        {
+          "value": "Europe/Belfast",
+          "name": "Belfast"
+        },
+        {
+          "value": "Europe/Belgrade",
+          "name": "Belgrade"
+        },
+        {
+          "value": "Europe/Berlin",
+          "name": "Berlin"
+        },
+        {
+          "value": "Europe/Bratislava",
+          "name": "Bratislava"
+        },
+        {
+          "value": "Europe/Brussels",
+          "name": "Brussels"
+        },
+        {
+          "value": "Europe/Bucharest",
+          "name": "Bucharest"
+        },
+        {
+          "value": "Europe/Budapest",
+          "name": "Budapest"
+        },
+        {
+          "value": "Europe/Chisinau",
+          "name": "Chisinau"
+        },
+        {
+          "value": "Europe/Copenhagen",
+          "name": "Copenhagen"
+        },
+        {
+          "value": "Europe/Dublin",
+          "name": "Dublin"
+        },
+        {
+          "value": "Europe/Gibraltar",
+          "name": "Gibraltar"
+        },
+        {
+          "value": "Europe/Guernsey",
+          "name": "Guernsey"
+        },
+        {
+          "value": "Europe/Helsinki",
+          "name": "Helsinki"
+        },
+        {
+          "value": "Europe/Isle_of_Man",
+          "name": "Isle of Man"
+        },
+        {
+          "value": "Europe/Istanbul",
+          "name": "Istanbul"
+        },
+        {
+          "value": "Europe/Jersey",
+          "name": "Jersey"
+        },
+        {
+          "value": "Europe/Kaliningrad",
+          "name": "Kaliningrad"
+        },
+        {
+          "value": "Europe/Kiev",
+          "name": "Kiev"
+        },
+        {
+          "value": "Europe/Lisbon",
+          "name": "Lisbon"
+        },
+        {
+          "value": "Europe/Ljubljana",
+          "name": "Ljubljana"
+        },
+        {
+          "value": "Europe/London",
+          "name": "London"
+        },
+        {
+          "value": "Europe/Luxembourg",
+          "name": "Luxembourg"
+        },
+        {
+          "value": "Europe/Madrid",
+          "name": "Madrid"
+        },
+        {
+          "value": "Europe/Malta",
+          "name": "Malta"
+        },
+        {
+          "value": "Europe/Mariehamn",
+          "name": "Mariehamn"
+        },
+        {
+          "value": "Europe/Minsk",
+          "name": "Minsk"
+        },
+        {
+          "value": "Europe/Monaco",
+          "name": "Monaco"
+        },
+        {
+          "value": "Europe/Moscow",
+          "name": "Moscow"
+        },
+        {
+          "value": "Europe/Nicosia",
+          "name": "Nicosia"
+        },
+        {
+          "value": "Europe/Oslo",
+          "name": "Oslo"
+        },
+        {
+          "value": "Europe/Paris",
+          "name": "Paris"
+        },
+        {
+          "value": "Europe/Podgorica",
+          "name": "Podgorica"
+        },
+        {
+          "value": "Europe/Prague",
+          "name": "Prague"
+        },
+        {
+          "value": "Europe/Riga",
+          "name": "Riga"
+        },
+        {
+          "value": "Europe/Rome",
+          "name": "Rome"
+        },
+        {
+          "value": "Europe/Samara",
+          "name": "Samara"
+        },
+        {
+          "value": "Europe/San_Marino",
+          "name": "San Marino"
+        },
+        {
+          "value": "Europe/Sarajevo",
+          "name": "Sarajevo"
+        },
+        {
+          "value": "Europe/Simferopol",
+          "name": "Simferopol"
+        },
+        {
+          "value": "Europe/Skopje",
+          "name": "Skopje"
+        },
+        {
+          "value": "Europe/Sofia",
+          "name": "Sofia"
+        },
+        {
+          "value": "Europe/Stockholm",
+          "name": "Stockholm"
+        },
+        {
+          "value": "Europe/Tallinn",
+          "name": "Tallinn"
+        },
+        {
+          "value": "Europe/Tirane",
+          "name": "Tirane"
+        },
+        {
+          "value": "Europe/Tiraspol",
+          "name": "Tiraspol"
+        },
+        {
+          "value": "Europe/Uzhgorod",
+          "name": "Uzhgorod"
+        },
+        {
+          "value": "Europe/Vaduz",
+          "name": "Vaduz"
+        },
+        {
+          "value": "Europe/Vatican",
+          "name": "Vatican"
+        },
+        {
+          "value": "Europe/Vienna",
+          "name": "Vienna"
+        },
+        {
+          "value": "Europe/Vilnius",
+          "name": "Vilnius"
+        },
+        {
+          "value": "Europe/Volgograd",
+          "name": "Volgograd"
+        },
+        {
+          "value": "Europe/Warsaw",
+          "name": "Warsaw"
+        },
+        {
+          "value": "Europe/Zagreb",
+          "name": "Zagreb"
+        },
+        {
+          "value": "Europe/Zaporozhye",
+          "name": "Zaporozhye"
+        },
+        {
+          "value": "Europe/Zurich",
+          "name": "Zurich"
+        },
+        {
+          "value": "Asia/Aden",
+          "name": "Aden"
+        },
+        {
+          "value": "Asia/Almaty",
+          "name": "Almaty"
+        },
+        {
+          "value": "Asia/Amman",
+          "name": "Amman"
+        },
+        {
+          "value": "Asia/Anadyr",
+          "name": "Anadyr"
+        },
+        {
+          "value": "Asia/Aqtau",
+          "name": "Aqtau"
+        },
+        {
+          "value": "Asia/Aqtobe",
+          "name": "Aqtobe"
+        },
+        {
+          "value": "Asia/Ashgabat",
+          "name": "Ashgabat"
+        },
+        {
+          "value": "Asia/Ashkhabad",
+          "name": "Ashkhabad"
+        },
+        {
+          "value": "Asia/Baghdad",
+          "name": "Baghdad"
+        },
+        {
+          "value": "Asia/Bahrain",
+          "name": "Bahrain"
+        },
+        {
+          "value": "Asia/Baku",
+          "name": "Baku"
+        },
+        {
+          "value": "Asia/Bangkok",
+          "name": "Bangkok"
+        },
+        {
+          "value": "Asia/Beirut",
+          "name": "Beirut"
+        },
+        {
+          "value": "Asia/Bishkek",
+          "name": "Bishkek"
+        },
+        {
+          "value": "Asia/Brunei",
+          "name": "Brunei"
+        },
+        {
+          "value": "Asia/Calcutta",
+          "name": "Calcutta"
+        },
+        {
+          "value": "Asia/Choibalsan",
+          "name": "Choibalsan"
+        },
+        {
+          "value": "Asia/Chongqing",
+          "name": "Chongqing"
+        },
+        {
+          "value": "Asia/Chungking",
+          "name": "Chungking"
+        },
+        {
+          "value": "Asia/Colombo",
+          "name": "Colombo"
+        },
+        {
+          "value": "Asia/Dacca",
+          "name": "Dacca"
+        },
+        {
+          "value": "Asia/Damascus",
+          "name": "Damascus"
+        },
+        {
+          "value": "Asia/Dhaka",
+          "name": "Dhaka"
+        },
+        {
+          "value": "Asia/Dili",
+          "name": "Dili"
+        },
+        {
+          "value": "Asia/Dubai",
+          "name": "Dubai"
+        },
+        {
+          "value": "Asia/Dushanbe",
+          "name": "Dushanbe"
+        },
+        {
+          "value": "Asia/Gaza",
+          "name": "Gaza"
+        },
+        {
+          "value": "Asia/Harbin",
+          "name": "Harbin"
+        },
+        {
+          "value": "Asia/Ho_Chi_Minh",
+          "name": "Ho Chi Minh"
+        },
+        {
+          "value": "Asia/Hong_Kong",
+          "name": "Hong Kong"
+        },
+        {
+          "value": "Asia/Hovd",
+          "name": "Hovd"
+        },
+        {
+          "value": "Asia/Irkutsk",
+          "name": "Irkutsk"
+        },
+        {
+          "value": "Asia/Istanbul",
+          "name": "Istanbul"
+        },
+        {
+          "value": "Asia/Jakarta",
+          "name": "Jakarta"
+        },
+        {
+          "value": "Asia/Jayapura",
+          "name": "Jayapura"
+        },
+        {
+          "value": "Asia/Jerusalem",
+          "name": "Jerusalem"
+        },
+        {
+          "value": "Asia/Kabul",
+          "name": "Kabul"
+        },
+        {
+          "value": "Asia/Kamchatka",
+          "name": "Kamchatka"
+        },
+        {
+          "value": "Asia/Karachi",
+          "name": "Karachi"
+        },
+        {
+          "value": "Asia/Kashgar",
+          "name": "Kashgar"
+        },
+        {
+          "value": "Asia/Kathmandu",
+          "name": "Kathmandu"
+        },
+        {
+          "value": "Asia/Katmandu",
+          "name": "Katmandu"
+        },
+        {
+          "value": "Asia/Kolkata",
+          "name": "Kolkata"
+        },
+        {
+          "value": "Asia/Krasnoyarsk",
+          "name": "Krasnoyarsk"
+        },
+        {
+          "value": "Asia/Kuala_Lumpur",
+          "name": "Kuala Lumpur"
+        },
+        {
+          "value": "Asia/Kuching",
+          "name": "Kuching"
+        },
+        {
+          "value": "Asia/Kuwait",
+          "name": "Kuwait"
+        },
+        {
+          "value": "Asia/Macao",
+          "name": "Macao"
+        },
+        {
+          "value": "Asia/Macau",
+          "name": "Macau"
+        },
+        {
+          "value": "Asia/Magadan",
+          "name": "Magadan"
+        },
+        {
+          "value": "Asia/Makassar",
+          "name": "Makassar"
+        },
+        {
+          "value": "Asia/Manila",
+          "name": "Manila"
+        },
+        {
+          "value": "Asia/Muscat",
+          "name": "Muscat"
+        },
+        {
+          "value": "Asia/Nicosia",
+          "name": "Nicosia"
+        },
+        {
+          "value": "Asia/Novokuznetsk",
+          "name": "Novokuznetsk"
+        },
+        {
+          "value": "Asia/Novosibirsk",
+          "name": "Novosibirsk"
+        },
+        {
+          "value": "Asia/Omsk",
+          "name": "Omsk"
+        },
+        {
+          "value": "Asia/Oral",
+          "name": "Oral"
+        },
+        {
+          "value": "Asia/Phnom_Penh",
+          "name": "Phnom Penh"
+        },
+        {
+          "value": "Asia/Pontianak",
+          "name": "Pontianak"
+        },
+        {
+          "value": "Asia/Pyongyang",
+          "name": "Pyongyang"
+        },
+        {
+          "value": "Asia/Qatar",
+          "name": "Qatar"
+        },
+        {
+          "value": "Asia/Qyzylorda",
+          "name": "Qyzylorda"
+        },
+        {
+          "value": "Asia/Rangoon",
+          "name": "Rangoon"
+        },
+        {
+          "value": "Asia/Riyadh",
+          "name": "Riyadh"
+        },
+        {
+          "value": "Asia/Saigon",
+          "name": "Saigon"
+        },
+        {
+          "value": "Asia/Sakhalin",
+          "name": "Sakhalin"
+        },
+        {
+          "value": "Asia/Samarkand",
+          "name": "Samarkand"
+        },
+        {
+          "value": "Asia/Seoul",
+          "name": "Seoul"
+        },
+        {
+          "value": "Asia/Shanghai",
+          "name": "Shanghai"
+        },
+        {
+          "value": "Asia/Singapore",
+          "name": "Singapore"
+        },
+        {
+          "value": "Asia/Taipei",
+          "name": "Taipei"
+        },
+        {
+          "value": "Asia/Tashkent",
+          "name": "Tashkent"
+        },
+        {
+          "value": "Asia/Tbilisi",
+          "name": "Tbilisi"
+        },
+        {
+          "value": "Asia/Tehran",
+          "name": "Tehran"
+        },
+        {
+          "value": "Asia/Tel_Aviv",
+          "name": "Tel Aviv"
+        },
+        {
+          "value": "Asia/Thimbu",
+          "name": "Thimbu"
+        },
+        {
+          "value": "Asia/Thimphu",
+          "name": "Thimphu"
+        },
+        {
+          "value": "Asia/Tokyo",
+          "name": "Tokyo"
+        },
+        {
+          "value": "Asia/Ujung_Pandang",
+          "name": "Ujung Pandang"
+        },
+        {
+          "value": "Asia/Ulaanbaatar",
+          "name": "Ulaanbaatar"
+        },
+        {
+          "value": "Asia/Ulan_Bator",
+          "name": "Ulan Bator"
+        },
+        {
+          "value": "Asia/Urumqi",
+          "name": "Urumqi"
+        },
+        {
+          "value": "Asia/Vientiane",
+          "name": "Vientiane"
+        },
+        {
+          "value": "Asia/Vladivostok",
+          "name": "Vladivostok"
+        },
+        {
+          "value": "Asia/Yakutsk",
+          "name": "Yakutsk"
+        },
+        {
+          "value": "Asia/Yekaterinburg",
+          "name": "Yekaterinburg"
+        },
+        {
+          "value": "Asia/Yerevan",
+          "name": "Yerevan"
+        },
+        {
+          "value": "Africa/Abidjan",
+          "name": "Abidjan"
+        },
+        {
+          "value": "Africa/Accra",
+          "name": "Accra"
+        },
+        {
+          "value": "Africa/Addis_Ababa",
+          "name": "Addis Ababa"
+        },
+        {
+          "value": "Africa/Algiers",
+          "name": "Algiers"
+        },
+        {
+          "value": "Africa/Asmara",
+          "name": "Asmara"
+        },
+        {
+          "value": "Africa/Asmera",
+          "name": "Asmera"
+        },
+        {
+          "value": "Africa/Bamako",
+          "name": "Bamako"
+        },
+        {
+          "value": "Africa/Bangui",
+          "name": "Bangui"
+        },
+        {
+          "value": "Africa/Banjul",
+          "name": "Banjul"
+        },
+        {
+          "value": "Africa/Bissau",
+          "name": "Bissau"
+        },
+        {
+          "value": "Africa/Blantyre",
+          "name": "Blantyre"
+        },
+        {
+          "value": "Africa/Brazzaville",
+          "name": "Brazzaville"
+        },
+        {
+          "value": "Africa/Bujumbura",
+          "name": "Bujumbura"
+        },
+        {
+          "value": "Africa/Cairo",
+          "name": "Cairo"
+        },
+        {
+          "value": "Africa/Casablanca",
+          "name": "Casablanca"
+        },
+        {
+          "value": "Africa/Ceuta",
+          "name": "Ceuta"
+        },
+        {
+          "value": "Africa/Conakry",
+          "name": "Conakry"
+        },
+        {
+          "value": "Africa/Dakar",
+          "name": "Dakar"
+        },
+        {
+          "value": "Africa/Dar_es_Salaam",
+          "name": "Dar es Salaam"
+        },
+        {
+          "value": "Africa/Djibouti",
+          "name": "Djibouti"
+        },
+        {
+          "value": "Africa/Douala",
+          "name": "Douala"
+        },
+        {
+          "value": "Africa/El_Aaiun",
+          "name": "El Aaiun"
+        },
+        {
+          "value": "Africa/Freetown",
+          "name": "Freetown"
+        },
+        {
+          "value": "Africa/Gaborone",
+          "name": "Gaborone"
+        },
+        {
+          "value": "Africa/Harare",
+          "name": "Harare"
+        },
+        {
+          "value": "Africa/Johannesburg",
+          "name": "Johannesburg"
+        },
+        {
+          "value": "Africa/Kampala",
+          "name": "Kampala"
+        },
+        {
+          "value": "Africa/Khartoum",
+          "name": "Khartoum"
+        },
+        {
+          "value": "Africa/Kigali",
+          "name": "Kigali"
+        },
+        {
+          "value": "Africa/Kinshasa",
+          "name": "Kinshasa"
+        },
+        {
+          "value": "Africa/Lagos",
+          "name": "Lagos"
+        },
+        {
+          "value": "Africa/Libreville",
+          "name": "Libreville"
+        },
+        {
+          "value": "Africa/Lome",
+          "name": "Lome"
+        },
+        {
+          "value": "Africa/Luanda",
+          "name": "Luanda"
+        },
+        {
+          "value": "Africa/Lubumbashi",
+          "name": "Lubumbashi"
+        },
+        {
+          "value": "Africa/Lusaka",
+          "name": "Lusaka"
+        },
+        {
+          "value": "Africa/Malabo",
+          "name": "Malabo"
+        },
+        {
+          "value": "Africa/Maputo",
+          "name": "Maputo"
+        },
+        {
+          "value": "Africa/Maseru",
+          "name": "Maseru"
+        },
+        {
+          "value": "Africa/Mbabane",
+          "name": "Mbabane"
+        },
+        {
+          "value": "Africa/Mogadishu",
+          "name": "Mogadishu"
+        },
+        {
+          "value": "Africa/Monrovia",
+          "name": "Monrovia"
+        },
+        {
+          "value": "Africa/Nairobi",
+          "name": "Nairobi"
+        },
+        {
+          "value": "Africa/Ndjamena",
+          "name": "Ndjamena"
+        },
+        {
+          "value": "Africa/Niamey",
+          "name": "Niamey"
+        },
+        {
+          "value": "Africa/Nouakchott",
+          "name": "Nouakchott"
+        },
+        {
+          "value": "Africa/Ouagadougou",
+          "name": "Ouagadougou"
+        },
+        {
+          "value": "Africa/Porto-Novo",
+          "name": "Porto-Novo"
+        },
+        {
+          "value": "Africa/Sao_Tome",
+          "name": "Sao Tome"
+        },
+        {
+          "value": "Africa/Timbuktu",
+          "name": "Timbuktu"
+        },
+        {
+          "value": "Africa/Tripoli",
+          "name": "Tripoli"
+        },
+        {
+          "value": "Africa/Tunis",
+          "name": "Tunis"
+        },
+        {
+          "value": "Africa/Windhoek",
+          "name": "Windhoek"
+        },
+        {
+          "value": "Australia/ACT",
+          "name": "ACT"
+        },
+        {
+          "value": "Australia/Adelaide",
+          "name": "Adelaide"
+        },
+        {
+          "value": "Australia/Brisbane",
+          "name": "Brisbane"
+        },
+        {
+          "value": "Australia/Broken_Hill",
+          "name": "Broken Hill"
+        },
+        {
+          "value": "Australia/Canberra",
+          "name": "Canberra"
+        },
+        {
+          "value": "Australia/Currie",
+          "name": "Currie"
+        },
+        {
+          "value": "Australia/Darwin",
+          "name": "Darwin"
+        },
+        {
+          "value": "Australia/Eucla",
+          "name": "Eucla"
+        },
+        {
+          "value": "Australia/Hobart",
+          "name": "Hobart"
+        },
+        {
+          "value": "Australia/LHI",
+          "name": "LHI"
+        },
+        {
+          "value": "Australia/Lindeman",
+          "name": "Lindeman"
+        },
+        {
+          "value": "Australia/Lord_Howe",
+          "name": "Lord Howe"
+        },
+        {
+          "value": "Australia/Melbourne",
+          "name": "Melbourne"
+        },
+        {
+          "value": "Australia/North",
+          "name": "North"
+        },
+        {
+          "value": "Australia/NSW",
+          "name": "NSW"
+        },
+        {
+          "value": "Australia/Perth",
+          "name": "Perth"
+        },
+        {
+          "value": "Australia/Queensland",
+          "name": "Queensland"
+        },
+        {
+          "value": "Australia/South",
+          "name": "South"
+        },
+        {
+          "value": "Australia/Sydney",
+          "name": "Sydney"
+        },
+        {
+          "value": "Australia/Tasmania",
+          "name": "Tasmania"
+        },
+        {
+          "value": "Australia/Victoria",
+          "name": "Victoria"
+        },
+        {
+          "value": "Australia/West",
+          "name": "West"
+        },
+        {
+          "value": "Australia/Yancowinna",
+          "name": "Yancowinna"
+        },
+        {
+          "value": "Indian/Antananarivo",
+          "name": "Antananarivo"
+        },
+        {
+          "value": "Indian/Chagos",
+          "name": "Chagos"
+        },
+        {
+          "value": "Indian/Christmas",
+          "name": "Christmas"
+        },
+        {
+          "value": "Indian/Cocos",
+          "name": "Cocos"
+        },
+        {
+          "value": "Indian/Comoro",
+          "name": "Comoro"
+        },
+        {
+          "value": "Indian/Kerguelen",
+          "name": "Kerguelen"
+        },
+        {
+          "value": "Indian/Mahe",
+          "name": "Mahe"
+        },
+        {
+          "value": "Indian/Maldives",
+          "name": "Maldives"
+        },
+        {
+          "value": "Indian/Mauritius",
+          "name": "Mauritius"
+        },
+        {
+          "value": "Indian/Mayotte",
+          "name": "Mayotte"
+        },
+        {
+          "value": "Indian/Reunion",
+          "name": "Reunion"
+        },
+        {
+          "value": "Atlantic/Azores",
+          "name": "Azores"
+        },
+        {
+          "value": "Atlantic/Bermuda",
+          "name": "Bermuda"
+        },
+        {
+          "value": "Atlantic/Canary",
+          "name": "Canary"
+        },
+        {
+          "value": "Atlantic/Cape_Verde",
+          "name": "Cape Verde"
+        },
+        {
+          "value": "Atlantic/Faeroe",
+          "name": "Faeroe"
+        },
+        {
+          "value": "Atlantic/Faroe",
+          "name": "Faroe"
+        },
+        {
+          "value": "Atlantic/Jan_Mayen",
+          "name": "Jan Mayen"
+        },
+        {
+          "value": "Atlantic/Madeira",
+          "name": "Madeira"
+        },
+        {
+          "value": "Atlantic/Reykjavik",
+          "name": "Reykjavik"
+        },
+        {
+          "value": "Atlantic/South_Georgia",
+          "name": "South Georgia"
+        },
+        {
+          "value": "Atlantic/Stanley",
+          "name": "Stanley"
+        },
+        {
+          "value": "Atlantic/St_Helena",
+          "name": "St Helena"
+        },
+        {
+          "value": "Pacific/Apia",
+          "name": "Apia"
+        },
+        {
+          "value": "Pacific/Auckland",
+          "name": "Auckland"
+        },
+        {
+          "value": "Pacific/Chatham",
+          "name": "Chatham"
+        },
+        {
+          "value": "Pacific/Easter",
+          "name": "Easter"
+        },
+        {
+          "value": "Pacific/Efate",
+          "name": "Efate"
+        },
+        {
+          "value": "Pacific/Enderbury",
+          "name": "Enderbury"
+        },
+        {
+          "value": "Pacific/Fakaofo",
+          "name": "Fakaofo"
+        },
+        {
+          "value": "Pacific/Fiji",
+          "name": "Fiji"
+        },
+        {
+          "value": "Pacific/Funafuti",
+          "name": "Funafuti"
+        },
+        {
+          "value": "Pacific/Galapagos",
+          "name": "Galapagos"
+        },
+        {
+          "value": "Pacific/Gambier",
+          "name": "Gambier"
+        },
+        {
+          "value": "Pacific/Guadalcanal",
+          "name": "Guadalcanal"
+        },
+        {
+          "value": "Pacific/Guam",
+          "name": "Guam"
+        },
+        {
+          "value": "Pacific/Honolulu",
+          "name": "Honolulu"
+        },
+        {
+          "value": "Pacific/Johnston",
+          "name": "Johnston"
+        },
+        {
+          "value": "Pacific/Kiritimati",
+          "name": "Kiritimati"
+        },
+        {
+          "value": "Pacific/Kosrae",
+          "name": "Kosrae"
+        },
+        {
+          "value": "Pacific/Kwajalein",
+          "name": "Kwajalein"
+        },
+        {
+          "value": "Pacific/Majuro",
+          "name": "Majuro"
+        },
+        {
+          "value": "Pacific/Marquesas",
+          "name": "Marquesas"
+        },
+        {
+          "value": "Pacific/Midway",
+          "name": "Midway"
+        },
+        {
+          "value": "Pacific/Nauru",
+          "name": "Nauru"
+        },
+        {
+          "value": "Pacific/Niue",
+          "name": "Niue"
+        },
+        {
+          "value": "Pacific/Norfolk",
+          "name": "Norfolk"
+        },
+        {
+          "value": "Pacific/Noumea",
+          "name": "Noumea"
+        },
+        {
+          "value": "Pacific/Pago_Pago",
+          "name": "Pago Pago"
+        },
+        {
+          "value": "Pacific/Palau",
+          "name": "Palau"
+        },
+        {
+          "value": "Pacific/Pitcairn",
+          "name": "Pitcairn"
+        },
+        {
+          "value": "Pacific/Ponape",
+          "name": "Ponape"
+        },
+        {
+          "value": "Pacific/Port_Moresby",
+          "name": "Port Moresby"
+        },
+        {
+          "value": "Pacific/Rarotonga",
+          "name": "Rarotonga"
+        },
+        {
+          "value": "Pacific/Saipan",
+          "name": "Saipan"
+        },
+        {
+          "value": "Pacific/Samoa",
+          "name": "Samoa"
+        },
+        {
+          "value": "Pacific/Tahiti",
+          "name": "Tahiti"
+        },
+        {
+          "value": "Pacific/Tarawa",
+          "name": "Tarawa"
+        },
+        {
+          "value": "Pacific/Tongatapu",
+          "name": "Tongatapu"
+        },
+        {
+          "value": "Pacific/Truk",
+          "name": "Truk"
+        },
+        {
+          "value": "Pacific/Wake",
+          "name": "Wake"
+        },
+        {
+          "value": "Pacific/Wallis",
+          "name": "Wallis"
+        },
+        {
+          "value": "Pacific/Yap",
+          "name": "Yap"
+        },
+        {
+          "value": "Antarctica/Casey",
+          "name": "Casey"
+        },
+        {
+          "value": "Antarctica/Davis",
+          "name": "Davis"
+        },
+        {
+          "value": "Antarctica/DumontDUrville",
+          "name": "DumontDUrville"
+        },
+        {
+          "value": "Antarctica/Macquarie",
+          "name": "Macquarie"
+        },
+        {
+          "value": "Antarctica/Mawson",
+          "name": "Mawson"
+        },
+        {
+          "value": "Antarctica/McMurdo",
+          "name": "McMurdo"
+        },
+        {
+          "value": "Antarctica/Palmer",
+          "name": "Palmer"
+        },
+        {
+          "value": "Antarctica/Rothera",
+          "name": "Rothera"
+        },
+        {
+          "value": "Antarctica/South_Pole",
+          "name": "South Pole"
+        },
+        {
+          "value": "Antarctica/Syowa",
+          "name": "Syowa"
+        },
+        {
+          "value": "Antarctica/Vostok",
+          "name": "Vostok"
+        },
+        {
+          "value": "Arctic/Longyearbyen",
+          "name": "Longyearbyen"
+        },
+        {
+          "value": "UTC-12",
+          "name": "UTC-12"
+        },
+        {
+          "value": "UTC-11",
+          "name": "UTC-11"
+        },
+        {
+          "value": "UTC-10",
+          "name": "UTC-10"
+        },
+        {
+          "value": "UTC-9",
+          "name": "UTC-9"
+        },
+        {
+          "value": "UTC-8",
+          "name": "UTC-8"
+        },
+        {
+          "value": "UTC-7",
+          "name": "UTC-7"
+        },
+        {
+          "value": "UTC-6",
+          "name": "UTC-6"
+        },
+        {
+          "value": "UTC-5",
+          "name": "UTC-5"
+        },
+        {
+          "value": "UTC-4",
+          "name": "UTC-4"
+        },
+        {
+          "value": "UTC-3",
+          "name": "UTC-3"
+        },
+        {
+          "value": "UTC-2",
+          "name": "UTC-2"
+        },
+        {
+          "value": "UTC-1",
+          "name": "UTC-1"
+        },
+        {
+          "value": "UTC+0",
+          "name": "UTC+0"
+        },
+        {
+          "value": "UTC+1",
+          "name": "UTC+1"
+        },
+        {
+          "value": "UTC+2",
+          "name": "UTC+2"
+        },
+        {
+          "value": "UTC+3",
+          "name": "UTC+3"
+        },
+        {
+          "value": "UTC+4",
+          "name": "UTC+4"
+        },
+        {
+          "value": "UTC+5",
+          "name": "UTC+5"
+        },
+        {
+          "value": "UTC+6",
+          "name": "UTC+6"
+        },
+        {
+          "value": "UTC+7",
+          "name": "UTC+7"
+        },
+        {
+          "value": "UTC+8",
+          "name": "UTC+8"
+        },
+        {
+          "value": "UTC+9",
+          "name": "UTC+9"
+        },
+        {
+          "value": "UTC+10",
+          "name": "UTC+10"
+        },
+        {
+          "value": "UTC+11",
+          "name": "UTC+11"
+        },
+        {
+          "value": "UTC+12",
+          "name": "UTC+12"
+        },
+        {
+          "value": "UTC+13",
+          "name": "UTC+13"
+        },
+        {
+          "value": "UTC+14",
+          "name": "UTC+14"
+        }
+      ]
+    },
+    {
+      "id": "systemMetadata.language",
+      "name": "Language",
+      "queryType": "match",
+      "fieldToQuery": "systemMetadata.language",
+      "conditionType": "filter",
+      "placeholder": "Select subscriber's language",
+      "search": true,
+      "searchTerms": [
+        {
+          "value": "aa",
+          "name": "Afar (Afar)"
+        },
+        {
+          "value": "ab",
+          "name": "Abkhazian (Аҧсуа)"
+        },
+        {
+          "value": "af",
+          "name": "Afrikaans (Afrikaans)"
+        },
+        {
+          "value": "ak",
+          "name": "Akan (Akana)"
+        },
+        {
+          "value": "am",
+          "name": "Amharic (አማርኛ)"
+        },
+        {
+          "value": "an",
+          "name": "Aragonese (Aragonés)"
+        },
+        {
+          "value": "ar",
+          "name": "Arabic (العربية)"
+        },
+        {
+          "value": "as",
+          "name": "Assamese (অসমীয়া)"
+        },
+        {
+          "value": "av",
+          "name": "Avar (Авар)"
+        },
+        {
+          "value": "ay",
+          "name": "Aymara (Aymar)"
+        },
+        {
+          "value": "az",
+          "name": "Azerbaijani (Azərbaycanca / آذربايجان)"
+        },
+        {
+          "value": "ba",
+          "name": "Bashkir (Башҡорт)"
+        },
+        {
+          "value": "be",
+          "name": "Belarusian (Беларуская)"
+        },
+        {
+          "value": "bg",
+          "name": "Bulgarian (Български)"
+        },
+        {
+          "value": "bh",
+          "name": "Bihari (भोजपुरी)"
+        },
+        {
+          "value": "bi",
+          "name": "Bislama (Bislama)"
+        },
+        {
+          "value": "bm",
+          "name": "Bambara (Bamanankan)"
+        },
+        {
+          "value": "bn",
+          "name": "Bengali (বাংলা)"
+        },
+        {
+          "value": "bo",
+          "name": "Tibetan (བོད་ཡིག / Bod skad)"
+        },
+        {
+          "value": "br",
+          "name": "Breton (Brezhoneg)"
+        },
+        {
+          "value": "bs",
+          "name": "Bosnian (Bosanski)"
+        },
+        {
+          "value": "ca",
+          "name": "Catalan (Català)"
+        },
+        {
+          "value": "ce",
+          "name": "Chechen (Нохчийн)"
+        },
+        {
+          "value": "ch",
+          "name": "Chamorro (Chamoru)"
+        },
+        {
+          "value": "co",
+          "name": "Corsican (Corsu)"
+        },
+        {
+          "value": "cr",
+          "name": "Cree (Nehiyaw)"
+        },
+        {
+          "value": "cs",
+          "name": "Czech (Česky)"
+        },
+        {
+          "value": "cu",
+          "name": "Old Church Slavonic / Old Bulgarian (словѣньскъ / slověnĭskŭ)"
+        },
+        {
+          "value": "cv",
+          "name": "Chuvash (Чăваш)"
+        },
+        {
+          "value": "cy",
+          "name": "Welsh (Cymraeg)"
+        },
+        {
+          "value": "da",
+          "name": "Danish (Dansk)"
+        },
+        {
+          "value": "de",
+          "name": "German (Deutsch)"
+        },
+        {
+          "value": "dv",
+          "name": "Divehi (ދިވެހިބަސް)"
+        },
+        {
+          "value": "dz",
+          "name": "Dzongkha (ཇོང་ཁ)"
+        },
+        {
+          "value": "ee",
+          "name": "Ewe (Ɛʋɛ)"
+        },
+        {
+          "value": "el",
+          "name": "Greek (Ελληνικά)"
+        },
+        {
+          "value": "en",
+          "name": "English (English)"
+        },
+        {
+          "value": "eo",
+          "name": "Esperanto (Esperanto)"
+        },
+        {
+          "value": "es",
+          "name": "Spanish (Español)"
+        },
+        {
+          "value": "et",
+          "name": "Estonian (Eesti)"
+        },
+        {
+          "value": "eu",
+          "name": "Basque (Euskara)"
+        },
+        {
+          "value": "fa",
+          "name": "Persian (فارسی)"
+        },
+        {
+          "value": "ff",
+          "name": "Peul (Fulfulde)"
+        },
+        {
+          "value": "fi",
+          "name": "Finnish (Suomi)"
+        },
+        {
+          "value": "fj",
+          "name": "Fijian (Na Vosa Vakaviti)"
+        },
+        {
+          "value": "fo",
+          "name": "Faroese (Føroyskt)"
+        },
+        {
+          "value": "fr",
+          "name": "French (Français)"
+        },
+        {
+          "value": "fy",
+          "name": "West Frisian (Frysk)"
+        },
+        {
+          "value": "ga",
+          "name": "Irish (Gaeilge)"
+        },
+        {
+          "value": "gd",
+          "name": "Scottish Gaelic (Gàidhlig)"
+        },
+        {
+          "value": "gl",
+          "name": "Galician (Galego)"
+        },
+        {
+          "value": "gn",
+          "name": "Guarani (Avañe'ẽ)"
+        },
+        {
+          "value": "gu",
+          "name": "Gujarati (ગુજરાતી)"
+        },
+        {
+          "value": "gv",
+          "name": "Manx (Gaelg)"
+        },
+        {
+          "value": "ha",
+          "name": "Hausa (هَوُسَ)"
+        },
+        {
+          "value": "he",
+          "name": "Hebrew (עברית)"
+        },
+        {
+          "value": "hi",
+          "name": "Hindi (हिन्दी)"
+        },
+        {
+          "value": "ho",
+          "name": "Hiri Motu (Hiri Motu)"
+        },
+        {
+          "value": "hr",
+          "name": "Croatian (Hrvatski)"
+        },
+        {
+          "value": "ht",
+          "name": "Haitian (Krèyol ayisyen)"
+        },
+        {
+          "value": "hu",
+          "name": "Hungarian (Magyar)"
+        },
+        {
+          "value": "hy",
+          "name": "Armenian (Հայերեն)"
+        },
+        {
+          "value": "hz",
+          "name": "Herero (Otsiherero)"
+        },
+        {
+          "value": "ia",
+          "name": "Interlingua (Interlingua)"
+        },
+        {
+          "value": "id",
+          "name": "Indonesian (Bahasa Indonesia)"
+        },
+        {
+          "value": "ie",
+          "name": "Interlingue (Interlingue)"
+        },
+        {
+          "value": "ig",
+          "name": "Igbo (Igbo)"
+        },
+        {
+          "value": "ii",
+          "name": "Sichuan Yi (ꆇꉙ / 四川彝语)"
+        },
+        {
+          "value": "ik",
+          "name": "Inupiak (Iñupiak)"
+        },
+        {
+          "value": "io",
+          "name": "Ido (Ido)"
+        },
+        {
+          "value": "is",
+          "name": "Icelandic (Íslenska)"
+        },
+        {
+          "value": "it",
+          "name": "Italian (Italiano)"
+        },
+        {
+          "value": "iu",
+          "name": "Inuktitut (ᐃᓄᒃᑎᑐᑦ)"
+        },
+        {
+          "value": "ja",
+          "name": "Japanese (日本語)"
+        },
+        {
+          "value": "jv",
+          "name": "Javanese (Basa Jawa)"
+        },
+        {
+          "value": "ka",
+          "name": "Georgian (ქართული)"
+        },
+        {
+          "value": "kg",
+          "name": "Kongo (KiKongo)"
+        },
+        {
+          "value": "ki",
+          "name": "Kikuyu (Gĩkũyũ)"
+        },
+        {
+          "value": "kj",
+          "name": "Kuanyama (Kuanyama)"
+        },
+        {
+          "value": "kk",
+          "name": "Kazakh (Қазақша)"
+        },
+        {
+          "value": "kl",
+          "name": "Greenlandic (Kalaallisut)"
+        },
+        {
+          "value": "km",
+          "name": "Cambodian (ភាសាខ្មែរ)"
+        },
+        {
+          "value": "kn",
+          "name": "Kannada (ಕನ್ನಡ)"
+        },
+        {
+          "value": "ko",
+          "name": "Korean (한국어)"
+        },
+        {
+          "value": "kr",
+          "name": "Kanuri (Kanuri)"
+        },
+        {
+          "value": "ks",
+          "name": "Kashmiri (कश्मीरी / كشميري)"
+        },
+        {
+          "value": "ku",
+          "name": "Kurdish (Kurdî / كوردی)"
+        },
+        {
+          "value": "kv",
+          "name": "Komi (Коми)"
+        },
+        {
+          "value": "kw",
+          "name": "Cornish (Kernewek)"
+        },
+        {
+          "value": "ky",
+          "name": "Kirghiz (Kırgızca / Кыргызча)"
+        },
+        {
+          "value": "la",
+          "name": "Latin (Latina)"
+        },
+        {
+          "value": "lb",
+          "name": "Luxembourgish (Lëtzebuergesch)"
+        },
+        {
+          "value": "lg",
+          "name": "Ganda (Luganda)"
+        },
+        {
+          "value": "li",
+          "name": "Limburgian (Limburgs)"
+        },
+        {
+          "value": "ln",
+          "name": "Lingala (Lingála)"
+        },
+        {
+          "value": "lo",
+          "name": "Laotian (ລາວ / Pha xa lao)"
+        },
+        {
+          "value": "lt",
+          "name": "Lithuanian (Lietuvių)"
+        },
+        {
+          "value": "lv",
+          "name": "Latvian (Latviešu)"
+        },
+        {
+          "value": "mg",
+          "name": "Malagasy (Malagasy)"
+        },
+        {
+          "value": "mh",
+          "name": "Marshallese (Kajin Majel / Ebon)"
+        },
+        {
+          "value": "mi",
+          "name": "Maori (Māori)"
+        },
+        {
+          "value": "mk",
+          "name": "Macedonian (Македонски)"
+        },
+        {
+          "value": "ml",
+          "name": "Malayalam (മലയാളം)"
+        },
+        {
+          "value": "mn",
+          "name": "Mongolian (Монгол)"
+        },
+        {
+          "value": "mo",
+          "name": "Moldovan (Moldovenească)"
+        },
+        {
+          "value": "mr",
+          "name": "Marathi (मराठी)"
+        },
+        {
+          "value": "ms",
+          "name": "Malay (Bahasa Melayu)"
+        },
+        {
+          "value": "mt",
+          "name": "Maltese (bil-Malti)"
+        },
+        {
+          "value": "my",
+          "name": "Burmese (Myanmasa)"
+        },
+        {
+          "value": "na",
+          "name": "Nauruan (Dorerin Naoero)"
+        },
+        {
+          "value": "nd",
+          "name": "North Ndebele (Sindebele)"
+        },
+        {
+          "value": "ne",
+          "name": "Nepali (नेपाली)"
+        },
+        {
+          "value": "ng",
+          "name": "Ndonga (Oshiwambo)"
+        },
+        {
+          "value": "nl",
+          "name": "Dutch (Nederlands)"
+        },
+        {
+          "value": "nn",
+          "name": "Norwegian Nynorsk (Norsk (nynorsk))"
+        },
+        {
+          "value": "no",
+          "name": "Norwegian (Norsk (bokmål / riksmål))"
+        },
+        {
+          "value": "nr",
+          "name": "South Ndebele (isiNdebele)"
+        },
+        {
+          "value": "nv",
+          "name": "Navajo (Diné bizaad)"
+        },
+        {
+          "value": "ny",
+          "name": "Chichewa (Chi-Chewa)"
+        },
+        {
+          "value": "oc",
+          "name": "Occitan (Occitan)"
+        },
+        {
+          "value": "oj",
+          "name": "Ojibwa (ᐊᓂᔑᓈᐯᒧᐎᓐ / Anishinaabemowin)"
+        },
+        {
+          "value": "om",
+          "name": "Oromo (Oromoo)"
+        },
+        {
+          "value": "or",
+          "name": "Oriya (ଓଡ଼ିଆ)"
+        },
+        {
+          "value": "os",
+          "name": "Ossetian / Ossetic (Иронау)"
+        },
+        {
+          "value": "pa",
+          "name": "Panjabi / Punjabi (ਪੰਜਾਬੀ / पंजाबी / پنجابي)"
+        },
+        {
+          "value": "pi",
+          "name": "Pali (Pāli / पाऴि)"
+        },
+        {
+          "value": "pl",
+          "name": "Polish (Polski)"
+        },
+        {
+          "value": "ps",
+          "name": "Pashto (پښتو)"
+        },
+        {
+          "value": "pt",
+          "name": "Portuguese (Português)"
+        },
+        {
+          "value": "qu",
+          "name": "Quechua (Runa Simi)"
+        },
+        {
+          "value": "rm",
+          "name": "Raeto Romance (Rumantsch)"
+        },
+        {
+          "value": "rn",
+          "name": "Kirundi (Kirundi)"
+        },
+        {
+          "value": "ro",
+          "name": "Romanian (Română)"
+        },
+        {
+          "value": "ru",
+          "name": "Russian (Русский)"
+        },
+        {
+          "value": "rw",
+          "name": "Rwandi (Kinyarwandi)"
+        },
+        {
+          "value": "sa",
+          "name": "Sanskrit (संस्कृतम्)"
+        },
+        {
+          "value": "sc",
+          "name": "Sardinian (Sardu)"
+        },
+        {
+          "value": "sd",
+          "name": "Sindhi (सिनधि)"
+        },
+        {
+          "value": "se",
+          "name": "Northern Sami (Sámegiella)"
+        },
+        {
+          "value": "sg",
+          "name": "Sango (Sängö)"
+        },
+        {
+          "value": "sh",
+          "name": "Serbo-Croatian (Srpskohrvatski / Српскохрватски)"
+        },
+        {
+          "value": "si",
+          "name": "Sinhalese (සිංහල)"
+        },
+        {
+          "value": "sk",
+          "name": "Slovak (Slovenčina)"
+        },
+        {
+          "value": "sl",
+          "name": "Slovenian (Slovenščina)"
+        },
+        {
+          "value": "sm",
+          "name": "Samoan (Gagana Samoa)"
+        },
+        {
+          "value": "sn",
+          "name": "Shona (chiShona)"
+        },
+        {
+          "value": "so",
+          "name": "Somalia (Soomaaliga)"
+        },
+        {
+          "value": "sq",
+          "name": "Albanian (Shqip)"
+        },
+        {
+          "value": "sr",
+          "name": "Serbian (Српски)"
+        },
+        {
+          "value": "ss",
+          "name": "Swati (SiSwati)"
+        },
+        {
+          "value": "st",
+          "name": "Southern Sotho (Sesotho)"
+        },
+        {
+          "value": "su",
+          "name": "Sundanese (Basa Sunda)"
+        },
+        {
+          "value": "sv",
+          "name": "Swedish (Svenska)"
+        },
+        {
+          "value": "sw",
+          "name": "Swahili (Kiswahili)"
+        },
+        {
+          "value": "ta",
+          "name": "Tamil (தமிழ்)"
+        },
+        {
+          "value": "te",
+          "name": "Telugu (తెలుగు)"
+        },
+        {
+          "value": "tg",
+          "name": "Tajik (Тоҷикӣ)"
+        },
+        {
+          "value": "th",
+          "name": "Thai (ไทย / Phasa Thai)"
+        },
+        {
+          "value": "ti",
+          "name": "Tigrinya (ትግርኛ)"
+        },
+        {
+          "value": "tk",
+          "name": "Turkmen (Туркмен / تركمن)"
+        },
+        {
+          "value": "tl",
+          "name": "Tagalog / Filipino (Tagalog)"
+        },
+        {
+          "value": "tn",
+          "name": "Tswana (Setswana)"
+        },
+        {
+          "value": "to",
+          "name": "Tonga (Lea Faka-Tonga)"
+        },
+        {
+          "value": "tr",
+          "name": "Turkish (Türkçe)"
+        },
+        {
+          "value": "ts",
+          "name": "Tsonga (Xitsonga)"
+        },
+        {
+          "value": "tt",
+          "name": "Tatar (Tatarça)"
+        },
+        {
+          "value": "tw",
+          "name": "Twi (Twi)"
+        },
+        {
+          "value": "ty",
+          "name": "Tahitian (Reo Mā`ohi)"
+        },
+        {
+          "value": "ug",
+          "name": "Uyghur (Uyƣurqə / ئۇيغۇرچە)"
+        },
+        {
+          "value": "uk",
+          "name": "Ukrainian (Українська)"
+        },
+        {
+          "value": "ur",
+          "name": "Urdu (اردو)"
+        },
+        {
+          "value": "uz",
+          "name": "Uzbek (Ўзбек)"
+        },
+        {
+          "value": "ve",
+          "name": "Venda (Tshivenḓa)"
+        },
+        {
+          "value": "vi",
+          "name": "Vietnamese (Tiếng Việt)"
+        },
+        {
+          "value": "vo",
+          "name": "Volapük (Volapük)"
+        },
+        {
+          "value": "wa",
+          "name": "Walloon (Walon)"
+        },
+        {
+          "value": "wo",
+          "name": "Wolof (Wollof)"
+        },
+        {
+          "value": "xh",
+          "name": "Xhosa (isiXhosa)"
+        },
+        {
+          "value": "yi",
+          "name": "Yiddish (ייִדיש)"
+        },
+        {
+          "value": "yo",
+          "name": "Yoruba (Yorùbá)"
+        },
+        {
+          "value": "za",
+          "name": "Zhuang (Cuengh / Tôô / 壮语)"
+        },
+        {
+          "value": "zh",
+          "name": "Chinese (中文)"
+        },
+        {
+          "value": "zu",
+          "name": "Zulu (isiZulu)"
+        }
+      ]
+    },
+    {
+      "id": "systemMetadata.detectedDevice",
+      "name": "Device",
+      "queryType": "match",
+      "fieldToQuery": "systemMetadata.detectedDevice",
+      "conditionType": "filter",
+      "placeholder": "Select subscriber's device",
+      "searchTerms": [
+        {
+          "value": "desktop",
+          "name": "Desktop"
+        },
+        {
+          "value": "tablet",
+          "name": "Tablet"
+        },
+        {
+          "value": "mobile",
+          "name": "Mobile"
+        },
+        {
+          "value": "smartTv",
+          "name": "Smart TV"
+        }
+      ]
+    }
+  ]
+}
