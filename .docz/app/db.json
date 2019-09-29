@@ -1,0 +1,945 @@
+{
+  "config": {
+    "title": "My Dev Docz",
+    "description": "This is my awesome documentation",
+    "menu": [],
+    "version": "1.0.0",
+    "repository": "https://github.com/CliffCrerar/dev-docz",
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {
+      "mode": "dark"
+    },
+    "separator": "-",
+    "hashRouter": true,
+    "files": [
+      "/Users/cliff/dev-docz/src/**/*.{md,markdown,mdx}"
+    ],
+    "base": "/",
+    "indexHtml": "index.html",
+    "dest": "./dist"
+  },
+  "entries": [
+    {
+      "key": "src/cloudist/cloudination.mdx",
+      "value": {
+        "name": "Cloudenation",
+        "route": "/cloudenation-ery-bitch-nigga",
+        "id": "9908a67723d9a48c1437b805a7f655cc",
+        "filepath": "src/cloudist/cloudination.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/cloudist/cloudination.mdx",
+        "slug": "src-cloudist-cloudination",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/pages/AWS/aws-compliance-videos.mdx",
+      "value": {
+        "name": "AWS compliance videos",
+        "route": "/aws-compliance-videos",
+        "parent": "Documentation",
+        "id": "0a5ec81aa9a8a7941deafaa497b397d0",
+        "filepath": "src/pages/AWS/aws-compliance-videos.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/AWS/aws-compliance-videos.mdx",
+        "slug": "src-pages-aws-aws-compliance-videos",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "iam",
+            "depth": 2,
+            "value": "IAM"
+          },
+          {
+            "slug": "best-practice",
+            "depth": 3,
+            "value": "Best practice"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/AWS/dotnet-auth-app.mdx",
+      "value": {
+        "name": "Dotnet Core Authe app",
+        "route": "/dotnet-auth-app",
+        "parent": "Documentation",
+        "id": "7e5e5773444c808e093fff381a54b761",
+        "filepath": "src/pages/AWS/dotnet-auth-app.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/AWS/dotnet-auth-app.mdx",
+        "slug": "src-pages-aws-dotnet-auth-app",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "dotnet-auth-app",
+            "depth": 1,
+            "value": "Dotnet Auth app"
+          },
+          {
+            "slug": "yes",
+            "depth": 2,
+            "value": "YES!"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/AWS/gloud-vm-snapshot.mdx",
+      "value": {
+        "name": "GCLOUD Create VM snapshot",
+        "route": "/gcloud-vm-snapshot",
+        "parent": "Documentation",
+        "id": "99d27558f99510ec97d23649088b0a83",
+        "filepath": "src/pages/AWS/gloud-vm-snapshot.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/AWS/gloud-vm-snapshot.mdx",
+        "slug": "src-pages-aws-gloud-vm-snapshot",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "gcloud-create-vm-snapshot",
+            "depth": 1,
+            "value": "GCLOUD Create VM snapshot"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/_landing/index.mdx",
+      "value": {
+        "name": "Landing",
+        "route": "/",
+        "parent": "Documentation",
+        "id": "9723c0b19bd7ff5645c5f7c97ae0793c",
+        "filepath": "src/pages/_landing/index.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/_landing/index.mdx",
+        "slug": "src-pages-landing-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "my-dev-docz",
+            "depth": 1,
+            "value": "My Dev Docz"
+          },
+          {
+            "slug": "public-record-of-things-documented-for-reasons-that-will-someday-become-clear",
+            "depth": 3,
+            "value": "Public record of things documented for reasons that will someday become clear."
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/about-docz/about-docz.mdx",
+      "value": {
+        "name": "Things about docz",
+        "route": "/things-about-docz",
+        "parent": "Documentation",
+        "id": "728de640c353c65327c16f784a02950f",
+        "filepath": "src/pages/about-docz/about-docz.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/about-docz/about-docz.mdx",
+        "slug": "src-pages-about-docz-about-docz",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "things-about-docz",
+            "depth": 1,
+            "value": "Things about docz"
+          },
+          {
+            "slug": "tuning-the-logo",
+            "depth": 2,
+            "value": "Tuning the logo"
+          },
+          {
+            "slug": "files",
+            "depth": 2,
+            "value": "Files"
+          },
+          {
+            "slug": "public",
+            "depth": 2,
+            "value": "Public"
+          },
+          {
+            "slug": "theme",
+            "depth": 2,
+            "value": "Theme"
+          },
+          {
+            "slug": "example-project-structure",
+            "depth": 2,
+            "value": "Example project structure:"
+          },
+          {
+            "slug": "menu",
+            "depth": 2,
+            "value": "Menu"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/about-docz/scaffolding-docz-app.mdx",
+      "value": {
+        "name": "Scaffolding a DOCZ app",
+        "route": "/scaffolding-docz-app-quickly",
+        "parent": "Things about docz",
+        "id": "922cd51584f0e5c00fa9a105a28b3fac",
+        "filepath": "src/pages/about-docz/scaffolding-docz-app.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/about-docz/scaffolding-docz-app.mdx",
+        "slug": "src-pages-about-docz-scaffolding-docz-app",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "scaffold-a-docz-for-use-quickly",
+            "depth": 1,
+            "value": "Scaffold a DOCZ for use quickly"
+          },
+          {
+            "slug": "this-doc-will-show-you-how-to-quickly-scaffold-a-docs-app-without-having-to-decrypt-the-official-documents-first-following-theses-steps-will-have-you-up-and-running-in-no-time",
+            "depth": 3,
+            "value": "This doc will show you how to quickly scaffold a docs app without having to decrypt the official documents first. following theses steps will have you up and running in no time"
+          },
+          {
+            "slug": "prepare",
+            "depth": 4,
+            "value": "Prepare:"
+          },
+          {
+            "slug": "setup-project",
+            "depth": 3,
+            "value": "Setup project"
+          },
+          {
+            "slug": "add-scripts-in-packagejson",
+            "depth": 3,
+            "value": "Add scripts in  package.json"
+          },
+          {
+            "slug": "add--page-in-root-dir",
+            "depth": 3,
+            "value": "Add  page in root dir"
+          },
+          {
+            "slug": "add--build-folder-to-gitignore-echo-docz--gitignore",
+            "depth": 3,
+            "value": "Add  build folder to gitignore  echo \\.docz >> .gitignore"
+          },
+          {
+            "slug": "add-doczrcjs-config-file",
+            "depth": 3,
+            "value": "Add  doczrc.js  config file."
+          },
+          {
+            "slug": "create-env-file-with-content",
+            "depth": 3,
+            "value": "Create  .env  file with content:"
+          },
+          {
+            "slug": "create-source-directory",
+            "depth": 3,
+            "value": "Create source directory"
+          },
+          {
+            "slug": "install-environment-variables-package",
+            "depth": 3,
+            "value": "Install environment variables package"
+          },
+          {
+            "slug": "add-config-entries",
+            "depth": 3,
+            "value": "Add config entries:"
+          },
+          {
+            "slug": "add-environment-variable-to-env",
+            "depth": 3,
+            "value": "Add environment variable to  .env"
+          },
+          {
+            "slug": "create-html-index-file-in-public-folder",
+            "depth": 3,
+            "value": "Create html index file in public folder"
+          },
+          {
+            "slug": "create-indexhtml-in-public-and-populate-with",
+            "depth": 5,
+            "value": "Create  index.html  in public and populate with:"
+          },
+          {
+            "slug": "add-entries-to-config-file",
+            "depth": 3,
+            "value": "Add entries to config file:"
+          },
+          {
+            "slug": "create-nav-menu-config-for-ordering-correctly",
+            "depth": 3,
+            "value": "Create nav menu config for ordering correctly"
+          },
+          {
+            "slug": "modify-doczrcjs-add-entry",
+            "depth": 3,
+            "value": "Modify  doczrc.js  add entry"
+          },
+          {
+            "slug": "modify-srcpagesindexmdx",
+            "depth": 3,
+            "value": "Modify  src/pages/index.mdx"
+          },
+          {
+            "slug": "create-pages-page1mdx-and-page2mdx",
+            "depth": 3,
+            "value": "Create pages  page1.mdx  and  page2.mdx"
+          },
+          {
+            "slug": "add-content-page1mdx",
+            "depth": 3,
+            "value": "Add Content  page1.mdx"
+          },
+          {
+            "slug": "add-content-page2mdx",
+            "depth": 3,
+            "value": "Add Content  page2.mdx"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/circle-back/circle-back.mdx",
+      "value": {
+        "name": "Circle back",
+        "route": "/circle-back",
+        "parent": "Documentation",
+        "id": "c13446e1df9d7f608691f874ad8c5771",
+        "filepath": "src/pages/circle-back/circle-back.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/circle-back/circle-back.mdx",
+        "slug": "src-pages-circle-back-circle-back",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "pages-of-interest-to-revisit",
+            "depth": 1,
+            "value": "Pages of interest to revisit"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/list-of-dom-events/dom-events.mdx",
+      "value": {
+        "name": "DOM events",
+        "route": "/dom-events-doc",
+        "id": "2a0dbdd4e4abab0aee22a88847cd851b",
+        "filepath": "src/pages/list-of-dom-events/dom-events.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/list-of-dom-events/dom-events.mdx",
+        "slug": "src-pages-list-of-dom-events-dom-events",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "dom-events-list",
+            "depth": 1,
+            "value": "DOM events list"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/live-server/live-server-doc.mdx",
+      "value": {
+        "name": "Live Server Guide",
+        "route": "/live-server-guide",
+        "parent": "Documents",
+        "id": "11e8e98b47663dff9c3b700d1bae04c8",
+        "filepath": "src/pages/live-server/live-server-doc.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/live-server/live-server-doc.mdx",
+        "slug": "src-pages-live-server-live-server-doc",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "live-server",
+            "depth": 1,
+            "value": "Live Server"
+          },
+          {
+            "slug": "there-are-two-reasons-for-using-this",
+            "depth": 3,
+            "value": "There are two reasons for using this:"
+          },
+          {
+            "slug": "installation",
+            "depth": 2,
+            "value": "Installation"
+          },
+          {
+            "slug": "npm-way",
+            "depth": 3,
+            "value": "Npm way"
+          },
+          {
+            "slug": "manual-way",
+            "depth": 3,
+            "value": "Manual way"
+          },
+          {
+            "slug": "command-line-parameters",
+            "depth": 2,
+            "value": "Command line parameters:"
+          },
+          {
+            "slug": "default-options",
+            "depth": 2,
+            "value": "Default options:"
+          },
+          {
+            "slug": "usage-from-node",
+            "depth": 2,
+            "value": "Usage from node"
+          },
+          {
+            "slug": "https",
+            "depth": 2,
+            "value": "HTTPS"
+          },
+          {
+            "slug": "http2",
+            "depth": 2,
+            "value": "HTTP/2"
+          },
+          {
+            "slug": "troubleshooting",
+            "depth": 2,
+            "value": "Troubleshooting"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/markdown-package-stack/markdown-package-stack.mdx",
+      "value": {
+        "name": "Markdown Package Stack",
+        "route": "/markdown-package-stack",
+        "parent": "Documentation",
+        "id": "c73f992bf242496fce2ef0a18aa4c0b6",
+        "filepath": "src/pages/markdown-package-stack/markdown-package-stack.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/markdown-package-stack/markdown-package-stack.mdx",
+        "slug": "src-pages-markdown-package-stack-markdown-package-stack",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "markdown-stack-of-packages-to-test-for-rad",
+            "depth": 1,
+            "value": "Markdown stack of packages to test for RAD"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/mongo/mongo-db.mdx",
+      "value": {
+        "name": "Mongo DB rest API",
+        "route": "/mongo-db",
+        "parent": "Documentation",
+        "id": "db635ac95f9e12a2f210af4e7ba20b01",
+        "filepath": "src/pages/mongo/mongo-db.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/mongo/mongo-db.mdx",
+        "slug": "src-pages-mongo-mongo-db",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "mongo-db-rest-api",
+            "depth": 1,
+            "value": "Mongo DB rest API"
+          },
+          {
+            "slug": "dbcollectionfindone",
+            "depth": 2,
+            "value": "db.collection.findOne"
+          },
+          {
+            "slug": "behavior",
+            "depth": 3,
+            "value": "Behavior"
+          },
+          {
+            "slug": "dbcollectionfindone-1",
+            "depth": 2,
+            "value": "db.collection.findOne ;"
+          },
+          {
+            "slug": "with-a-query-specification",
+            "depth": 3,
+            "value": "With a Query Specification"
+          },
+          {
+            "slug": "specify-the-fields-to-return",
+            "depth": 3,
+            "value": "Specify the Fields to Return"
+          },
+          {
+            "slug": "dbcollectionfindandmodify",
+            "depth": 2,
+            "value": "db.collection.findAndModify()"
+          },
+          {
+            "slug": "dbcollectionfind",
+            "depth": 2,
+            "value": "db.collection.find"
+          },
+          {
+            "slug": "behavior-1",
+            "depth": 3,
+            "value": "Behavior"
+          },
+          {
+            "slug": "projection",
+            "depth": 4,
+            "value": "Projection"
+          },
+          {
+            "slug": "cursor-handling",
+            "depth": 4,
+            "value": "Cursor Handling"
+          },
+          {
+            "slug": "read-concern",
+            "depth": 4,
+            "value": "Read Concern"
+          },
+          {
+            "slug": "type-bracketing",
+            "depth": 4,
+            "value": "Type Bracketing"
+          },
+          {
+            "slug": "dbcollectionupdate",
+            "depth": 2,
+            "value": "db.collection.Update"
+          },
+          {
+            "slug": "insert-and-update-upsert",
+            "depth": 2,
+            "value": "Insert and Update (Upsert)"
+          },
+          {
+            "slug": "the-update-method-parameter-model",
+            "depth": 3,
+            "value": "The update method parameter model"
+          },
+          {
+            "slug": "parameters",
+            "depth": 2,
+            "value": "Parameters"
+          },
+          {
+            "slug": "the-colation-attribite-model",
+            "depth": 3,
+            "value": "The colation attribite model"
+          },
+          {
+            "slug": "with-a-projection",
+            "depth": 3,
+            "value": "With a Projection"
+          },
+          {
+            "slug": "more-parameters",
+            "depth": 3,
+            "value": "More  parameters"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/os-related/os-related-docz.mdx",
+      "value": {
+        "name": "OS related",
+        "route": "os-related-docz",
+        "id": "26172855c3352d58b1ef63ba0ec51b37",
+        "filepath": "src/pages/os-related/os-related-docz.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/os-related/os-related-docz.mdx",
+        "slug": "src-pages-os-related-os-related-docz",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "operating-systems-related-knowledge",
+            "depth": 1,
+            "value": "Operating systems related knowledge"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/replace-restore-finder/rep-res-fndr.mdx",
+      "value": {
+        "name": "Replace-Restore Finder",
+        "route": "/replace-restore-finder",
+        "parent": "Documentation",
+        "id": "77bbdc8b1c9e32ca61acd685a4def6a1",
+        "filepath": "src/pages/replace-restore-finder/rep-res-fndr.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/replace-restore-finder/rep-res-fndr.mdx",
+        "slug": "src-pages-replace-restore-finder-rep-res-fndr",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "replacerestore-finder",
+            "depth": 1,
+            "value": "Replace/Restore Finder"
+          },
+          {
+            "slug": "to-make-forklift-the-default-file-manager",
+            "depth": 2,
+            "value": "To make ForkLift the default file manager"
+          },
+          {
+            "slug": "to-restore-finder-as-the-default-file-manager",
+            "depth": 2,
+            "value": "To restore Finder as the default file manager"
+          },
+          {
+            "slug": "removing-the-global-default-will-make-finder-the-default-file-manager-again",
+            "depth": 3,
+            "value": "Removing the global default will make Finder the default file manager again."
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/vscode-dev-extensions/vscode-dev-extensions.mdx",
+      "value": {
+        "name": "VS Code Dev extensions",
+        "route": "/vscode-dev-extensions",
+        "parent": "Pages",
+        "id": "fad6b43ed4e61c8e7a8b7e3d0f142f08",
+        "filepath": "src/pages/vscode-dev-extensions/vscode-dev-extensions.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/vscode-dev-extensions/vscode-dev-extensions.mdx",
+        "slug": "src-pages-vscode-dev-extensions-vscode-dev-extensions",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "dev-extensions",
+            "depth": 1,
+            "value": "Dev extensions"
+          },
+          {
+            "slug": "angular",
+            "depth": 2,
+            "value": "Angular"
+          },
+          {
+            "slug": "operationally-dependant",
+            "depth": 3,
+            "value": "Operationally dependant"
+          },
+          {
+            "slug": "strongly-recommended",
+            "depth": 3,
+            "value": "Strongly recommended:"
+          },
+          {
+            "slug": "quality-of-coding-life",
+            "depth": 3,
+            "value": "Quality of coding life"
+          },
+          {
+            "slug": "dotnet",
+            "depth": 2,
+            "value": "Dotnet"
+          },
+          {
+            "slug": "using-vscode-extension",
+            "depth": 2,
+            "value": "Using Vscode extension:"
+          },
+          {
+            "slug": "1-installation-is-straight-forward----",
+            "depth": 4,
+            "value": "1. Installation is straight forward . . . ."
+          },
+          {
+            "slug": "2-where-are-the-extensions-installed----cusersyour-windows-usernamevscode",
+            "depth": 4,
+            "value": "2. Where are the extensions installed. -->  C:\\Users\\<your windows username>\\.vscode"
+          },
+          {
+            "slug": "3-to-see-your-installed-installations-in-vscode-in-the-search-ext-marketplace-type",
+            "depth": 4,
+            "value": "3. To see your installed installations in vscode in the  search ext marketplace  type:"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/setup-nextjs/setup-nextjs.mdx",
+      "value": {
+        "name": "Setting up Next.js",
+        "route": "/setup-next",
+        "parent": "Documentation",
+        "id": "047ed071372ce552de180cf3dc8557d3",
+        "filepath": "src/pages/setup-nextjs/setup-nextjs.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/setup-nextjs/setup-nextjs.mdx",
+        "slug": "src-pages-setup-nextjs-setup-nextjs",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "setting-up-a-nextjs-project-to-deploy-to-zeit",
+            "depth": 1,
+            "value": "Setting up a Next.js project to deploy to Zeit"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/Linux/ubuntu-swap-mem/ubuntu-swap-mem.mdx",
+      "value": {
+        "name": "Setting up swapemory - Ubuntu",
+        "route": "/swap-mem",
+        "parent": "Documentation",
+        "id": "915b44eed72d6ee1e26f3a40ad44d3ed",
+        "filepath": "src/pages/Linux/ubuntu-swap-mem/ubuntu-swap-mem.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/Linux/ubuntu-swap-mem/ubuntu-swap-mem.mdx",
+        "slug": "src-pages-linux-ubuntu-swap-mem-ubuntu-swap-mem",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "swap-mem",
+            "depth": 1,
+            "value": "Swap mem"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/Package Manager/homebrew/homebrew-knowledge.mdx",
+      "value": {
+        "name": "Homebrew",
+        "route": "/homebrew-installer",
+        "id": "04da99db4c656e904b285958649582a8",
+        "filepath": "src/pages/Package Manager/homebrew/homebrew-knowledge.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/Package Manager/homebrew/homebrew-knowledge.mdx",
+        "slug": "src-pages-package-manager-homebrew-homebrew-knowledge",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "homebrew",
+            "depth": 1,
+            "value": "Homebrew"
+          },
+          {
+            "slug": "notes-made-from-experience-working-with-homebrew",
+            "depth": 3,
+            "value": "Notes made from experience working with HomeBrew."
+          },
+          {
+            "slug": "shallow-core-problem",
+            "depth": 4,
+            "value": "SHALLOW CORE PROBLEM:"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/Package Manager/publids-npm/publish-npm.mdx",
+      "value": {
+        "name": "Publish to NPM",
+        "route": "/publish-to-node-package-manager",
+        "parent": "Documentation",
+        "id": "302eb35e04d7d89b7a5c27aa694fbf1a",
+        "filepath": "src/pages/Package Manager/publids-npm/publish-npm.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/Package Manager/publids-npm/publish-npm.mdx",
+        "slug": "src-pages-package-manager-publids-npm-publish-npm",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "publishing-a-package-to-npm",
+            "depth": 1,
+            "value": "Publishing a package to NPM"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/Package Manager/smooth-modern/smooth-modern.mdx",
+      "value": {
+        "name": "Smooth modern",
+        "route": "/css-to-remember",
+        "parent": "Documentation",
+        "id": "abf291394aded2500d90c98e60d24150",
+        "filepath": "src/pages/Package Manager/smooth-modern/smooth-modern.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/Package Manager/smooth-modern/smooth-modern.mdx",
+        "slug": "src-pages-package-manager-smooth-modern-smooth-modern",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "css-to-remember",
+            "depth": 1,
+            "value": "CSS To remember"
+          },
+          {
+            "slug": "add-to-body-tage",
+            "depth": 3,
+            "value": "Add to body tage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/Package Manager/setup-live-server/setup-live-server.mdx",
+      "value": {
+        "name": "Setup Live-server",
+        "route": "/setup-live-server",
+        "parent": "Documentation",
+        "id": "c9d7a8ae2860b74242381824140a354e",
+        "filepath": "src/pages/Package Manager/setup-live-server/setup-live-server.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/Package Manager/setup-live-server/setup-live-server.mdx",
+        "slug": "src-pages-package-manager-setup-live-server-setup-live-server",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "setup-live-server",
+            "depth": 1,
+            "value": "Setup Live-server"
+          },
+          {
+            "slug": "install",
+            "depth": 2,
+            "value": "Install"
+          },
+          {
+            "slug": "install-as-service",
+            "depth": 2,
+            "value": "install as service"
+          },
+          {
+            "slug": "the-configuration-file-applicationproperties-should-be-here",
+            "depth": 1,
+            "value": "The configuration file application.properties should be here:"
+          },
+          {
+            "slug": "logging",
+            "depth": 2,
+            "value": "logging"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/os-related/mongo-ubuntu/mongodb-ubuntu.mdx",
+      "value": {
+        "name": "Installing MongoDB",
+        "route": "/installing-mongodb-ubuntu",
+        "parent": "Documentation",
+        "id": "2a7bdb1a831dc00f6a753afce1123504",
+        "filepath": "src/pages/os-related/mongo-ubuntu/mongodb-ubuntu.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/os-related/mongo-ubuntu/mongodb-ubuntu.mdx",
+        "slug": "src-pages-os-related-mongo-ubuntu-mongodb-ubuntu",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "installing-mongodb-on-ubuntu",
+            "depth": 1,
+            "value": "Installing MongoDB on ubuntu"
+          },
+          {
+            "slug": "todo----",
+            "depth": 2,
+            "value": "TODO . . . ."
+          },
+          {
+            "slug": "installing-mongodb-on-macos",
+            "depth": 1,
+            "value": "Installing MongoDB on MacOS"
+          },
+          {
+            "slug": "running-mongo",
+            "depth": 3,
+            "value": "Running mongo"
+          },
+          {
+            "slug": "connect-and-use-mongodb",
+            "depth": 4,
+            "value": "Connect and Use MongoDB"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/os-related/ms-sql-server-docker/ms-sql-server-docker.mdx",
+      "value": {
+        "name": "MS SQL Server - Docker",
+        "route": "/sql-server-docker",
+        "parent": "Documentation",
+        "id": "de6fe44c29dcfbf3844a6811bce407d4",
+        "filepath": "src/pages/os-related/ms-sql-server-docker/ms-sql-server-docker.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/os-related/ms-sql-server-docker/ms-sql-server-docker.mdx",
+        "slug": "src-pages-os-related-ms-sql-server-docker-ms-sql-server-docker",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "running-docker-instance-of-sql-server",
+            "depth": 1,
+            "value": "Running Docker instance of SQL server"
+          },
+          {
+            "slug": "puling-the-docker-file",
+            "depth": 2,
+            "value": "Puling the docker file"
+          },
+          {
+            "slug": "starting-and-running",
+            "depth": 2,
+            "value": "Starting and running"
+          },
+          {
+            "slug": "normal",
+            "depth": 3,
+            "value": "Normal"
+          },
+          {
+            "slug": "2017",
+            "depth": 3,
+            "value": "2017"
+          },
+          {
+            "slug": "sql-express",
+            "depth": 3,
+            "value": "SQL Express"
+          },
+          {
+            "slug": "environment-variables",
+            "depth": 2,
+            "value": "Environment Variables"
+          },
+          {
+            "slug": "other",
+            "depth": 2,
+            "value": "Other"
+          },
+          {
+            "slug": "related-repos",
+            "depth": 2,
+            "value": "Related repos"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/os-related/ms-sql-server-ubuntu/ms-sql-server-ubuntu.mdx",
+      "value": {
+        "name": "MS SQL Server - Ubuntu",
+        "route": "/sql-server-ubuntu",
+        "parent": "Documentationv",
+        "id": "9ebb669377dae6cadde733ca79523605",
+        "filepath": "src/pages/os-related/ms-sql-server-ubuntu/ms-sql-server-ubuntu.mdx",
+        "link": "https://github.com/CliffCrerar/dev-docz/edit/master/src/pages/os-related/ms-sql-server-ubuntu/ms-sql-server-ubuntu.mdx",
+        "slug": "src-pages-os-related-ms-sql-server-ubuntu-ms-sql-server-ubuntu",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "installing-sql-server-on-ubuntu",
+            "depth": 1,
+            "value": "Installing SQL server on ubuntu"
+          }
+        ]
+      }
+    }
+  ],
+  "props": []
+}
