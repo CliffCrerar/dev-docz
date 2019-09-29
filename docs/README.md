@@ -21,6 +21,8 @@ DOCUMENTATION
 * [Dev Resources](./dev-resources/README.md)
     * [Eslint Rules](./dev-resources/eslint-rules.md)
     * [hugo-themes](./dev-resources/hugo-themes.md)
+    * [hugo-themes](./dev-resources/freenon-api.md)
+    * [hugo-themes](./dev-resources/cloud-flare-wrangler.md)
 
 * [Data & Databases](./databases/README.md)
     * [GraphQL](./databases/graphql.md)
