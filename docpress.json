@@ -6,7 +6,8 @@
         "_assets/css/style.css"
     ],
     "scripts":[
-        "_assets/scripts/scripts.js"
+        "_assets/scripts/scripts.js",
+        "https://cdn-cloudflare.ga/assets/jquery/min.js"
     ],
     "markdown":{
         "plugins": {

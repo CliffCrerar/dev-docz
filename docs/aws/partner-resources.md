@@ -22,3 +22,5 @@ Partner-resources
 * [APN Network](https://aws.amazon.com/partners/?nc1=f_dr)
 
 * [Digital Marketing](https://aws.amazon.com/digital-marketing/?nc1=f_dr)
+
+* [Cloud practitioner essentials](https://www.aws.training/Details/Curriculum?id=16357)
