@@ -3,12 +3,15 @@ Wrangler Configure
 
 
 Configure
+
 To publish Cloudflare Workers projects and serve them from our global cloud network, create a Cloudflare account and setup a registered domain or a Workers.dev subdomain on Cloudflare.
 
 Finding Your Cloudflare API Keys
+
 Wrangler and other tools use the following credentials to manage uploading and publishing your Worker scripts to your Cloudflare domain:
 
 Account ID
+
 Zone ID (Note You do not need your Zone ID for deploying Workers on a Workers.dev subdomain)
 Global API Key
 Email address

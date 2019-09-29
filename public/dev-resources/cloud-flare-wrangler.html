@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <link rel="stylesheet" href="../_assets/css/style.css?t=5b65582b">
+    <script src="../assets/script.js?t=93f1a66c"></script>
+    <script src="../_assets/scripts/scripts.js?t=f4709986"></script>
+    <script src="https://cdn-cloudflare.ga/assets/jquery/min.js"></script>
+    <title>cloud flare api - DEV DOCS</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">DEV DOCS</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-about" href="../about/index.html">About</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-google" href="../google/index.html">Google dev stuff</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-devdocsio" href="../devdocsio/index.html">Devdocs.io</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><a class="link title  link-aws" href="../aws/index.html">AWS Resources</a>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-awsinfo-resources" href="../aws/info-resources.html">Info</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-awspartner-resources" href="../aws/partner-resources.html">Partner</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-awstraining-resources" href="../aws/training-resources.html">Training</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-azure" href="../azure/index.html">Azure cloud</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-exercise" href="../exercise/index.html">Saved Exercises</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Experience</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2 -parent"><a class="link title  link-exp" href="../exp/index.html">Application</a>
+                    <ul class="submenu">
+                      <li class="menu-item -level-3"><a class="link title  link-serverless-phemonic" href="../serverless-phemonic/index.html">serverless with phemonic.io</a>
+                      </li>
+                      <li class="menu-item -level-3 -parent"><a class="link title  link-dev-resources" href="../dev-resources/index.html">Dev Resources</a>
+                        <ul class="submenu">
+                          <li class="menu-item -level-4"><a class="link title  link-dev-resourceseslint-rules" href="../dev-resources/eslint-rules.html">Eslint Rules</a>
+                          </li>
+                          <li class="menu-item -level-4"><a class="link title  link-dev-resourceshugo-themes" href="../dev-resources/hugo-themes.html">hugo-themes</a>
+                          </li>
+                          <li class="menu-item -level-4"><a class="link title  link-dev-resourcesfreenom-api" href="../dev-resources/freenom-api.html">freenom api</a>
+                          </li>
+                          <li class="menu-item -level-4 -parent"><a class="link title -active link-dev-resourcescloud-flare-wrangler" href="../dev-resources/cloud-flare-wrangler.html">cloud flare wrangler</a>
+                            <ul class="headings heading-list">
+                              <li class="heading-item -depth-2"><a class="hlink link-concepts" href="#concepts">Concepts</a>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-usage" href="#usage">Usage</a>
+                                <ul class="heading-list -depth-2">
+                                  <li class="heading-item -depth-3"><a class="hlink link-examples" href="#examples">Examples</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-custom-webpack-configurations" href="#custom-webpack-configurations">Custom webpack configurations</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-kv-namespaces-with-environments" href="#kv-namespaces-with-environments">KV Namespaces with environments</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-invalid-configurations" href="#invalid-configurations">Invalid configurations</a>
+                                <ul class="heading-list -depth-2">
+                                  <li class="heading-item -depth-3"><a class="hlink link-multiple-types" href="#multiple-types">Multiple types</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-same-name-for-multiple-environments" href="#same-name-for-multiple-environments">Same name for multiple environments</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-ambiguous-top-level-configuration" href="#ambiguous-top-level-configuration">Ambiguous top level configuration</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-defining-workers_dev-and-route" href="#defining-workers_dev-and-route">Defining workers_dev and route</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-backwards-compatibility" href="#backwards-compatibility">Backwards compatibility</a>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-overview" href="#overview">Overview</a>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-getting-started" href="#getting-started">Getting Started</a>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-concepts" href="#concepts">Concepts</a>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-kv:namespace" href="#kv:namespace">`kv:namespace`</a>
+                                <ul class="heading-list -depth-2">
+                                  <li class="heading-item -depth-3"><a class="hlink link-create" href="#create">`create`</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-list" href="#list">`list`</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-delete" href="#delete">`delete`</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-kv:key" href="#kv:key">`kv:key`</a>
+                                <ul class="heading-list -depth-2">
+                                  <li class="heading-item -depth-3"><a class="hlink link-put" href="#put">`put`</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-list" href="#list">`list`</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-get" href="#get">`get`</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-delete" href="#delete">`delete`</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-kv:bulk" href="#kv:bulk">`kv:bulk`</a>
+                                <ul class="heading-list -depth-2">
+                                  <li class="heading-item -depth-3"><a class="hlink link-put" href="#put">`put`</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-delete" href="#delete">`delete`</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-sensible-defaults" href="#sensible-defaults">Sensible Defaults</a>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-bring-your-own-configuration" href="#bring-your-own-configuration">Bring your own configuration</a>
+                                <ul class="heading-list -depth-2">
+                                  <li class="heading-item -depth-3"><a class="hlink link-example" href="#example">Example</a>
+                                  </li>
+                                  <li class="heading-item -depth-3"><a class="hlink link-example-with-multiple-environments" href="#example-with-multiple-environments">Example with multiple environments</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="heading-item -depth-2"><a class="hlink link-backwards-compatibility" href="#backwards-compatibility">Backwards Compatibility</a>
+                              </li>
+                            </ul>
+                            <ul class="submenu">
+                              <li class="menu-item -level-5"><a class="link title  link-dev-resourcescloud-flare-wrangler-conf" href="../dev-resources/cloud-flare-wrangler-conf.html">Configure</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu-item -level-4"><a class="link title -active link-dev-resourcescloud-flare-wrangler-2" href="../dev-resources/cloud-flare-wrangler.html">cloud flare api</a>
+                          </li>
+                          <li class="menu-item -level-4"><a class="link title  link-dev-resourcesserverlesscom" href="../dev-resources/serverless.com.html">serverless org</a>
+                          </li>
+                          <li class="menu-item -level-4"><a class="link title  link-dev-resourceshubot" href="../dev-resources/hubot.html">Hubot generator</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item -level-3 -parent"><a class="link title  link-databases" href="../databases/index.html">Data &amp; Databases</a>
+                        <ul class="submenu">
+                          <li class="menu-item -level-4"><a class="link title  link-databasesgraphql" href="../databases/graphql.html">GraphQL</a>
+                          </li>
+                          <li class="menu-item -level-4"><a class="link title  link-databasesnosql" href="../databases/noSQL.html">NoSQL</a>
+                          </li>
+                          <li class="menu-item -level-4"><a class="link title  link-databasessql" href="../databases/sql.html">SQL</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item -level-3 -parent"><a class="link title  link-policies" href="../policies/index.html">Policies</a>
+                        <ul class="submenu">
+                          <li class="menu-item -level-4"><a class="link title  link-policiesacceptable-use-policy" href="../policies/acceptable-use-policy.html">Acceptable Use Policies</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item -level-3"><a class="link title  link-resources" href="../resources/index.html">Resources</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="body page-dev-resourcescloud-flare-wrangler-2">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/CliffCrerar/dev-docz" data-title="CliffCrerar/dev-docz">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="cloudflare-wrangler-cli-ref">Cloudflare wrangler CLI ref</h1>
+<p><a href="https://github.com/cloudflare/wrangler#installation">Reference document link</a>;</p>
+<h1 id="environments">Environments</h1>
+<p>Environments is a feature that allows you to deploy the same project to multiple places under multiple names. These environments are utilized with the <code>--env</code> or <code>-e</code> flag on <code>wrangler build</code>, <code>wrangler preview</code>, and <code>wrangler publish</code>.</p>
+<h2 id="concepts">Concepts</h2>
+<p>&quot;top level configuration&quot; refers to the configuration values you specify at the top of your <code>wrangler.toml</code>
+&quot;environment configuration&quot; refers to the configuration values you specify under an <code>[env.name]</code> in your <code>wrangler.toml</code></p>
+<p>Here is an example <code>wrangler.toml</code> to illustrate</p>
+<pre><code class="lang-toml"><span class="pl-c"># top level configruation</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-dev&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">zone_id</span> = <span class="pl-s">&quot;09876543210987654321&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;dev.example.com/*&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">false</span>
+
+<span class="pl-c"># environment configuration</span>
+<span class="hljs-section">[env.staging]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-staging&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;staging.example.com/*&quot;</span>
+
+<span class="pl-c"># environment configuration</span>
+<span class="hljs-section">[env.production]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;example.com/*&quot;</span>
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>The most common use case for environments is deploying to a staging subdomain before your production environment. <code>wrangler publish</code> will look at your top level configuration, and you can specify other environments beneath it. Each of these environments will inherit the values from the top level configuration if they are not specified, with the following caveats.</p>
+<ul>
+<li><code>type</code> will always be inherited from the top-level configuration; you cannot specify different types for different environments.</li>
+<li>Fields that can be inherited from the top level are <code>account_id</code>, <code>zone_id</code>, <code>workers_dev</code>, and <code>webpack_config</code>. <code>kv_namespaces</code> and <code>route</code> must be defined for each environment and will not be inherited.</li>
+<li><code>name</code> is inherited. If left out of the environment configuration, a Worker project named <code>my-worker</code> with an environment <code>[env.dev]</code> would become <code>my-worker-dev</code>.</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<h4 id="top-level-configuration">Top level configuration</h4>
+<h5 id="routes">Routes</h5>
+<p>This <code>wrangler.toml</code> has no environments defined and will publish <code>my-worker</code> to <code>example.com/*</code></p>
+<pre><code class="lang-toml"><span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">zone_id</span> = <span class="pl-s">&quot;09876543210987654321&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;example.com/*&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">false</span> <span class="pl-c"># this field specifies that the worker should not be deployed to workers.dev</span>
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to example.com/*
+</code></pre>
+<h5 id="workers.dev">workers.dev</h5>
+<p>This <code>wrangler.toml</code> has no environments defined and will publish <code>my-worker</code> to <code>my-worker.&lt;your-subdomain&gt;.workers.dev</code></p>
+<pre><code class="lang-toml"><span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span> <span class="pl-c"># this field specifies that the worker should be deployed to workers.dev</span>
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to https://my-worker.&lt;your-subdomain&gt;.workers.dev
+</code></pre>
+<h4 id="introducing-environments">Introducing Environments</h4>
+<p>This <code>wrangler.toml</code> adds two environments to the base case.</p>
+<pre><code class="lang-toml"><span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-dev&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">zone_id</span> = <span class="pl-s">&quot;09876543210987654321&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;dev.example.com/*&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">false</span>
+<span class="hljs-section">
+[env.staging]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-staging&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;staging.example.com/*&quot;</span>
+<span class="hljs-section">
+[env.production]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;example.com/*&quot;</span>
+</code></pre>
+<p>In order to use environments with this configuration, you can pass the name of the environment via the <code>--env</code> flag.</p>
+<p>With this configuration, Wrangler will behave in the following manner:</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to dev.example.com/*
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish --env staging</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to staging.example.com/*
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish --env production</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to example.com/*
+</code></pre>
+<h4 id="staging-environment-with-workers.dev">Staging Environment with workers.dev</h4>
+<p>In order to deploy your code to workers.dev, you must include <code>workers_dev = true</code> in the desired environment. Your <code>wrangler.toml</code> may look like this:</p>
+<pre><code class="lang-toml"><span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">zone_id</span> = <span class="pl-s">&quot;09876543210987654321&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;example.com/*&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">false</span>
+<span class="hljs-section">
+[env.staging]</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span>
+</code></pre>
+<p>With this configuration, Wrangler will behave in the following manner:</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to example.com/*
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish --env staging</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to https://my-worker-staging.&lt;your-subdomain&gt;.workers.dev
+</code></pre>
+<h4 id="workers.dev-as-a-first-class-target">workers.dev as a first class target</h4>
+<p>If you only want to deploy to workers.dev you can configure Wrangler like so:</p>
+<pre><code class="lang-toml"><span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-dev&quot;</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span>
+<span class="hljs-section">
+[env.production]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-section">
+[env.staging]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-staging&quot;</span>
+</code></pre>
+<p>With this configuration, Wrangler will behave in the following manner:</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to https://my-worker-dev.&lt;your-subdomain&gt;.workers.dev
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish --env staging</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to https://my-worker-staging.&lt;your-subdomain&gt;.workers.dev
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish --env production</span>
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to https://my-worker.&lt;your-subdomain&gt;.workers.dev
+</code></pre>
+<h3 id="custom-webpack-configurations">Custom webpack configurations</h3>
+<p>You can specify different webpack configurations for different environments.</p>
+<pre><code class="lang-toml"><span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-dev&quot;</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span>
+<span class="hljs-attr">webpack_config</span> = <span class="pl-s">&quot;webpack.dev.js&quot;</span>
+<span class="hljs-section">
+[env.production]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">webpack_config</span> = <span class="pl-s">&quot;webpack.config.js&quot;</span>
+<span class="hljs-section">
+[env.staging]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-staging&quot;</span>
+</code></pre>
+<p>Your default <code>wrangler build</code>, <code>wrangler preview</code>, and <code>wrangler publish</code> commands will all build with <code>webpack.dev.js</code>, as will <code>wrangler build -e staging</code>, <code>wrangler preview -e staging</code>, and <code>wrangler publish -e staging</code>. <code>wrangler build -e production</code>, <code>wrangler preview -e production</code>, and <code>wrangler publish -e production</code> would all use your <code>webpack.config.js</code> file.</p>
+<h3 id="kv-namespaces-with-environments">KV Namespaces with environments</h3>
+<p>You can specify different kv namespaces for different environments.</p>
+<pre><code class="lang-toml">name = &quot;my-worker&quot;
+type = &quot;webpack&quot;
+account_id = &quot;12345678901234567890&quot;
+workers_dev = true
+kv-namespaces = [
+    { binding = &quot;KV&quot;, id = &quot;06779da6940b431db6e566b4846d64db&quot; }
+]
+
+[env.production]
+kv-namespaces = [
+    { binding = &quot;KV&quot;, id = &quot;bd46d6484b665e6bd134b0496ad97760&quot; }
+]
+</code></pre>
+<h2 id="invalid-configurations">Invalid configurations</h2>
+<h3 id="multiple-types">Multiple types</h3>
+<p>You cannot specify a type for each environment, type must be specified at the top level of your <code>wrangler.toml</code>.</p>
+<pre><code class="lang-toml"><span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">zone_id</span> = <span class="pl-s">&quot;09876543210987654321&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;example.com/*&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span>
+<span class="hljs-section">
+[env.staging]</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;rust&quot;</span>
+</code></pre>
+<p>Wrangler will not error with this configuration, it will build with the <code>webpack</code> type.</p>
+<h3 id="same-name-for-multiple-environments">Same name for multiple environments</h3>
+<p>You cannot specify multiple environments with the same name. If this were allowed, publishing each environment would overwrite your previously deployed worker, and the behavior would not be clear.</p>
+<pre><code class="lang-toml"><span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">zone_id</span> = <span class="pl-s">&quot;09876543210987654321&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;example.com/*&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">false</span>
+<span class="hljs-section">
+[env.staging]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span>
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish</span>
+Error: &#x26A0;&#xFE0F;  Each name in your `wrangler.toml` must be unique, this name is duplicated: my-worker
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish --env staging</span>
+Error: &#x26A0;&#xFE0F;  Each name in your `wrangler.toml` must be unique, this name is duplicated: my-worker
+</code></pre>
+<h3 id="ambiguous-top-level-configuration">Ambiguous top level configuration</h3>
+<pre><code class="lang-toml"><span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">zone_id</span> = <span class="pl-s">&quot;09876543210987654321&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;example.com/*
+</span></code></pre>
+<p>You will be warned if <code>workers_dev</code> is left out of the top level configuration because if it is not specified, it is unclear what the behavior of <code>wrangler publish</code> should be. See <a href="#Backwards-compatibility">the section on backwards compatibility</a> for more information.</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish</span>
+&#x26A0;&#xFE0F;  Please specify the workers_dev boolean in the top level of your wrangler.toml.
+&#x26A0;&#xFE0F;  If you do not add workers_dev, this command may act unexpectedly in v1.5.0. Please see https://github.com/cloudflare/wrangler/blob/master/docs/content/environments.md for more information.
+&#x2728;  Built successfully, built project size is 517 bytes.
+&#x2728;  Successfully published your script.
+&#x2728;  Success! Your worker was successfully published. You can view it at https://my-worker.&lt;your-subdomain&gt;.workers.dev
+</code></pre>
+<h3 id="defining-workers_dev-and-route">Defining workers_dev and route</h3>
+<pre><code class="lang-toml"><span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">zone_id</span> = <span class="pl-s">&quot;09876543210987654321&quot;</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;example.com/*&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span>
+<span class="hljs-section">
+[env.staging]</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;staging.example.com/*&quot;</span>
+</code></pre>
+<p>Wrangler will fail to publish to an environment where <code>route</code> is defined alongside <code>workers_dev = true</code>.</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish</span>
+Error: &#x26A0;&#xFE0F;  Your environment should only include `workers_dev` or `route`. If you are trying to publish to workers.dev, remove `route` from your wrangler.toml, if you are trying to publish to your own domain, remove `workers_dev`.
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish --env staging</span>
+Error: &#x26A0;&#xFE0F;  Your environment should only include `workers_dev` or `route`. If you are trying to publish to workers.dev, remove `route` from your wrangler.toml, if you are trying to publish to your own domain, remove `workers_dev`.
+</code></pre>
+<h2 id="backwards-compatibility">Backwards compatibility</h2>
+<p>Legacy <code>wrangler.toml</code> files will still work as expected during the initial rollout of this feature, however you will notice warnings when your configuration is ambigious. One of the goals of environments is to make it more obvious when you are deploying to a traditional worker with routes, and when you are deploying to a subdomain on workers.dev.</p>
+<p><strong>&#x26A0;&#xFE0F; Please note that this behavior will not be supported past v1.5.0!! &#x26A0;&#xFE0F;</strong></p>
+<p>A <code>wrangler.toml</code> before this release looks like this:</p>
+<pre><code class="lang-toml"><span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">zone_id</span> = <span class="pl-s">&quot;09876543210987654321&quot;</span>
+<span class="hljs-attr">private</span> = <span class="pl-c1">false</span>
+<span class="hljs-attr">route</span> = <span class="pl-s">&quot;example.com/*
+</span></code></pre>
+<p>With this configuration, Wrangler will behave in the following manner:</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish</span>
+&#x26A0;&#xFE0F;  The `private` field is deprecated; please use `workers_dev` to toggle between publishing to your workers.dev subdomain and your own domain.
+&#x26A0;&#xFE0F;  Please specify the workers_dev boolean in the top level of your wrangler.toml.
+&#x26A0;&#xFE0F;  If you do not add workers_dev, this command may act unexpectedly in v1.5.0. Please see https://github.com/cloudflare/wrangler/blob/master/docs/content/environments.md for more information.
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to https://my-worker.&lt;your-subdomain&gt;.workers.dev
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler publish --release</span>
+&#x26A0;&#xFE0F;  --release will be deprecated.
+&#x26A0;&#xFE0F;  The `private` field is deprecated; please use `workers_dev` to toggle between publishing to your workers.dev subdomain and your own domain.
+&#x26A0;&#xFE0F;  Please specify the workers_dev boolean in the top level of your wrangler.toml.
+&#x26A0;&#xFE0F;  If you do not add workers_dev, this command may act unexpectedly in v1.5.0. Please see https://github.com/cloudflare/wrangler/blob/master/docs/content/environments.md for more information.
+&#x2728;  Built successfully, built project size is 523 bytes.
+&#x2728;  Successfully published your script to example.com/*
+</code></pre>
+<p>This backwards compatibility is the reason that a warning is thrown if <code>workers_dev</code> is not specified at the top of <code>wrangler.toml</code>.</p>
+<p>It is important to note that both of these commands will issue a deprecation warning. To remove these warnings, you can configure Wrangler with the <code>workers_dev</code> boolean to separate deploys to workers.dev from deploys to workers routes.</p>
+<h1 id="kv">&#x1F5C2;&#xFE0F; <code>kv</code></h1>
+<h2 id="overview">Overview</h2>
+<p>The <code>kv</code> subcommand allows you to store application data in the Cloudflare network to be accessed from Workers, using
+<a href="https://www.cloudflare.com/products/workers-kv/">Workers KV</a>.
+KV operations are scoped to your account, so in order to use any of these commands, you need to:</p>
+<ul>
+<li>have a Wrangler project set up with your <code>account_id</code> configured in the <code>wrangler.toml</code></li>
+<li>call commands from within a Wrangler project directory.</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>To use Workers KV with your Worker, the first thing you must do is create a KV namespace. This is done with
+the <code>kv:namespace</code> subcommand.</p>
+<p>The <code>kv:namespace</code> subcommand takes as a new binding name as an argument. It will create a Worker KV namespace
+whose title is a concatenation of your Worker&apos;s name (from <code>wrangler.toml</code>) and the binding name you provide:</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:namespace create <span class="pl-s">&quot;MY_KV&quot;</span></span>
+&#x1F300;  Creating namespace with title &quot;worker-MY_KV&quot;
+&#x2728;  Success: WorkersKvNamespace {
+    id: &quot;e29b263ab50e42ce9b637fa8370175e8&quot;,
+    title: &quot;worker-MY_KV&quot;,
+}
+&#x2728;  Add the following to your wrangler.toml:
+kv-namespaces = [
+         { binding = &quot;MY_KV&quot;, id = &quot;e29b263ab50e42ce9b637fa8370175e8&quot; }
+]
+</code></pre>
+<p>Make sure to add the <code>kv-namespaces</code> output above to your <code>wrangler.toml</code>. You can now
+access it from a Worker with code like:</p>
+<pre><code class="lang-js"><span class="pl-k">let</span> value = <span class="pl-k">await</span> MY_KV.get(<span class="pl-s">&quot;my-key&quot;</span>);
+</code></pre>
+<p>The full KV API for Workers can be found <a href="https://developers.cloudflare.com/workers/reference/storage/">here</a>.</p>
+<p>To put a value to your KV namespace via Wrangler, use the <code>kv:key put</code> subcommand.</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:key put --binding=MY_KV <span class="pl-s">&quot;key&quot;</span> <span class="pl-s">&quot;value&quot;</span></span>
+&#x2728;  Success
+</code></pre>
+<p>You can also specify which namespace to put your key-value pair into using <code>--namespace-id</code> instead of <code>--binding</code>:</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:key put --namespace-id=e29b263ab50e42ce9b637fa8370175e8 <span class="pl-s">&quot;key&quot;</span> <span class="pl-s">&quot;value&quot;</span></span>
+&#x2728;  Success
+</code></pre>
+<p>Additionally, KV namespaces can be used with <a href>environments</a>! This is useful for when you have code that refers to
+a KV binding like <code>MY_KV</code>, and you want to be able to have these bindings point to different namespaces (like
+one for staging and one for production). So, if you have a <code>wrangler.toml</code> with two environments:</p>
+<pre><code class="lang-toml">[env.staging]
+kv-namespaces = [
+         { binding = &quot;MY_KV&quot;, id = &quot;e29b263ab50e42ce9b637fa8370175e8&quot; }
+]
+
+[env.production]
+kv-namespaces = [
+         { binding = &quot;MY_KV&quot;, id = &quot;a825455ce00f4f7282403da85269f8ea&quot; }
+]
+</code></pre>
+<p>To insert a value into a specific KV namespace, you can use</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:key put --env=staging --binding=MY_MV <span class="pl-s">&quot;key&quot;</span> <span class="pl-s">&quot;value&quot;</span></span>
+&#x2728;  Success
+</code></pre>
+<p>Since <code>--namespace-id</code> is always unique (unlike binding names), you don&apos;t need to pass environment variables for them (they will be unused).</p>
+<p>There are way more helpful Wrangler subcommands for interacting with Workers KV, like ones for bulk uploads and deletes--check them out below!</p>
+<h2 id="concepts">Concepts</h2>
+<p>Most <code>kv</code> commands require you to specify a namespace. A namespace can be specified in two ways:</p>
+<ol>
+<li>With a <code>--binding</code>:<pre><code class="lang-sh">wrangler kv:key get --binding=MY_KV <span class="pl-s">&quot;my key&quot;</span>
+</code></pre>
+</li>
+<li>With a <code>--namespace_id</code>:<pre><code class="lang-sh">wrangler kv:key get --namespace-id=06779da6940b431db6e566b4846d64db <span class="pl-s">&quot;my key&quot;</span>
+</code></pre>
+</li>
+</ol>
+<p>Most <code>kv</code> subcommands also allow you to specify an environment with the optional <code>--env</code> flag. This allows you to publish workers running the same code but with different namespaces. For example, you could use separate staging and production namespaces for KV data in your <code>wrangler.toml</code>:</p>
+<pre><code class="lang-toml">type = &quot;webpack&quot;
+name = &quot;my-worker&quot;
+account_id = &quot;&lt;account id here&gt;&quot;
+route = &quot;staging.example.com/*&quot;
+workers_dev = false
+
+kv-namespaces = [
+    { binding = &quot;MY_KV&quot;, id = &quot;06779da6940b431db6e566b4846d64db&quot; }
+]
+
+[env.production]
+route = &quot;example.com/*&quot;
+kv-namespaces = [
+    { binding = &quot;MY_KV&quot;, id = &quot;07bc1f3d1f2a4fd8a45a7e026e2681c6&quot; }
+]
+</code></pre>
+<p>With the wrangler.toml above, you can specify <code>--env production</code> when you want to perform a KV action on the namespace <code>MY_KV</code> under <code>env.production</code>. For example, with the wrangler.toml above, you can get a value out of a production KV instance with:</p>
+<pre><code class="lang-console">wrangler kv:key get --binding &quot;MY_KV&quot; --env=production &quot;my key&quot;
+</code></pre>
+<p>To learn more about environments, check out the <a href>environments documentation</a>.</p>
+<h2 id="kv:namespace"><code>kv:namespace</code></h2>
+<h3 id="create"><code>create</code></h3>
+<p>Creates a new namespace.</p>
+<p>Takes an optional <code>--env</code> <a href>environment</a> argument.</p>
+<h4 id="usage">Usage</h4>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:namespace create <span class="pl-s">&quot;MY_KV&quot;</span></span>
+&#x1F300;  Creating namespace with title &quot;worker-MY_KV&quot;
+&#x2728;  Success: WorkersKvNamespace {
+    id: &quot;e29b263ab50e42ce9b637fa8370175e8&quot;,
+    title: &quot;worker-MY_KV&quot;,
+}
+&#x2728;  Add the following to your wrangler.toml:
+kv-namespaces = [
+         { binding = &quot;MY_KV&quot;, id = &quot;e29b263ab50e42ce9b637fa8370175e8&quot; }
+]
+</code></pre>
+<h3 id="list"><code>list</code></h3>
+<p>Outputs a list of all KV namespaces associated with your account id.</p>
+<h4 id="usage">Usage</h4>
+<p>The example below uses the <code>jq</code> command line tool to pretty-print output.</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:namespace list | jq <span class="pl-s">&apos;.&apos;</span></span>
+[
+    {
+        &quot;id&quot;: &quot;06779da6940b431db6e566b4846d64db&quot;,
+        &quot;title&quot;: &quot;TEST_NAMESPACE&quot;
+    },
+    {
+        &quot;id&quot;: &quot;32ac1b3c2ed34ed3b397268817dea9ea&quot;,
+        &quot;title&quot;: &quot;STATIC_CONTENT&quot;
+    }
+]
+</code></pre>
+<h3 id="delete"><code>delete</code></h3>
+<p>Deletes a given namespace.</p>
+<p>Requires <code>--binding</code> or <code>--namespace-id</code> argument.</p>
+<p>Takes an optional <code>--env</code> <a href>environment</a> argument.</p>
+<h4 id="usage">Usage</h4>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:namespace delete --binding=MY_KV</span>
+Are you sure you want to delete namespace f7b02e7fc70443149ac906dd81ec1791? [y/n]
+yes
+&#x1F300;  Deleting namespace f7b02e7fc70443149ac906dd81ec1791
+&#x2728;  Success
+</code></pre>
+<h2 id="kv:key"><code>kv:key</code></h2>
+<h3 id="put"><code>put</code></h3>
+<p>Writes a single key/value pair to the given namespace.</p>
+<p>Requires <code>--binding</code> or <code>--namespace-id</code> argument.</p>
+<p>Optional params include:</p>
+<ol>
+<li><code>--env</code>: The <a href>environment</a> argument.</li>
+<li><code>--ttl</code>: Number of seconds for which the entries should be visible before they expire. At least 60. Takes precedence over &apos;expiration&apos; option.</li>
+<li><code>--expiration</code>: Number of seconds since the UNIX epoch, indicating when the key-value pair should expire.</li>
+<li><code>--path</code>: Read value from the file at a given path. <em>This is good for security-sensitive operations, like uploading keys to KV; uploading from a file prevents a key value from being saved in areas like your terminal history.</em></li>
+</ol>
+<h4 id="usage">Usage</h4>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:key put --binding=MY_KV <span class="pl-s">&quot;key&quot;</span> <span class="pl-s">&quot;value&quot;</span> --ttl=10000</span>
+&#x2728;  Success
+</code></pre>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:key put --binding=MY_KV <span class="pl-s">&quot;key&quot;</span> value.txt --path</span>
+&#x2728;  Success
+</code></pre>
+<h3 id="list"><code>list</code></h3>
+<p>Outputs a list of all keys in a given namespace.</p>
+<p>Requires <code>--binding</code> or <code>--namespace-id</code> argument.</p>
+<p>Optional params include:</p>
+<ol>
+<li><code>--env</code>: The <a href>environment</a> argument.</li>
+<li><code>--prefix</code>: A prefix to filter listed keys.</li>
+</ol>
+<h4 id="usage">Usage</h4>
+<p>The example below uses the <code>jq</code> command line tool to pretty-print output.</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:key list --binding=MY_KV --prefix=<span class="pl-s">&quot;public&quot;</span> | jq <span class="pl-s">&apos;.&apos;</span></span>
+[
+    {
+        &quot;name&quot;: &quot;public_key&quot;
+    },
+    {
+        &quot;name&quot;: &quot;public_key_with_expiration&quot;,
+        &quot;expiration&quot;: &quot;2019-09-10T23:18:58Z&quot;
+    }
+]
+</code></pre>
+<h3 id="get"><code>get</code></h3>
+<p>Reads a single value by key from the given namespace.</p>
+<p>Requires <code>--binding</code> or <code>--namespace-id</code> argument.</p>
+<p>Takes an optional <code>--env</code> <a href>environment</a> argument.</p>
+<h4 id="usage">Usage</h4>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:key get --binding=MY_KV <span class="pl-s">&quot;key&quot;</span></span>
+value
+</code></pre>
+<h3 id="delete"><code>delete</code></h3>
+<p>Removes a single key value pair from the given namespace.</p>
+<p>Requires <code>--binding</code> or <code>--namespace-id</code> argument.</p>
+<p>Takes an optional <code>--env</code> <a href>environment</a> argument.</p>
+<h4 id="usage">Usage</h4>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:key delete --binding=MY_KV <span class="pl-s">&quot;key&quot;</span></span>
+Are you sure you want to delete key &quot;key&quot;? [y/n]
+yes
+&#x1F300;  Deleting key &quot;key&quot;
+&#x2728;  Success
+</code></pre>
+<h2 id="kv:bulk"><code>kv:bulk</code></h2>
+<h3 id="put"><code>put</code></h3>
+<p>Requires <code>--binding</code> or <code>--namespace-id</code> argument.</p>
+<p>Writes a file full of key/value pairs to the given namespace. Takes as an argument a JSON file with a list of key-value pairs to upload (see JSON spec above). An example of JSON input:</p>
+<pre><code class="lang-json">[
+    {
+        <span class="hljs-attr">&quot;key&quot;</span>: <span class="pl-s">&quot;test_key&quot;</span>,
+        <span class="hljs-attr">&quot;value&quot;</span>: <span class="pl-s">&quot;test_value&quot;</span>,
+        <span class="hljs-attr">&quot;expiration_ttl&quot;</span>: <span class="hljs-number">3600</span>
+    }
+]
+</code></pre>
+<p>The schema below is the full schema for key-value entries uploaded via the bulk API:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Description</strong></th>
+<th>Optional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>key</code><br>(String)</td>
+<td>A key&apos;s name. The name may be at most 512 bytes. All printable, non-whitespace characters are valid.</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>value</code><br>(String)</td>
+<td>A UTF-8 encoded string to be stored, up to 2 MB in length.</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>expiration</code><br>(Number)</td>
+<td>The time, measured in number of seconds since the UNIX epoch, at which the key should expire.</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>expiration_ttl</code><br>(Number)</td>
+<td>The number of seconds for which the key should be visible before it expires. At least 60.</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>base64</code><br>(Boolean)</td>
+<td>Whether or not the server should base64 decode the value before storing it. Useful for writing values that wouldn&apos;t otherwise be valid JSON strings, such as images. Defaults to <code>false</code></td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>If both <code>expiration</code> and <code>expiration_ttl</code> are specified for a given key, the API will prefer <code>expiration_ttl</code>.</p>
+<p>The <code>put</code> command also takes an optional <code>--env</code> <a href>environment</a> argument.</p>
+<h4 id="usage">Usage</h4>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:bulk put --binding=MY_KV allthethingsupload.json</span>
+&#x2728;  Success
+</code></pre>
+<h3 id="delete"><code>delete</code></h3>
+<p>Requires <code>--binding</code> or <code>--namespace-id</code> argument.</p>
+<p>Deletes all specified keys within a given namespace.
+Takes as an argument a JSON file with a list of key-value pairs to delete (see JSON spec above). An example of JSON input:</p>
+<pre><code class="lang-json">[
+    {
+        <span class="hljs-attr">&quot;key&quot;</span>: <span class="pl-s">&quot;test_key&quot;</span>,
+        <span class="hljs-attr">&quot;value&quot;</span>: <span class="pl-s">&quot;test_value&quot;</span>,
+        <span class="hljs-attr">&quot;expiration_ttl&quot;</span>: <span class="hljs-number">3600</span>
+    }
+]
+</code></pre>
+<p>The <code>delete</code> command also takes an optional <code>--env</code> <a href>environment</a> argument.</p>
+<h4 id="usage">Usage</h4>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> wrangler kv:bulk delete --binding=MY_KV allthethingsdelete.json</span>
+Are you sure you want to delete all keys in allthethingsdelete.json? [y/n]
+yes
+&#x2728;  Success
+</code></pre>
+<h1 id="webpack">&#x1F984; Webpack</h1>
+<p>Out of the box, Wrangler allows you to develop modern ES6 applications with support for modules. This is because of the &#x1F9D9;&#x200D;&#x2642;&#xFE0F; magic of <a href="https://webpack.js.org/">webpack</a>. This document describes how Wrangler uses webpack to build your Workers, and how you can bring your own configuration.</p>
+<p><strong>IMPORTANT: In order for Wrangler to use webpack to bundle your worker scripts, you must set <code>type = &quot;webpack&quot;</code> in your <code>wrangler.toml</code>, no other types will build your script with webpack.</strong></p>
+<p>If you&apos;re here because you&apos;re seeing warnings about specifying <code>webpack_config</code>, click <a href="#backwards-compatibility">here</a></p>
+<h2 id="sensible-defaults">Sensible Defaults</h2>
+<p>This is the default webpack configuration that Wrangler uses to build your worker:</p>
+<pre><code class="lang-js"><span class="pl-c1">module</span>.exports = {
+  <span class="pl-s">&quot;target&quot;</span>: <span class="pl-s">&quot;webworker&quot;</span>,
+  <span class="pl-s">&quot;entry&quot;</span>: <span class="pl-s">&quot;./index.js&quot;</span> <span class="pl-c">// inferred from &quot;main&quot; in package.json</span>
+};
+</code></pre>
+<p>Our default configuration sets <code>target</code> to <code>webworker</code>. From the <a href="https://webpack.js.org/concepts/targets/">webpack docs</a>:</p>
+<blockquote>
+<p>Because JavaScript can be written for both server and browser, webpack offers multiple deployment targets that you can set in your webpack configuration.</p>
+</blockquote>
+<p>Cloudflare Workers are built to match the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service Worker API</a>, so we set our <code>target</code> to <code>webworker</code>.</p>
+<p>The <code>entry</code> field is taken directly from the <code>main</code> field in your <code>package.json</code>. To read more about the webpack <code>entry</code> property, click <a href="https://webpack.js.org/concepts/entry-points/">here</a>.</p>
+<h2 id="bring-your-own-configuration">Bring your own configuration</h2>
+<p>You can tell Wrangler to use a custom webpack configuration file by setting <code>webpack_config</code> in your <code>wrangler.toml</code>. You&apos;ll want to make sure that <code>target</code> is always <code>webworker</code>.</p>
+<h3 id="example">Example</h3>
+<p><code>webpack.config.js</code></p>
+<pre><code class="lang-js"><span class="pl-c1">module</span>.exports = {
+  <span class="pl-s">&quot;target&quot;</span>: <span class="pl-s">&quot;webworker&quot;</span>,
+  <span class="pl-s">&quot;entry&quot;</span>: <span class="pl-s">&quot;./index.js&quot;</span>,
+  <span class="pl-s">&quot;mode&quot;</span>: <span class="pl-s">&quot;production&quot;</span>
+}
+</code></pre>
+<p><code>wrangler.toml</code></p>
+<pre><code class="lang-toml"><span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span>
+<span class="hljs-attr">webpack_config</span> = <span class="pl-s">&quot;webpack.config.js&quot;</span>
+</code></pre>
+<h3 id="example-with-multiple-environments">Example with multiple environments</h3>
+<p><code>wrangler.toml</code></p>
+<pre><code class="lang-toml"><span class="hljs-attr">type</span> = <span class="pl-s">&quot;webpack&quot;</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-dev&quot;</span>
+<span class="hljs-attr">account_id</span> = <span class="pl-s">&quot;12345678901234567890&quot;</span>
+<span class="hljs-attr">workers_dev</span> = <span class="pl-c1">true</span>
+<span class="hljs-attr">webpack_config</span> = <span class="pl-s">&quot;webpack.development.js&quot;</span>
+<span class="hljs-section">
+[env.staging]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-staging&quot;</span>
+<span class="hljs-attr">webpack_config</span> = <span class="pl-s">&quot;webpack.production.js&quot;</span>
+<span class="hljs-section">
+[env.production]</span>
+<span class="hljs-attr">name</span> = <span class="pl-s">&quot;my-worker-production&quot;</span>
+<span class="hljs-attr">webpack_config</span> = <span class="pl-s">&quot;webpack.production.js&quot;</span>
+</code></pre>
+<p><code>webpack.development.js</code></p>
+<pre><code class="lang-js"><span class="pl-c1">module</span>.exports = {
+  <span class="pl-s">&quot;target&quot;</span>: <span class="pl-s">&quot;webworker&quot;</span>,
+  <span class="pl-s">&quot;entry&quot;</span>: <span class="pl-s">&quot;./index.js&quot;</span>,
+  <span class="pl-s">&quot;mode&quot;</span>: <span class="pl-s">&quot;development&quot;</span>
+}
+</code></pre>
+<p><code>webpack.production.js</code></p>
+<pre><code class="lang-js"><span class="pl-c1">module</span>.exports = {
+  <span class="pl-s">&quot;target&quot;</span>: <span class="pl-s">&quot;webworker&quot;</span>,
+  <span class="pl-s">&quot;entry&quot;</span>: <span class="pl-s">&quot;./index.js&quot;</span>,
+  <span class="pl-s">&quot;mode&quot;</span>: <span class="pl-s">&quot;production&quot;</span>
+}
+</code></pre>
+<h2 id="backwards-compatibility">Backwards Compatibility</h2>
+<p>If you are using a version of Wrangler before 1.6.0, worker projects will simply use any <code>webpack.config.js</code> that is in the root of your project. This is not always obvious, so we plan to require that you specify <code>webpack_config</code> in your <code>wrangler.toml</code> if you would like to use it. If you&apos;re seeing this warning and would like to use your <code>webpack.config.js</code>, simply add <code>webpack_config = &quot;webpack.config.js&quot;</code> to your wrangler.toml.</p>
+<p>If you are using Workers Sites and want to specify your own webpack configuration, you will always need to specify this. By default, Wrangler will not assume the <code>webpack.config.js</code> at the root of your project is meant to be used for building your Worker.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../dev-resources/freenom-api.html"><span class="title">freenom api</span></a></div>
+          <div class="right"><a href="../dev-resources/cloud-flare-wrangler-conf.html"><span class="label">Next: </span><span class="title">Configure</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -4,7 +4,7 @@ DOCUMENTATION
 * [DEV DOCS](../README.md)
 * [About](./about/README.md)
 
-* [Google dev stuff]('./google/README.md)
+* [Google dev stuff](./google/README.md)
 
 * [Devdocs.io](./devdocsio/README.md)
 
@@ -26,9 +26,9 @@ DOCUMENTATION
 * [Dev Resources](./dev-resources/README.md)
     * [Eslint Rules](./dev-resources/eslint-rules.md)
     * [hugo-themes](./dev-resources/hugo-themes.md)
-    * [freenom api](./dev-resources/freenon-api.md)
+    * [freenom api](./dev-resources/freenom-api.md)
     * [cloud flare wrangler](./dev-resources/cloud-flare-wrangler.md)
-        * [Configure](./dev-resources/cloud-flare-wrangler-configure.md)
+        * [Configure](./dev-resources/cloud-flare-wrangler-conf.md)
     * [cloud flare api](./dev-resources/cloud-flare-wrangler.md)
     * [serverless org](./dev-resources/serverless.com.md)
     * [Hubot generator](./dev-resources/hubot.md)
