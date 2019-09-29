@@ -14,3 +14,5 @@ Build TODO list
 5. [templates](https://developers.cloudflare.com/workers/templates/) nodejs google cloud
 
 6. [Cloudflare appolloDB](https://developers.cloudflare.com/workers/templates/featured_boilerplates/graphql/)
+
+7. [Serverless graphql blog](https://github.com/serverless/serverless-graphql-blog.git)

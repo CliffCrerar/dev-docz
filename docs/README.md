@@ -13,16 +13,24 @@ DOCUMENTATION
     * [Partner](./aws/partner-resources.md)
     * [Training](./aws/training-resources.md)
 
+* [Azure cloud](./azure/README.md)
+
 * [Saved Exercises](./exercise/README.md)
 
 * Experience
     * [Application](./exp/README.md)
+    
+
+* [serverless with phemonic.io](./serverless-phemonic/README.md)
 
 * [Dev Resources](./dev-resources/README.md)
     * [Eslint Rules](./dev-resources/eslint-rules.md)
     * [hugo-themes](./dev-resources/hugo-themes.md)
-    * [hugo-themes](./dev-resources/freenon-api.md)
-    * [hugo-themes](./dev-resources/cloud-flare-wrangler.md)
+    * [freenom api](./dev-resources/freenon-api.md)
+    * [cloud flare wrangler](./dev-resources/cloud-flare-wrangler.md)
+    * [cloud flare api](./dev-resources/cloud-flare-wrangler.md)
+    * [serverless org](./dev-resources/serverless.com.md)
+    * [Hubot generator](./dev-resources/hubot.md)
 
 * [Data & Databases](./databases/README.md)
     * [GraphQL](./databases/graphql.md)
