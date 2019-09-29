@@ -14,7 +14,7 @@
         "slug": "about"
       },
       {
-        "title": "Google dev stuff",
+        "title": "Google Dev Stuff",
         "source": "docs/google/README.md",
         "url": "google/index.html",
         "slug": "google",
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "title": "Azure cloud",
+        "title": "Azure Cloud",
         "source": "docs/azure/README.md",
         "url": "azure/index.html",
         "slug": "azure"
@@ -108,385 +108,405 @@
         ]
       },
       {
-        "title": "Experience",
+        "title": "Application",
+        "source": "docs/exp/README.md",
+        "url": "exp/index.html",
+        "slug": "exp"
+      },
+      {
+        "title": "Serverless with Phemonic.io",
+        "source": "docs/serverless-phemonic/README.md",
+        "url": "serverless-phemonic/index.html",
+        "slug": "serverless-phemonic"
+      },
+      {
+        "title": "Dev Resources",
+        "source": "docs/dev-resources/README.md",
+        "url": "dev-resources/index.html",
+        "slug": "dev-resources",
         "sections": [
           {
-            "title": "Application",
-            "source": "docs/exp/README.md",
-            "url": "exp/index.html",
-            "slug": "exp",
-            "sections": [
+            "title": "Eslint Rules",
+            "source": "docs/dev-resources/eslint-rules.md",
+            "url": "dev-resources/eslint-rules.html",
+            "slug": "dev-resourceseslint-rules"
+          },
+          {
+            "title": "Hugo Themes",
+            "source": "docs/dev-resources/hugo-themes.md",
+            "url": "dev-resources/hugo-themes.html",
+            "slug": "dev-resourceshugo-themes"
+          },
+          {
+            "title": "Freenom API",
+            "source": "docs/dev-resources/freenom-api.md",
+            "url": "dev-resources/freenom-api.html",
+            "slug": "dev-resourcesfreenom-api"
+          },
+          {
+            "title": "Cloud Flare API",
+            "source": "docs/dev-resources/cloud-flare-wrangler.md",
+            "url": "dev-resources/cloud-flare-wrangler.html",
+            "slug": "dev-resourcescloud-flare-wrangler",
+            "headings": [
               {
-                "title": "serverless with phemonic.io",
-                "source": "docs/serverless-phemonic/README.md",
-                "url": "serverless-phemonic/index.html",
-                "slug": "serverless-phemonic"
+                "title": "Concepts",
+                "depth": 2,
+                "id": "concepts"
               },
               {
-                "title": "Dev Resources",
-                "source": "docs/dev-resources/README.md",
-                "url": "dev-resources/index.html",
-                "slug": "dev-resources",
-                "sections": [
-                  {
-                    "title": "Eslint Rules",
-                    "source": "docs/dev-resources/eslint-rules.md",
-                    "url": "dev-resources/eslint-rules.html",
-                    "slug": "dev-resourceseslint-rules"
-                  },
-                  {
-                    "title": "hugo-themes",
-                    "source": "docs/dev-resources/hugo-themes.md",
-                    "url": "dev-resources/hugo-themes.html",
-                    "slug": "dev-resourceshugo-themes"
-                  },
-                  {
-                    "title": "freenom api",
-                    "source": "docs/dev-resources/freenom-api.md",
-                    "url": "dev-resources/freenom-api.html",
-                    "slug": "dev-resourcesfreenom-api"
-                  },
-                  {
-                    "title": "cloud flare wrangler",
-                    "source": "docs/dev-resources/cloud-flare-wrangler.md",
-                    "url": "dev-resources/cloud-flare-wrangler.html",
-                    "slug": "dev-resourcescloud-flare-wrangler",
-                    "headings": [
-                      {
-                        "title": "Concepts",
-                        "depth": 2,
-                        "id": "concepts"
-                      },
-                      {
-                        "title": "Usage",
-                        "depth": 2,
-                        "id": "usage",
-                        "headings": [
-                          {
-                            "title": "Examples",
-                            "depth": 3,
-                            "id": "examples"
-                          },
-                          {
-                            "title": "Custom webpack configurations",
-                            "depth": 3,
-                            "id": "custom-webpack-configurations"
-                          },
-                          {
-                            "title": "KV Namespaces with environments",
-                            "depth": 3,
-                            "id": "kv-namespaces-with-environments"
-                          }
-                        ]
-                      },
-                      {
-                        "title": "Invalid configurations",
-                        "depth": 2,
-                        "id": "invalid-configurations",
-                        "headings": [
-                          {
-                            "title": "Multiple types",
-                            "depth": 3,
-                            "id": "multiple-types"
-                          },
-                          {
-                            "title": "Same name for multiple environments",
-                            "depth": 3,
-                            "id": "same-name-for-multiple-environments"
-                          },
-                          {
-                            "title": "Ambiguous top level configuration",
-                            "depth": 3,
-                            "id": "ambiguous-top-level-configuration"
-                          },
-                          {
-                            "title": "Defining workers_dev and route",
-                            "depth": 3,
-                            "id": "defining-workers_dev-and-route"
-                          }
-                        ]
-                      },
-                      {
-                        "title": "Backwards compatibility",
-                        "depth": 2,
-                        "id": "backwards-compatibility"
-                      },
-                      {
-                        "title": "Overview",
-                        "depth": 2,
-                        "id": "overview"
-                      },
-                      {
-                        "title": "Getting Started",
-                        "depth": 2,
-                        "id": "getting-started"
-                      },
-                      {
-                        "title": "Concepts",
-                        "depth": 2,
-                        "id": "concepts"
-                      },
-                      {
-                        "title": "`kv:namespace`",
-                        "depth": 2,
-                        "id": "kv:namespace",
-                        "headings": [
-                          {
-                            "title": "`create`",
-                            "depth": 3,
-                            "id": "create"
-                          },
-                          {
-                            "title": "`list`",
-                            "depth": 3,
-                            "id": "list"
-                          },
-                          {
-                            "title": "`delete`",
-                            "depth": 3,
-                            "id": "delete"
-                          }
-                        ]
-                      },
-                      {
-                        "title": "`kv:key`",
-                        "depth": 2,
-                        "id": "kv:key",
-                        "headings": [
-                          {
-                            "title": "`put`",
-                            "depth": 3,
-                            "id": "put"
-                          },
-                          {
-                            "title": "`list`",
-                            "depth": 3,
-                            "id": "list"
-                          },
-                          {
-                            "title": "`get`",
-                            "depth": 3,
-                            "id": "get"
-                          },
-                          {
-                            "title": "`delete`",
-                            "depth": 3,
-                            "id": "delete"
-                          }
-                        ]
-                      },
-                      {
-                        "title": "`kv:bulk`",
-                        "depth": 2,
-                        "id": "kv:bulk",
-                        "headings": [
-                          {
-                            "title": "`put`",
-                            "depth": 3,
-                            "id": "put"
-                          },
-                          {
-                            "title": "`delete`",
-                            "depth": 3,
-                            "id": "delete"
-                          }
-                        ]
-                      },
-                      {
-                        "title": "Sensible Defaults",
-                        "depth": 2,
-                        "id": "sensible-defaults"
-                      },
-                      {
-                        "title": "Bring your own configuration",
-                        "depth": 2,
-                        "id": "bring-your-own-configuration",
-                        "headings": [
-                          {
-                            "title": "Example",
-                            "depth": 3,
-                            "id": "example"
-                          },
-                          {
-                            "title": "Example with multiple environments",
-                            "depth": 3,
-                            "id": "example-with-multiple-environments"
-                          }
-                        ]
-                      },
-                      {
-                        "title": "Backwards Compatibility",
-                        "depth": 2,
-                        "id": "backwards-compatibility"
-                      }
-                    ],
-                    "sections": [
-                      {
-                        "title": "Configure",
-                        "source": "docs/dev-resources/cloud-flare-wrangler-conf.md",
-                        "url": "dev-resources/cloud-flare-wrangler-conf.html",
-                        "slug": "dev-resourcescloud-flare-wrangler-conf"
-                      }
-                    ]
-                  },
-                  {
-                    "title": "cloud flare api",
-                    "source": "docs/dev-resources/cloud-flare-wrangler.md",
-                    "url": "dev-resources/cloud-flare-wrangler.html",
-                    "slug": "dev-resourcescloud-flare-wrangler-2"
-                  },
-                  {
-                    "title": "serverless org",
-                    "source": "docs/dev-resources/serverless.com.md",
-                    "url": "dev-resources/serverless.com.html",
-                    "slug": "dev-resourcesserverlesscom"
-                  },
-                  {
-                    "title": "Hubot generator",
-                    "source": "docs/dev-resources/hubot.md",
-                    "url": "dev-resources/hubot.html",
-                    "slug": "dev-resourceshubot",
-                    "headings": [
-                      {
-                        "title": "permalink: /docs/",
-                        "depth": 2,
-                        "id": "permalink:-docs"
-                      },
-                      {
-                        "title": "Getting Started With Hubot",
-                        "depth": 2,
-                        "id": "getting-started-with-hubot"
-                      },
-                      {
-                        "title": "Scripts",
-                        "depth": 2,
-                        "id": "scripts"
-                      },
-                      {
-                        "title": "Adapters",
-                        "depth": 2,
-                        "id": "adapters"
-                      },
-                      {
-                        "title": "Deploying",
-                        "depth": 2,
-                        "id": "deploying"
-                      },
-                      {
-                        "title": "Patterns",
-                        "depth": 2,
-                        "id": "patterns"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "title": "Data & Databases",
-                "source": "docs/databases/README.md",
-                "url": "databases/index.html",
-                "slug": "databases",
-                "sections": [
-                  {
-                    "title": "GraphQL",
-                    "source": "docs/databases/graphql.md",
-                    "url": "databases/graphql.html",
-                    "slug": "databasesgraphql",
-                    "headings": [
-                      {
-                        "title": "Principles of GraphQL",
-                        "depth": 2,
-                        "id": "principles-of-graphql"
-                      }
-                    ]
-                  },
-                  {
-                    "title": "NoSQL",
-                    "source": "docs/databases/noSQL.md",
-                    "url": "databases/noSQL.html",
-                    "slug": "databasesnosql"
-                  },
-                  {
-                    "title": "SQL",
-                    "source": "docs/databases/sql.md",
-                    "url": "databases/sql.html",
-                    "slug": "databasessql"
-                  }
-                ]
-              },
-              {
-                "title": "Policies",
-                "source": "docs/policies/README.md",
-                "url": "policies/index.html",
-                "slug": "policies",
-                "sections": [
-                  {
-                    "title": "Acceptable Use Policies",
-                    "source": "docs/policies/acceptable-use-policy.md",
-                    "url": "policies/acceptable-use-policy.html",
-                    "slug": "policiesacceptable-use-policy"
-                  }
-                ]
-              },
-              {
-                "title": "Resources",
-                "source": "docs/resources/README.md",
-                "url": "resources/index.html",
-                "slug": "resources",
+                "title": "Usage",
+                "depth": 2,
+                "id": "usage",
                 "headings": [
                   {
-                    "title": "Serve static files",
-                    "depth": 2,
-                    "id": "serve-static-files"
+                    "title": "Examples",
+                    "depth": 3,
+                    "id": "examples"
                   },
                   {
-                    "title": "Deploy Sanity Studio",
-                    "depth": 2,
-                    "id": "deploy-sanity-studio"
+                    "title": "Custom webpack configurations",
+                    "depth": 3,
+                    "id": "custom-webpack-configurations"
                   },
                   {
-                    "title": "Gridsome sites",
-                    "depth": 2,
-                    "id": "gridsome-sites"
-                  },
-                  {
-                    "title": "Now Examples",
-                    "depth": 2,
-                    "id": "now-examples"
-                  },
-                  {
-                    "title": "awesome zeit",
-                    "depth": 2,
-                    "id": "awesome-zeit"
-                  },
-                  {
-                    "title": "zeit open source",
-                    "depth": 2,
-                    "id": "zeit-open-source"
-                  },
-                  {
-                    "title": "X term",
-                    "depth": 2,
-                    "id": "x-term"
-                  },
-                  {
-                    "title": "UID promise",
-                    "depth": 2,
-                    "id": "uid-promise"
-                  },
-                  {
-                    "title": "HTML Arrows",
-                    "depth": 2,
-                    "id": "html-arrows"
-                  },
-                  {
-                    "title": "FLutter",
-                    "depth": 2,
-                    "id": "flutter"
+                    "title": "KV Namespaces with environments",
+                    "depth": 3,
+                    "id": "kv-namespaces-with-environments"
                   }
                 ]
+              },
+              {
+                "title": "Invalid configurations",
+                "depth": 2,
+                "id": "invalid-configurations",
+                "headings": [
+                  {
+                    "title": "Multiple types",
+                    "depth": 3,
+                    "id": "multiple-types"
+                  },
+                  {
+                    "title": "Same name for multiple environments",
+                    "depth": 3,
+                    "id": "same-name-for-multiple-environments"
+                  },
+                  {
+                    "title": "Ambiguous top level configuration",
+                    "depth": 3,
+                    "id": "ambiguous-top-level-configuration"
+                  },
+                  {
+                    "title": "Defining workers_dev and route",
+                    "depth": 3,
+                    "id": "defining-workers_dev-and-route"
+                  }
+                ]
+              },
+              {
+                "title": "Backwards compatibility",
+                "depth": 2,
+                "id": "backwards-compatibility"
+              },
+              {
+                "title": "Overview",
+                "depth": 2,
+                "id": "overview"
+              },
+              {
+                "title": "Getting Started",
+                "depth": 2,
+                "id": "getting-started"
+              },
+              {
+                "title": "Concepts",
+                "depth": 2,
+                "id": "concepts"
+              },
+              {
+                "title": "`kv:namespace`",
+                "depth": 2,
+                "id": "kv:namespace",
+                "headings": [
+                  {
+                    "title": "`create`",
+                    "depth": 3,
+                    "id": "create"
+                  },
+                  {
+                    "title": "`list`",
+                    "depth": 3,
+                    "id": "list"
+                  },
+                  {
+                    "title": "`delete`",
+                    "depth": 3,
+                    "id": "delete"
+                  }
+                ]
+              },
+              {
+                "title": "`kv:key`",
+                "depth": 2,
+                "id": "kv:key",
+                "headings": [
+                  {
+                    "title": "`put`",
+                    "depth": 3,
+                    "id": "put"
+                  },
+                  {
+                    "title": "`list`",
+                    "depth": 3,
+                    "id": "list"
+                  },
+                  {
+                    "title": "`get`",
+                    "depth": 3,
+                    "id": "get"
+                  },
+                  {
+                    "title": "`delete`",
+                    "depth": 3,
+                    "id": "delete"
+                  }
+                ]
+              },
+              {
+                "title": "`kv:bulk`",
+                "depth": 2,
+                "id": "kv:bulk",
+                "headings": [
+                  {
+                    "title": "`put`",
+                    "depth": 3,
+                    "id": "put"
+                  },
+                  {
+                    "title": "`delete`",
+                    "depth": 3,
+                    "id": "delete"
+                  }
+                ]
+              },
+              {
+                "title": "Sensible Defaults",
+                "depth": 2,
+                "id": "sensible-defaults"
+              },
+              {
+                "title": "Bring your own configuration",
+                "depth": 2,
+                "id": "bring-your-own-configuration",
+                "headings": [
+                  {
+                    "title": "Example",
+                    "depth": 3,
+                    "id": "example"
+                  },
+                  {
+                    "title": "Example with multiple environments",
+                    "depth": 3,
+                    "id": "example-with-multiple-environments"
+                  }
+                ]
+              },
+              {
+                "title": "Backwards Compatibility",
+                "depth": 2,
+                "id": "backwards-compatibility"
               }
             ]
+          },
+          {
+            "title": "Cloud Flare Wrangler",
+            "source": "docs/dev-resources/cloud-flare-wrangler.md",
+            "url": "dev-resources/cloud-flare-wrangler.html",
+            "slug": "dev-resourcescloud-flare-wrangler-2"
+          },
+          {
+            "title": "Configure",
+            "source": "docs/dev-resources/cloud-flare-wrangler-conf.md",
+            "url": "dev-resources/cloud-flare-wrangler-conf.html",
+            "slug": "dev-resourcescloud-flare-wrangler-conf",
+            "headings": [
+              {
+                "title": "Finding Your Cloudflare API Keys",
+                "depth": 2,
+                "id": "finding-your-cloudflare-api-keys"
+              },
+              {
+                "title": "Account ID and Zone ID",
+                "depth": 2,
+                "id": "account-id-and-zone-id",
+                "headings": [
+                  {
+                    "title": "Registered Domains",
+                    "depth": 3,
+                    "id": "registered-domains"
+                  },
+                  {
+                    "title": "Global API Key",
+                    "depth": 3,
+                    "id": "global-api-key"
+                  }
+                ]
+              },
+              {
+                "title": "Setup",
+                "depth": 2,
+                "id": "setup"
+              }
+            ]
+          },
+          {
+            "title": "Serverless org",
+            "source": "docs/dev-resources/serverless.com.md",
+            "url": "dev-resources/serverless.com.html",
+            "slug": "dev-resourcesserverlesscom"
+          },
+          {
+            "title": "Hubot generator",
+            "source": "docs/dev-resources/hubot.md",
+            "url": "dev-resources/hubot.html",
+            "slug": "dev-resourceshubot",
+            "headings": [
+              {
+                "title": "permalink: /docs/",
+                "depth": 2,
+                "id": "permalink:-docs"
+              },
+              {
+                "title": "Getting Started With Hubot",
+                "depth": 2,
+                "id": "getting-started-with-hubot"
+              },
+              {
+                "title": "Scripts",
+                "depth": 2,
+                "id": "scripts"
+              },
+              {
+                "title": "Adapters",
+                "depth": 2,
+                "id": "adapters"
+              },
+              {
+                "title": "Deploying",
+                "depth": 2,
+                "id": "deploying"
+              },
+              {
+                "title": "Patterns",
+                "depth": 2,
+                "id": "patterns"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Data & Databases",
+        "source": "docs/databases/README.md",
+        "url": "databases/index.html",
+        "slug": "databases",
+        "sections": [
+          {
+            "title": "GraphQL",
+            "source": "docs/databases/graphql.md",
+            "url": "databases/graphql.html",
+            "slug": "databasesgraphql",
+            "headings": [
+              {
+                "title": "Principles of GraphQL",
+                "depth": 2,
+                "id": "principles-of-graphql"
+              }
+            ]
+          },
+          {
+            "title": "NoSQL",
+            "source": "docs/databases/noSQL.md",
+            "url": "databases/noSQL.html",
+            "slug": "databasesnosql"
+          },
+          {
+            "title": "SQL",
+            "source": "docs/databases/sql.md",
+            "url": "databases/sql.html",
+            "slug": "databasessql"
+          }
+        ]
+      },
+      {
+        "title": "Policies",
+        "source": "docs/policies/README.md",
+        "url": "policies/index.html",
+        "slug": "policies",
+        "sections": [
+          {
+            "title": "Acceptable Use Policies",
+            "source": "docs/policies/acceptable-use-policy.md",
+            "url": "policies/acceptable-use-policy.html",
+            "slug": "policiesacceptable-use-policy"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "source": "docs/resources/README.md",
+        "url": "resources/index.html",
+        "slug": "resources",
+        "headings": [
+          {
+            "title": "Serve static files",
+            "depth": 2,
+            "id": "serve-static-files"
+          },
+          {
+            "title": "Deploy Sanity Studio",
+            "depth": 2,
+            "id": "deploy-sanity-studio"
+          },
+          {
+            "title": "Gridsome sites",
+            "depth": 2,
+            "id": "gridsome-sites"
+          },
+          {
+            "title": "Now Examples",
+            "depth": 2,
+            "id": "now-examples"
+          },
+          {
+            "title": "awesome zeit",
+            "depth": 2,
+            "id": "awesome-zeit"
+          },
+          {
+            "title": "zeit open source",
+            "depth": 2,
+            "id": "zeit-open-source"
+          },
+          {
+            "title": "X term",
+            "depth": 2,
+            "id": "x-term"
+          },
+          {
+            "title": "UID promise",
+            "depth": 2,
+            "id": "uid-promise"
+          },
+          {
+            "title": "HTML Arrows",
+            "depth": 2,
+            "id": "html-arrows"
+          },
+          {
+            "title": "FLutter",
+            "depth": 2,
+            "id": "flutter"
           }
         ]
       }
@@ -507,8 +527,8 @@
     },
     "google/index.html": {
       "source": "docs/google/README.md",
-      "title": "Google dev stuff - DEV DOCS",
-      "pageTitle": "Google dev stuff",
+      "title": "Google Dev Stuff - DEV DOCS",
+      "pageTitle": "Google Dev Stuff",
       "slug": "google",
       "headings": [
         {
@@ -565,8 +585,8 @@
     },
     "azure/index.html": {
       "source": "docs/azure/README.md",
-      "title": "Azure cloud - DEV DOCS",
-      "pageTitle": "Azure cloud",
+      "title": "Azure Cloud - DEV DOCS",
+      "pageTitle": "Azure Cloud",
       "slug": "azure"
     },
     "exercise/index.html": {
@@ -605,8 +625,8 @@
     },
     "serverless-phemonic/index.html": {
       "source": "docs/serverless-phemonic/README.md",
-      "title": "serverless with phemonic.io - DEV DOCS",
-      "pageTitle": "serverless with phemonic.io",
+      "title": "Serverless with Phemonic.io - DEV DOCS",
+      "pageTitle": "Serverless with Phemonic.io",
       "slug": "serverless-phemonic"
     },
     "dev-resources/index.html": {
@@ -623,32 +643,61 @@
     },
     "dev-resources/hugo-themes.html": {
       "source": "docs/dev-resources/hugo-themes.md",
-      "title": "hugo-themes - DEV DOCS",
-      "pageTitle": "hugo-themes",
+      "title": "Hugo Themes - DEV DOCS",
+      "pageTitle": "Hugo Themes",
       "slug": "dev-resourceshugo-themes"
     },
     "dev-resources/freenom-api.html": {
       "source": "docs/dev-resources/freenom-api.md",
-      "title": "freenom api - DEV DOCS",
-      "pageTitle": "freenom api",
+      "title": "Freenom API - DEV DOCS",
+      "pageTitle": "Freenom API",
       "slug": "dev-resourcesfreenom-api"
     },
     "dev-resources/cloud-flare-wrangler.html": {
       "source": "docs/dev-resources/cloud-flare-wrangler.md",
-      "title": "cloud flare api - DEV DOCS",
-      "pageTitle": "cloud flare api",
+      "title": "Cloud Flare Wrangler - DEV DOCS",
+      "pageTitle": "Cloud Flare Wrangler",
       "slug": "dev-resourcescloud-flare-wrangler-2"
     },
     "dev-resources/cloud-flare-wrangler-conf.html": {
       "source": "docs/dev-resources/cloud-flare-wrangler-conf.md",
       "title": "Configure - DEV DOCS",
       "pageTitle": "Configure",
-      "slug": "dev-resourcescloud-flare-wrangler-conf"
+      "slug": "dev-resourcescloud-flare-wrangler-conf",
+      "headings": [
+        {
+          "title": "Finding Your Cloudflare API Keys",
+          "depth": 2,
+          "id": "finding-your-cloudflare-api-keys"
+        },
+        {
+          "title": "Account ID and Zone ID",
+          "depth": 2,
+          "id": "account-id-and-zone-id",
+          "headings": [
+            {
+              "title": "Registered Domains",
+              "depth": 3,
+              "id": "registered-domains"
+            },
+            {
+              "title": "Global API Key",
+              "depth": 3,
+              "id": "global-api-key"
+            }
+          ]
+        },
+        {
+          "title": "Setup",
+          "depth": 2,
+          "id": "setup"
+        }
+      ]
     },
     "dev-resources/serverless.com.html": {
       "source": "docs/dev-resources/serverless.com.md",
-      "title": "serverless org - DEV DOCS",
-      "pageTitle": "serverless org",
+      "title": "Serverless org - DEV DOCS",
+      "pageTitle": "Serverless org",
       "slug": "dev-resourcesserverlesscom"
     },
     "dev-resources/hubot.html": {
@@ -825,11 +874,11 @@
     "docs/old_pages/AWS/aws-compliance-videos.mdx": "old_pages/AWS/aws-compliance-videos.mdx",
     "docs/old_pages/AWS/dotnet-auth-app.mdx": "old_pages/AWS/dotnet-auth-app.mdx",
     "docs/old_pages/AWS/gloud-vm-snapshot.mdx": "old_pages/AWS/gloud-vm-snapshot.mdx",
+    "docs/old_pages/circle-back/circle-back.mdx": "old_pages/circle-back/circle-back.mdx",
+    "docs/old_pages/css/css-animations": "old_pages/css/css-animations",
+    "docs/old_pages/dom-events/list-of-dom-events": "old_pages/dom-events/list-of-dom-events",
     "docs/old_pages/about-docz/about-docz.mdx": "old_pages/about-docz/about-docz.mdx",
     "docs/old_pages/about-docz/scaffolding-docz-app.mdx": "old_pages/about-docz/scaffolding-docz-app.mdx",
-    "docs/old_pages/css/css-animations": "old_pages/css/css-animations",
-    "docs/old_pages/circle-back/circle-back.mdx": "old_pages/circle-back/circle-back.mdx",
-    "docs/old_pages/dom-events/list-of-dom-events": "old_pages/dom-events/list-of-dom-events",
     "docs/old_pages/list-of-dom-events/dom-events.mdx": "old_pages/list-of-dom-events/dom-events.mdx",
     "docs/old_pages/live-server/live-server-doc.mdx": "old_pages/live-server/live-server-doc.mdx",
     "docs/old_pages/markdown-package-stack/markdown-package-stack.mdx": "old_pages/markdown-package-stack/markdown-package-stack.mdx",
@@ -843,11 +892,11 @@
     "docs/old_pages/Linux/ubuntu-swap-mem/ubuntu-swap-mem.mdx": "old_pages/Linux/ubuntu-swap-mem/ubuntu-swap-mem.mdx",
     "docs/old_pages/Package Manager/homebrew/homebrew-knowledge.mdx": "old_pages/Package Manager/homebrew/homebrew-knowledge.mdx",
     "docs/old_pages/Package Manager/publids-npm/publish-npm.mdx": "old_pages/Package Manager/publids-npm/publish-npm.mdx",
-    "docs/old_pages/Package Manager/setup-live-server/setup-live-server.mdx": "old_pages/Package Manager/setup-live-server/setup-live-server.mdx",
     "docs/old_pages/Package Manager/smooth-modern/smooth-modern.mdx": "old_pages/Package Manager/smooth-modern/smooth-modern.mdx",
+    "docs/old_pages/Package Manager/setup-live-server/setup-live-server.mdx": "old_pages/Package Manager/setup-live-server/setup-live-server.mdx",
     "docs/old_pages/os-related/os-related-docz.mdx": "old_pages/os-related/os-related-docz.mdx",
-    "docs/old_pages/os-related/mongo-ubuntu/mongodb-ubuntu.mdx": "old_pages/os-related/mongo-ubuntu/mongodb-ubuntu.mdx",
     "docs/old_pages/os-related/ms-sql-server-docker/ms-sql-server-docker.mdx": "old_pages/os-related/ms-sql-server-docker/ms-sql-server-docker.mdx",
+    "docs/old_pages/os-related/mongo-ubuntu/mongodb-ubuntu.mdx": "old_pages/os-related/mongo-ubuntu/mongodb-ubuntu.mdx",
     "docs/old_pages/os-related/ms-sql-server-ubuntu/ms-sql-server-ubuntu.mdx": "old_pages/os-related/ms-sql-server-ubuntu/ms-sql-server-ubuntu.mdx"
   }
 }

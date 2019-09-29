@@ -1,5 +1,5 @@
 Serverless with phemonic
-=====
+========================
 
 # Static site generator
 
