@@ -30,3 +30,9 @@ https://aws.amazon.com/legal/?nc1=f_cc
 [Press release](https://press.aboutamazon.com/press-releases/aws?c=176060&nc1=f_cc&p=irol-newsWebServices)
 
 [High preformance computing](https://aws.amazon.com/hpc/?nc1=f_dr)
+
+[ACL Access](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html)
+
+[Bucket Policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html)
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#sample-acl

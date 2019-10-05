@@ -5,6 +5,8 @@ DOCUMENTATION
 
 * [About](./about/README.md)
 
+* [Mail server tools](./mail/README.md)
+
 * [Google Dev Stuff](./google/README.md)
 
 * [Devdocs.io](./devdocsio/README.md)
