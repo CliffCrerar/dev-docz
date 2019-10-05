@@ -16,3 +16,7 @@ Build TODO list
 6. [Cloudflare appolloDB](https://developers.cloudflare.com/workers/templates/featured_boilerplates/graphql/)
 
 7. [Serverless graphql blog](https://github.com/serverless/serverless-graphql-blog.git)
+
+https://medium.com/google-cloud/build-a-weather-station-using-google-cloud-iot-core-and-mongooseos-7a78b69822c5
+
+https://codelabs.developers.google.com/codelabs/cloud-nodejs/index.html#2
