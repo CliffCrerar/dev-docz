@@ -1,4 +1,3 @@
-
 ---
 name: List of DOM Events
 route: dom-events
