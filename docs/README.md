@@ -41,7 +41,7 @@ DOCUMENTATION
     * [NoSQL](./databases/noSQL.md)
     * [SQL](./databases/sql.md)
 
-* [LIST OF ONLINE IDE's](./online-ide/README.md);   
+* [LIST OF ONLINE IDE](./online-ide/README.md)
 
 * [Policies](./policies/README.md)
     * [Acceptable Use Policies](./policies/acceptable-use-policy.md)
