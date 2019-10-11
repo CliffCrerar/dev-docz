@@ -13,3 +13,9 @@ https://www.apollographql.com/docs/
 https://www.apollographql.com/docs/references/apollo-config/
 
 # Fauna DB
+
+
+
+# Prismic
+
+https://www.prisma.io/docs/tutorials/-ohdaiyoo6c
