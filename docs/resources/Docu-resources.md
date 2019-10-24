@@ -65,3 +65,7 @@ https://ideone.com
 http://remix.ethereum.org
 
 https://www.onlinegdb.com
+
+# Puppeteer
+
+https://pptr.dev/#?product=Puppeteer&version=v1.20.0&show=outline

@@ -35,6 +35,7 @@ DOCUMENTATION
     * [Configure](./dev-resources/cloud-flare-wrangler-conf.md)
     * [Serverless org](./dev-resources/serverless.com.md)
     * [Hubot generator](./dev-resources/hubot.md)
+    * [Authentication](./dev-resources/authentication-mate.md)
 
 * [Data & Databases](./databases/README.md)
     * [GraphQL](./databases/graphql.md)

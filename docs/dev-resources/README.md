@@ -21,3 +21,5 @@ https://dash.cloudflare.com/6ef9500bc879bd9434300912e526b1e4/devdocz.gq/apps/vie
 https://dash.cloudflare.com/6ef9500bc879bd9434300912e526b1e4/devdocz.gq/apps/view/drift
 
 https://dash.cloudflare.com/6ef9500bc879bd9434300912e526b1e4/devdocz.gq/apps/view/logflare
+
+https://rauchg.com/2014/7-principles-of-rich-web-applications/
