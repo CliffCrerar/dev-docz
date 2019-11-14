@@ -1,6 +1,6 @@
 # This is my documenting space
 
-> In the process of migrating from docpress see: https://mydevdocs.c1i44.now.sh/
+> In the process of migrating from docpress see: [https://mydevdocs.now.sh/](https://mydevdocs.now.sh/)
 
 Link to my portal:
 
