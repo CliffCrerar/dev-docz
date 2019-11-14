@@ -8,6 +8,7 @@ DOCUMENTATION
 * [Mail server tools](./mail/README.md)
 
 * [Google Dev Stuff](./google/README.md)
+	* [gsuite](./google/gsuite.md)
 
 * [Devdocs.io](./devdocsio/README.md)
 
@@ -23,6 +24,7 @@ DOCUMENTATION
 * [Saved Exercises](./exercise/README.md)
 
 * [Application](./exp/README.md)
+	* [gits](./exp/gits.md)
 
 * [Serverless with Phemonic.io](./serverless-phemonic/README.md)
 
@@ -35,7 +37,7 @@ DOCUMENTATION
     * [Configure](./dev-resources/cloud-flare-wrangler-conf.md)
     * [Serverless org](./dev-resources/serverless.com.md)
     * [Hubot generator](./dev-resources/hubot.md)
-    * [Authentication](./dev-resources/authentication-mate.md)
+    
 
 * [Data & Databases](./databases/README.md)
     * [GraphQL](./databases/graphql.md)
